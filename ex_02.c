@@ -7,9 +7,11 @@ Hacer un programa que me ensene a programar en C
 int main(){
     int n = -1, r = 0;
     do {
-        puts("\n### MENU ###\n1. Compilation Steps\n2. Comments\n3. Tokens\n4. Keywords\n5. Identifiers\n6. User Input\n7. Basic Syntax\n8. Data Types"
-        "\n9. Variables"
+        puts("\n### MENU ###\n## BASICS OF C ##\n1. Compilation Steps\n2. Comments\n3. Tokens\n4. Keywords\n5. Identifiers\n6. User Input\n7. Basic Syntax\n8. Data Types"
+        "\n9. Variables\n10. Integer Promotions\n11. Type Conversion\n12. Type Casting\n13. Booleans\n## Constants and Literals in C ##\n14. Constants\n15. Literals"
+        "\n16. Escape sequences\n17. Format Specifiers"
         "\n0. Salir\n\nSeleccione una opcion:");
+
         r = scanf("%d",&n);
         
         if(r != 1){
@@ -113,7 +115,113 @@ int main(){
             "\n\n## Arrays Data Type in C ##\nint marks[5];\nint marks[ ]={50,56,76,67,43};\n## Pointers Data Type in C ##\nint x;\nint *y;\ny = &x;");
             break;
             case 9:
-            puts("### Variables ###");
+            puts("### Variables ###\n## Naming Conventions of C Variables ##\n\n"
+            "int _num = 5; // valid integer variable\nfloat marks = 55.50; // valid float variable"
+            "char choice = '0'; // valid char variable\n\n// invalid variable name\n// cannot use \"-\""
+            "\nint sub-1 = 35;\n\n//invalid; must have data type\navg = 50;\n\n// invalid; name can be used for"
+            "\n// declaration only once in a function\nint choice = 0;\n\n// Valid integer name\nint sal_of_employee = 20000;\n"
+            "\n// Valid because all are of same type\nint phy, che, maths;\n\n// error because variables of"
+            "\n// different types in same statement\nint sal, float tax;"
+            "\n1. char: Typically a single octet(one byte). It is an integer type."
+            "\n2. int: The most natural size of integer for the machine."
+            "\n3. float: A single-precision floating point value."
+            "\n4. double: A double-precision floating point value."
+            "\n5. void: Represents the absence of type."
+            "\n\n## Variable Definition in C ##"
+            "\n- type variable_list;"
+            "\n\nint i, j, k;\nchar c, ch;\nfloat f, salary;\ndouble d;"
+            "\ntype variable_name = value;\n// declaration of d and f\nextern int d = 3, f = 5;\n\n// definition and initializing d and f"
+            "\nint d = 3, f = 5;\n\n// definition and initializes z\nbyte z = 22;\n\n// the variable x has the value 'x'\nchar x = 'x';"
+            "\n\n## Variable Declaration in C ##"
+            "\n// declaration with initialization\nint x = 10;\n// declare first and assign later\nint y;\ny = 20;\n"
+            "\n// define and initialize two variables\nint d = 3, f = 5;\n\n// the variable x has the value 'x'\nchar x = 'x';"
+            "\n// Variable declaration:\nextern int a, b;\nextern int c;\nextern float f;\n\nint main () {\n\n/* variable definition: */"
+            "\nint a, b;\nint c;\nfloat f;\n\n/* actual initialization */\na = 10;\nb = 20;\nc = a + b;\nprintf(\"value of c : %d \\n\", c);"
+            "\nf = 70.0/3.0;\nprintf(\"value of f : %f \\n\", f);\nreturn 0;\n}\n\n// function declaration\nint func();\n\nint main() {\n"
+            "\n// function call\nint i = func();\n}\n\n// function definition\nint func() {\nreturn 0;\n}\n"
+            "\n## Lvalues and Rvalues in C ##\n- lvalue expressions\n- rvalue expressions\n"
+            "\n// valid statement\nint g = 20;\n\n// invalid statement\n// it would generate compile-time error\n10 = 20;\n"
+            "\nVariables in C can be classified based on the following parameters:\nData types: int, float, char or struct types."
+            "\nScope: global or local variables.\nStorage type: automatic, static, register or extern.\n"
+            );
+            break;
+            case 10:
+            puts("### Integer Promotions ###\n\n#include <stdio.h>\n\nint main(){\n\nchar a = 251;\nunsigned char b = a;\n\nprintf(\"a = %c\", a);\nprintf(\"\\nb = %c\", b);\n"
+            "\nif (a == b)\n  printf(\"\\n Same\");\nelse\n  printf(\"\\n Not Same\");\n\nreturn 0;\n}\n\n#include <stdio.h>\n\nint main(){\n"
+            "\nchar a = 50;\nint b = a << 2;\n\nprintf (\"b as int: %d as char: %c\", b, b);\n\nreturn 0;\n}\n\n## Integer Promotion Rules ##\n"
+            "\n- The integer types in C are char, short, int, long, long long and enum. Booleans are also treated as an integer type when it comes to type promotions."
+            "\n- No two signed integer types shall have the same rank, even if they have the same representation.\n- The rank of a signed integer type shall be greater than the rank of any signed integer type with less precision."
+            "\n- The rank of long int > the rank of int > the rank of short int > the rank of signed char.\n- The rank of char is equal to the rank of signed char and unsigned char."
+            "\n- Whenever a small integer type is used in an expression, it is implicitly converted to int which is always signed.\n- All small integer types, irrespective of sign, are implicitly converted to (signed) int when used in most expressions."
+            "\n\n- Byte and short values: They are promoted to int.\n- If one operand is a long: The entire expression is promoted to long."
+            "\n- If one operand is a float: The entire expression is promoted to float.\n- If any of the operands is double: The result is promoted to double."
+            "\n#include <stdio.h>\n\nint main(){\n\nchar x = 68;\nchar y = 34;\n\nprintf(\"The value of x is: %d\", x);\nprintf(\"\\nThe value of y is: %d\", y);\n"
+            "\nchar z = x/y;\nprintf(\"\\nThe value of z: %d\", z);\n\nreturn 0;\n}\n"
+            );
+            break;
+            case 11:
+            puts("### Type Conversion ###"
+            "\n## Implicit Type Conversion in C ##\n\nByte and short values: They are promoted to int.\nIf one operand is a long: The entire expression is promoted to long."
+            "\nIf one operand is a float: The entire expression is promoted to float.\nIf any of the operands is double: The result is promoted to double."
+            "#include <stdio.h>\nint main(){\nint  i = 17;char c = 'c'; /* ascii value is 99 */\nint sum;sum = i + c;\nprintf(\"Value of sum: %d\\n\", sum);\nreturn 0;}\n"
+            "\nUsual Arithmetic Conversion\nint => unsigned int => long => unsigned long => long long => unsigned long long => float => double => long double\n"
+            "\n#include <stdio.h>\n\nint main(){\n\nchar a = 'A';\nfloat b = a + 5.5;\n\nprintf(\"%f\", b);\n\nreturn 0;\n}\n"
+            "\n## Explicit Type Conversion in C ##\ntype2 var2 = (type1) var1;\n#include <stdio.h>\n\nint main(){\n\nint x = 10, y = 4;\nfloat z = x/y;\n"
+            "\nprintf(\"%f\", z);\n\nreturn 0;\n}\n\n#include <stdio.h>\n\nint main(){\n\nint x = 10, y = 4;\nfloat z = (float)x/y;\n\nprintf(\"%f\", z);\n\nreturn 0;\n}\n"
+            "\n## Typecasting Functions in C ##\n\nThe atoi() Function\n\n#include <stdio.h>\n#include <stdlib.h>\n\nint main(){\n\nchar str[] = \"123\";"
+            "\nint num = atoi(str);\n\nprintf(\"%d\\n\", num);\n\nreturn 0;\n}\n"
+            "\nThe itoa() Function\n\n#include <stdio.h>\n#include <stdlib.h>\n\nint main(){\n\nint num = 123;\nchar str[10];\n\nitoa(num,str, 10);\n"
+            "\nprintf(\"%s\\n\", str);\n\nreturn 0;\n}\n\nThe malloc() Function\nint *ptr = (int*)malloc(n * sizeof(int));\n\n#include <stdio.h>\n#include <stdlib.h>\n"
+            "\nfloat divide(int, int);\nint main(){\n  int x = 10, y = 4;\n  float z = divide(x, y);\n  printf(\"%f\", z);\n  return 0;}\nfloat divide(int a, int b){"
+            "\n  return (float)a/b;\n}\n");
+            break;
+            case 12:
+            puts("\n### Type Casting ###\n\n(type_name) expression\n\n#include <stdio.h>\n\nint main() {\n\nint sum = 17, count = 5;\ndouble mean;\n"
+            "\nmean =  sum / count;\nprintf(\"Value of mean: %f\\n\", mean);\n\n}\n\n#include <stdio.h>\n\nint main() {\n\nint sum = 17, count = 5;"
+            "\ndouble mean;\n\nmean = (double) sum / count;\nprintf(\"Value of mean: %f\\n\", mean);\n\n}\n"
+            "\nRules of Type Promotions:\n- Byte and short values : They are promoted to int.\n- If one operand is a long : The entire expression is promoted to long."
+            "\n- If one operand is a float : The entire expression is promoted to float.\n- If any of the operands is double : The result is promoted to double.\n"
+            "\n## Integer Promotion in C ##\n\n#include <stdio.h>\n\nint main() {\n\nint i = 17;\nchar c = 'c';  /* ascii value is 99 */\nint sum;\n\nsum = i + c;\nprintf(\"Value of sum : %d\\n\", sum);\n\n}\n"
+            "\n## Usual Arithmetic Conversion ##\n#include <stdio.h>\n\nint main() {\n\nint i = 17;\nchar c = 'c';  /* ascii value is 99 */\nfloat sum;\n"
+            "\nsum = i + c;\nprintf(\"Value of sum : %f\\n\", sum);\n}\n"
+            );
+            break;
+            case 13:
+            puts("### Booleans ###\n## Using enum to Implement Boolean Type in C ##\n\n#include <stdio.h>\n\nint main (){\n\nenum bool {false, true};\nenum bool x = true;"
+            "\nenum bool y = false;\n\nprintf (\"%d\\n\", x);\nprintf (\"%d\\n\", y);\n}\n\ntypedef enum as BOOL\n\n#include <stdio.h>\n\nint main(){\n\ntypedef enum {false, true} BOOL;\n"
+            "\nBOOL x = true;\nBOOL y  = false;\n\nprintf (\"%d\\n\", x);\nprintf (\"%d\\n\", y);\n}\n"
+            "\n#include <stdio.h>\n\nint main(){\n\n  typedef enum {false, true} BOOL;\n\n  int i = 0;\n\n  while(true){\n    i++;\n    printf(\"%d\\n\", i);"
+            "\n    if(i >= 5)\n      break;\n  }\n  return 0;\n}\n\nBoolean Values with #define\n"
+            "\n#include <stdio.h>\n\n#define FALSE 0\n#define TRUE 1\n\nint main(){\n\n  printf(\"False: %d \\n True: %d\", FALSE, TRUE);\n\n  return 0;\n}\n"
+            "\nBoolean Type in stdbool.h\n\n#include <stdio.h>\n#include <stdbool.h>\n\nint main(){\n\n  bool a = true;\n  bool b = false;\n\n  printf(\"True: %d\\n\", a);"
+            "\n  printf(\"False: %d\", b);\n\n  return 0;\n}\n"
+            "\n#include <stdio.h>\n#include <stdbool.h>\n\nint main(){\n  bool x;\n  x = 10 > 5;\n  if(x)\n    printf(\"x is True\\n\");\n  else\n    printf(\"x is False\\n\");"
+            "\n  bool y;\n  int marks = 40;\n  y = marks > 50;\n  if(y)\n    printf(\"Result: Pass\\n\");\n  else\n    printf(\"Result: Fail\\n\");\n\n}"
+            "\n\n#include <stdio.h>\n#include <stdlib.h>\n#include <stdbool.h>\n\nint main(void){\n\n  bool loop = true;\n  int i = 0;\n\n  while(loop){\n    i++;"
+            "\n    printf(\"i: %d \\n\", i);\n\n    if (i >= 5)\n      loop = false;\n  }\n  printf(\"Loop stopped!\\n\");\n  return EXIT_SUCCESS;\n}\n"
+            );
+            break;
+            case 14:
+            puts(
+            "\n- Using the const Keyword\n- Using the #define Directive\n\n## Defining a Constant Using the const Keyword ##\nconst type NAME = val;\nconst float PI = 3.14159265359;\n"
+            "\n#include <stdio.h>\nint main(){\n  const float PI = 3.14159265359;\n  float radius = 5;\n  float area = PI*radius*radius;\n  printf (\"area: %f\", area);"
+            "\n  return 0;\n}\n\nconst float PI = 3.14159265359;\nPI=22/7;\n\nerror: assignment of read-only variable 'PI'\n\nconst float PI;\nPI = 3.14159265359;\n"
+            "\nerror: assignment of read-only variable 'PI'\n\nDefining a Constant Using the #define Directive\n#define name = value\n#define PI = 3.14159265359\n"
+            "\nExample: Define a Constant Using the #define\n\n#include <stdio.h>\n#define LENGTH 10\n#define WIDTH 5\n#define NEWLINE '\\\n'\n\nint main() {"
+            "\nint area;\narea = LENGTH * WIDTH;\nprintf(\"length: %d width: %d\", LENGTH, WIDTH);\nprintf(\"%c\", NEWLINE);\nprintf(\"value of area : %d\", area);"
+            "\nreturn 0;\n}\n\nChanging the Value of a Constant\n\nExample: Change the Value of a Constant\n\n#include <stdio.h>\nint main(){\nconst int x = 10;"
+            "\nprintf(\"Initial Value of Constant: %d\\n\", x);\n\n// y is a pointer to constant x\nint* y = &x;\n\n// assign new value\n*y = 100;\nprintf(\\\"Value of Constant after change: %d\\\", x);"
+            "\nreturn 0;\n}\n"
+            );
+            break;
+            case 15:
+            puts("Literals");
+            break;
+            case 16:
+            puts("");
+            break;
+            case 17:
+            puts("");
             break;
             default:
             puts("opcion invalida");
