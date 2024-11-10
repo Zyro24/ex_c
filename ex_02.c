@@ -215,10 +215,125 @@ int main(){
             );
             break;
             case 15:
-            puts("Literals");
+            puts("### Literals ###"
+
+            "\n- Using literal representation"
+            "\n- Using an expression"
+            "\n- int x = 10;\n"
+
+            "\n- int x = 10;"
+            "\n- int y = x*2;\n"
+
+            "\n## Integer Literals in C ##"
+            "\nint x = 200;"
+            "\nint y = -50;\n"
+            "\nint c = 89U;"
+            "\nlong int d = 99998L;\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){\n"
+            "\n  int oct = 025;"
+            "\n  int hex = 0xa1;"
+            "\n  printf(\"Octal to decimal: %d\\n\", oct);"
+            "\n  printf(\"Hexadecimal to decimal: %d\\n\", hex);"
+            "\n}\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){\n"
+            "\n  int x = 0b00010000;"
+            "\n  printf(\"binary to decimal: %d\", x);"
+            "\n}\n"
+
+            "\n212      /* valid */"
+            "\n215u     /* valid */"
+            "\n0xFeeL   /* valid */"
+            "\n078      /* invalid: 8 is not an octal digit */"
+            "\n032UU    /* invalid: cannot repeat a suffix */\n"
+
+            "\n85       /* decimal */"
+            "\n0213     /* octal */"
+            "\n0x4b     /* hexadecimal */"
+            "\n30       /* int */"
+            "\n30u      /* unsigned int */"
+            "\n30l      /* long */"
+            "\n30ul     /* unsigned long */\n"
+
+            "\n## Floating-point Literals in C ##\n"
+
+            "\n#include <stdio.h>\n"
+
+            "\nint main(){"
+            "\n  float x = 10.55;"
+            "\n  float y = -1.333;"
+            "\n  printf(\"x and y are: %f, %f\", x, y);"
+            "\n}"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  float x = 100E+4;"
+            "\n  float y = -1.3E-03;"
+            "\n  printf(\"x: %f\\n\", x);"
+            "\n  printf(\"y: %f\\n\", y);"
+            "\n}\n"
+
+            "\n3.14159     /* valid */"
+            "\n314159E-5L  /* valid */"
+            "\n510E        /* invalid: incomplete exponent */"
+            "\n210f        /* invalid: no decimal or exponent */"
+            "\n.e55        /* invalid: missing integer or fraction */\n"
+
+            "\n## Character Literals in C ##\n"
+
+            "\nchar x = 'I';\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\nchar x = 'I';"
+            "\n  printf(\"x: %c\\n\", x);"
+            "\n  printf(\"x: %d\\n\", x);"
+            "\n}"
+
+            "\n## Escape Sequences in C ##\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  char x = 'I';"
+            "\n  char y = 'J';"
+            "\n  printf(\"x: %c\\ny: %c\", x,y);"
+            "\n}\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  char x = '\u09A9';"
+            "\n  printf(\"x: %c\\n\", x);"
+            "\n  printf(\"x: %d\\n\", x);"
+            "\n}\n"
+
+            "\n## String Literals in C ##\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  char arr[] = \"Hello World\";"
+            "\n  printf(\"arr: %s\", arr);"
+            "\n}\n"
+
+            "\narr: Hello World\n"
+
+            "\nchar arr[] = \"Hello \\"
+            "\nWorld\";\n"
+
+            "\nint arr[] = {10, 20, 30, 40};\n"
+
+            "\nstruct marks {"
+            "\n  int phy;"
+            "\n  int che;"
+            "\n  int math"
+            "\n};\n"
+
+            "\nstruct marks m1 = {50, 60, 70};\n");
             break;
             case 16:
-            puts("");
+            puts("### Escape Sequence ###");
             break;
             case 17:
             puts("");
