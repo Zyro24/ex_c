@@ -35,6 +35,10 @@ int main(){
         "\n## Operators in C ##\n"
 
         "\n18. Operators"
+        "\n19. Arithmetic Operators"
+        "\n20. Relational Operators"
+        "\n21. Logical Operators"
+
         "\n0. Salir\n"
         "\nSeleccione una opcion:");
 
@@ -48,7 +52,7 @@ int main(){
         }
 
         putchar('\n');
-        
+
         switch(n){
             case 0:
             puts("\n ### ... Adios! ... ###\n");
@@ -56,6 +60,7 @@ int main(){
 
             case 1:
             puts("\n### COMPILATION STEPS ###\n"
+
             "\na. Preprocessing"
             "\nb. Compiling"
             "\nc. Assembling"
@@ -64,12 +69,14 @@ int main(){
 
             case 2:
             puts("\n### COMMENTS ###\n"
+
             "\na. /* --- */"
             "\nb. //\n");
             break;
 
             case 3:
             puts("\n### TOKERNS ###\n"
+
             "\n- Character set"
             "\n- Keyword tokens"
             "\n- Literal tokens"
@@ -92,6 +99,7 @@ int main(){
 
             case 4:
             puts("\n### KEYWORDS ###\n"
+
             "\n1. auto"
             "\n2. break"
             "\n3. case"
@@ -1252,17 +1260,798 @@ int main(){
             break;
 
             case 19:
-            puts(""
+            puts("\n### Arithmetic Operators ###\n"
+
+            "\nOperator - Description"
+            "\n+  Adds two operands."
+            "\n-  Subtracts second operand from the first."
+            "\n*  Multiplies both operands."
+            "\n/  Divides numerator by denominator."
+            "\n%  Modulus Operator and remainder of after an integer division."
+            "\n++ Increment operator increases the integer value by one."
+            "\n-- Decrement operator decreases the integer value by one.\n"
+
+            "\nExample: Arithmetic Operators in C\n"
+
+            "\n#include <stdio.h>\n"
+
+            "\nint main(){"
+            "\n  int op1 = 10;"
+            "\n  int op2 = 3;"
+            "\n  printf(\"Operand1: %d Operand2: %d \\n\n\", op1, op2);"
+            "\n  printf(\"Addition of op1 and op2: %d\\n\", op1 + op2);"
+            "\n  printf(\"Subtraction of op2 from op1: %d\\n\", op1 - op2);"
+            "\n  printf(\"Multiplication of op1 and op2: %d\\n\", op1 * op2);"
+            "\n  printf(\"Division of op1 by op2: %d\\n\", op1/op2);"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nType Casting in C"
+            "\nprintf(\"Division of op1 by op2: %f\\n\", op1/op2);"
+            "\nprintf(\"Division of op1 by op2: %f\\n\", (float)op1/op2);\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  int op1 = 10;"
+            "\n  float op2 = 2.5;"
+            "\n  printf(\"Operand1: %d Operand2: %f\\n\", op1, op2);"
+            "\n  printf(\"Addition of op1 and op2: %f\\n\", op1 + op2);"
+            "\n  printf(\"Subtraction of op2 from op1: %f\\n\", op1 - op2);"
+            "\n  printf(\"Multiplication of op1 and op2: %f\\n\", op1 * op2);"
+            "\n  printf(\"Division of op1 by op2: %f\\n\", op1/op2);"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nArithmetic Operations with char Data Type\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  char op1 = 'F';"
+            "\n  int op2 = 3;"
+            "\n  printf(\"operand1: %c operand2: %d\\n\", op1, op2);"
+            "\n  printf(\"Addition of op1 and op2: %d\\n\", op1 + op2);"
+            "\n  printf(\"Subtraction of op2 from op1: %d\\n\", op1 - op2);"
+            "\n  printf(\"Multiplication of op1 and op2: %d\\n\", op1 * op2);"
+            "\n  printf(\"Division of op1 by op2: %d\\n\", op1/op2);"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nModulo Operator in C\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  int op1 = 10;"
+            "\n  int op2 = 3;"
+            "\n  printf(\"Operand1: %d Operand2: %d\\n\", op1, op2);"
+            "\n  printf(\"Modulo of op1 and op2: %d\\n\", op1%op2);"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nfloat op1 = 10;"
+            "\nint op2 = 3;"
+            "\nprintf(\"Modulo of op1 and op2: %d\\n\", op1%op2);\n"
+
+            "\nNegation Operator in C\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  int op1 = 5;"
+            "\n  int op2 = -op1;"
+            "\n  printf(\"Operand1: %d Operand2: %d\\n\", op1, op2);"
+            "\n  return 0;"
+            "\n}\n"
             );
             break;
 
             case 20:
-            puts(""
+            puts("\n### Relational Operators ###\n"
+
+            "\n## Example 1 ##\n"
+
+            "\n#include <stdio.h>\n"
+
+            "\nint main(){"
+            "\n  int op1 = 5;"
+            "\n  int op2 = 3;"
+            "\n  printf(\"op1: %d op2: %d op1 < op2: %d\\n\", op1, op2, op1 < op2);"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nOperator - Description - Example\n"
+            "\n== Checks if the values of two operands are equal or not. If yes, then the condition becomes true. (A == B)"
+            "\n!= Checks if the values of two operands are equal or not. If the values are not equal, then the condition becomes true. (A != B)"
+            "\n>  Checks if the value of left operand is greater than the value of right operand. If yes, then the condition becomes true. (A > B)"
+            "\n<  Checks if the value of left operand is less than the value of right operand. If yes, then the condition becomes true. (A < B)"
+            "\n>= Checks if the value of left operand is greater than or equal to the value of right operand. If yes, then the condition becomes true. (A >= B)"
+            "\n<= Checks if the value of left operand is less than or equal to the value of right operand. If yes, then the condition becomes true. (A <= B)\n"
+
+            "\n## Example 2 ##\n"
+
+            "\n#include <stdio.h>\n"
+
+            "\nint main(){"
+            "\n  int a = 21;"
+            "\n  int b = 10;"
+            "\n  int c;"
+            "\n  printf(\"a: %d b: %d\\n\", a,b);"
+            "\n  if(a == b){"
+            "\n    printf(\"Line 1 - a is equal to b\\n\" );"
+            "\n  } else {"
+            "\n    printf(\"Line 1 - a is not equal to b\\n\" );"
+            "\n  }\n"
+            "\n  if (a < b){"
+            "\n    printf(\"Line 2 - a is less than b\\n\" );"
+            "\n  } else {"
+            "\n    printf(\"Line 2 - a is not less than b\\n\" );"
+            "\n  }\n"
+            "\n  if (a > b){"
+            "\n    printf(\"Line 3 - a is greater than b\\n\" );"
+            "\n  } else {"
+            "\n    printf(\"Line 3 - a is not greater than b \\n\\n\" );"
+            "\n  }\n"
+            "\n  /* Lets change value of a and b */"
+            "\n  a = 5;"
+            "\n  b = 20;"
+            "\n  printf(\"a: %d b: %d\\n\", a,b);"
+            "\n  if (a <= b){"
+            "\n    printf(\"Line 4 - a is either less than or equal to  b\\n\" );"
+            "\n  }\n"
+            "\n  if (b >= a){"
+            "\n    printf(\"Line 5 - b is either greater than  or equal to b\\n\" );"
+            "\n  }\n"
+            "\n  if(a != b){"
+            "\n    printf(\"Line 6 - a is not equal to b\\n\" );"
+            "\n  } else {"
+            "\n    printf(\"Line 6 - a is equal to b\\n\" );"
+            "\n  }"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\n## Example 3 ##\n"
+
+            "\n#include <stdio.h>\n"
+
+            "\nint main(){"
+            "\n  int a = 5;"
+            "\n  int b = 3;\n"
+            "\n  if (a = b){"
+            "\n  printf(\"a is equal to b\");"
+            "\n  } else {"
+            "\n  printf(\"a is not equal to b\");"
+            "\n  }\n"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\n## Example 4 ##\n"
+
+            "\n#include <stdio.h>\n"
+
+            "\nint main(){"
+            "\n  char a = 'B';"
+            "\n  char b = 'd';\n"
+            "\n  printf(\"a: %c b: %c\\n\", a,b);"
+            "\n  if(a == b){"
+            "\n    printf(\"Line 1 - a is equal to b \\n\");"
+            "\n  } else {"
+            "\n    printf(\"Line 1 - a is not equal to b \\n\");"
+            "\n  }\n"
+            "\n  if (a < b){"
+            "\n    printf(\"Line 2 - a is less than b \\n\");"
+            "\n  } else {"
+            "\n    printf(\"Line 2 - a is not less than b \\n\");"
+            "\n  }\n"
+            "\n  if (a > b) {"
+            "\n    printf(\"Line 3 - a is greater than b \\n\");"
+            "\n  } else {"
+            "\n    printf(\"Line 3 - a is not greater than b \\n\");"
+            "\n  }\n"
+            "\n  if(a != b) {"
+            "\n    printf(\"Line 4 - a is not equal to b \\n\");"
+            "\n  } else {"
+            "\n    printf(\"Line 4 - a is equal to b \\n\");"
+            "\n  }\n"
+            "\n  return 0;"
+            "\n}\n"
             );
             break;
 
             case 21:
-            puts(""
+            puts("\n### Logical Operators ###\n"
+
+            "\nOperator - Description - Example"
+            "\n&& Called Logical AND operator. If both the operands are non-zero, then the condition becomes true. (A && B)"
+            "\n|| Called Logical OR Operator. If any of the two operands is non-zero, then the condition becomes true. (A || B)"
+            "\n! Called Logical NOT Operator. It is used to reverse the logical state of its operand. If a condition is true, then Logical NOT operator will make it false. !(A)"
+
+            "\nLogical AND (&&) Operator"
+            "\na  b  a&&b"
+            "\ntrue true True"
+            "\ntrue false False"
+            "\nfalse true False"
+            "\nfalse false False\n"
+
+            "\nLogical OR (||) Operator\n"
+            "\na  b  a||b"
+            "\ntrue  true  True"
+            "\ntrue  false True"
+            "\nfalse true  true"
+            "\nfalse false false\n"
+
+            "\nLogical NOT (!) Operator\n"
+            "\nA  !a"
+            "\nTrue  False"
+            "\nFalse True\n"
+
+            "\n## Example 1 ##\n"
+
+            "\n#include <stdio.h>\n"
+
+            "\nint main(){"
+            "\n  int a = 5;"
+            "\n  int b = 20;\n"
+            "\n  if (a && b){"
+            "\n    printf(\"Line 1 - Condition is true\\n\");"
+            "\n  }\n"
+            "\n  if (a || b){"
+            "\n    printf(\"Line 2 - Condition is true\\n\");"
+            "\n  }\n"
+            "\n  /* lets change the value of  a and b */"
+            "\n  a = 0;"
+            "\n  b = 10;\n"
+            "\n  if (a && b){"
+            "\n    printf(\"Line 3 - Condition is true\\n\");"
+            "\n  } else {"
+            "\n    printf(\"Line 3 - Condition is not true\\n\");"
+            "\n  }\n"
+            "\n  if (!(a && b)){"
+            "\n    printf(\"Line 4 - Condition is true\\n\");"
+            "\n  }\n"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\n## Example 2 ##\n"
+
+            "\n#include <stdio.h>\n"
+
+            "\nint main(){"
+            "\n  char a = 'a';"
+            "\n  char b = '\0'; // Null character\n"
+            "\n  if (a && b){"
+            "\n    printf(\"Line 1 - Condition is true\\n\");"
+            "\n  }\n"
+            "\n  if (a || b){"
+            "\n    printf(\"Line 2 - Condition is true\\n\");"
+            "\n  }\n"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\n## Example 3 ##\n"
+
+            "\n#include <stdio.h>\n"
+
+            "\nint main(){"
+            "\n  int phy = 50;"
+            "\n  int maths = 60;"
+            "\n  if (phy < 50 || maths < 50){"
+            "\n    printf(\"Result:Fail\");"
+            "\n  } else {"
+            "\n    printf(\"Result:Pass\");"
+            "\n  }"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\n## Example 4 ##\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  int phy = 50;"
+            "\n  int maths = 60;"
+            "\n  if (phy >= 50 && maths >= 50){"
+            "\n    printf(\"Result: Pass\");"
+            "\n  } else {"
+            "\n    printf(\"Result: Fail\");"
+            "\n  }"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\n## Example 5 ##\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  int i = 0;"
+            "\n  while (!(i > 5)){"
+            "\n    printf(\"i = %d\\n\", i);"
+            "\n    i++;"
+            "\n  }"
+            "\n  return 0;"
+            "\n}\n"
+            );
+            break;
+
+            case 22:
+            puts("\n### Bitwise Operators ###\n"
+
+            "\n&  Binary AND Operator copies a bit to the result if it exists in both operands. (A & B)"
+            "\n|  Binary OR Operator copies a bit if it exists in either operand. (A | B)"
+            "\n^  Binary XOR Operator copies the bit if it is set in one operand but not both. (A ^ B)"
+            "\n~  Binary One's Complement Operator is unary and has the effect of 'flipping' bits. (~A)"
+            "\n<< Binary Left Shift Operator. The left operands value is moved left by the number of bits specified by the right operand. A << 2"
+            "\n>> Binary Right Shift Operator. The left operands value is moved right by the number of bits specified by the right operand. A >> 2\n"
+
+            "\n## Bitwise AND Operator (&) in C ##\n"
+            "\nbit a  bit b  a & b"
+            "\n0  0  0"
+            "\n0  1  0"
+            "\n1  0  0"
+            "\n1  1  1\n"
+
+            "\n  0011 1100"
+            "\n& 0000 1101"
+            "\n  ---------"
+            "\n= 0000 1100\n"
+
+            "\n## Bitwise OR (|) Operator ##\n"
+
+            "\nbit a  bit b  a | b"
+            "\n0  0  0"
+            "\n0  1  1"
+            "\n1  0  1"
+            "\n1  1  1\n"
+
+            "\n  0011 1100"
+            "\n| 0000 1101"
+            "\n  ---------"
+            "\n= 0011 1101"
+
+            "\nBitwise XOR (^) Operator\n"
+            "\nbit a  bit b  a ^ b"
+            "\n0  0  0"
+            "\n0  1  1"
+            "\n1  0  1"
+            "\n1  1  0\n"
+
+            "\n  0011 1100"
+            "\n^ 0000 1101"
+            "\n  ---------"
+            "\n= 0011 0001\n"
+
+            "\n## Shift (<<) Operator ##"
+            "\n0011 1100 << 2 = 1111 0000\n"
+
+            "\nThe Right Shift (>>) Operator"
+            "\n0011 1100 >> 2 = 0000 1111\n"
+
+            "\nThe 1's Complement (~) Operator"
+            "\na  ~a"
+            "\n0  1"
+            "\n1  0\n"
+
+            "\n~ 0011 1100 = 1100 0011\n"
+
+            "\n## Example ##\n"
+
+            "\n#include <stdio.h>\n"
+
+            "\nint main(){"
+            "\n  unsigned int a = 60;	/* 60 = 0011 1100 */"
+            "\n  unsigned int b = 13;	/* 13 = 0000 1101 */"
+            "\n  int c = 0;\n"
+            "\n  c = a & b;       /* 12 = 0000 1100 */"
+            "\n  printf(\"Line 1 - Value of c is %d\\n\", c);\n"
+            "\n  c = a | b;       /* 61 = 0011 1101 */"
+            "\n  printf(\"Line 2 - Value of c is %d\\n\", c);\n"
+            "\n  c = a ^ b;       /* 49 = 0011 0001 */"
+            "\n  printf(\"Line 3 - Value of c is %d\\n\", c);\n"
+            "\n  c = ~a;          /*-61 = 1100 0011 */"
+            "\n  printf(\"Line 4 - Value of c is %d\\n\", c);\n"
+            "\n  c = a << 2;     /* 240 = 1111 0000 */"
+            "\n  printf(\"Line 5 - Value of c is %d\\n\", c);\n"
+            "\n  c = a >> 2;     /* 15 = 0000 1111 */"
+            "\n  printf(\"Line 6 - Value of c is %d\\n\", c);\n"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nOutput:"
+            "\nLine 1 - Value of c is 12"
+            "\nLine 2 - Value of c is 61"
+            "\nLine 3 - Value of c is 49"
+            "\nLine 4 - Value of c is -61"
+            "\nLine 5 - Value of c is 240"
+            "\nLine 6 - Value of c is 15\n"
+            );
+            break;
+
+            case 23:
+            puts("\n## Assignment Operators ##\n"
+
+            "\nOperator Description Example"
+            "\n= Simple assignment operator. Assigns values from right side operands to left side operand C = A + B will assign the value of A + B to C"
+            "\n+= Add AND assignment operator. It adds the right operand to the left operand and assign the result to the left operand. C += A is equivalent to C = C + A"
+            "\n-= Subtract AND assignment operator. It subtracts the right operand from the left operand and assigns the result to the left operand. C -= A is equivalent to C = C - A"
+            "\n*= Multiply AND assignment operator. It multiplies the right operand with the left operand and assigns the result to the left operand. C *= A is equivalent to C = C * A"
+            "\n/= Divide AND assignment operator. It divides the left operand with the right operand and assigns the result to the left operand. C /= A is equivalent to C = C / A"
+            "\n%= Modulus AND assignment operator. It takes modulus using two operands and assigns the result to the left operand. C %= A is equivalent to C = C % A"
+            "\n<<= Left shift AND assignment operator. C <<= 2 is same as C = C << 2"
+            "\n>>= Right shift AND assignment operator. C >>= 2 is same as C = C >> 2"
+            "\n&= Bitwise AND assignment operator. C &= 2 is same as C = C & 2"
+            "\n^= Bitwise exclusive OR and assignment operator. C ^= 2 is same as C = C ^ 2"
+            "\n|= Bitwise inclusive OR and assignment operator. C |= 2 is same as C = C | 2\n"
+
+            "\nSimple Assignment Operator (=)\n"
+
+            "\nint x = 10;       // declaration with initialization"
+            "\nint y;            // declaration"
+            "\ny = 20;           // assignment later"
+            "\nint z = x + y;    // assign an expression"
+            "\nint d = 3, f = 5; // definition and initializing d and f."
+            "\nchar x = 'x';     // the variable x has the value 'x'.\n"
+
+            "\nint g = 20; // valid statement"
+            "\n10 = 20;    // invalid statement\n"
+
+            "Augmented Assignment Operators"
+
+            "\n## Example 1 ##\n"
+
+            "\n#include <stdio.h>"
+
+            "\nint main(){"
+            "\n  int a = 10;"
+            "\n  int b = 20;"
+            "\n  a += b;"
+            "\n  printf(\"a: %d\\\", a);"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nOutput:"
+            "\na: 30"
+
+            "\n## Example 2 ##\n"
+
+            "\n#include <stdio.h>\n"
+
+            "\nint main(){"
+            "\n  int a = 60;"
+            "\n  int b = 2;"
+            "\n  a <<= b;"
+            "\n  printf(\"a: %d\", a);"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nOutput:"
+            "\na: 240\n"
+
+            "\n## Example 3 ##\n"
+
+            "\n#include <stdio.h>\n"
+
+            "\nint main(){"
+            "\n  int a = 21;"
+            "\n  int c;"
+            "\n  c =  a;"
+            "\n  printf(\"Line 1 - =  Operator Example, Value of c = %d\\n\", c);\n"
+            "\n  c +=  a;"
+            "\n  printf(\"Line 2 - += Operator Example, Value of c = %d\\n\", c);\n"
+            "\n  c -=  a;"
+            "\n  printf(\"Line 3 - -= Operator Example, Value of c = %d\\n\", c);\n"
+            "\n  c *=  a;"
+            "\n  printf(\"Line 4 - *= Operator Example, Value of c = %d\\n\", c);\n"
+            "\n  c /=  a;"
+            "\n  printf(\"Line 5 - /= Operator Example, Value of c = %d\\n\", c);\n"
+            "\n  c  = 200;"
+            "\n  c %=  a;"
+            "\n  printf(\"Line 6 - %%= Operator Example, Value of c = %d\\n\", c);\n"
+            "\n  c <<=  2;"
+            "\n  printf(\"Line 7 - <<= Operator Example, Value of c = %d\\n\", c);\n"
+            "\n  c >>=  2;"
+            "\n  printf(\"Line 8 - >>= Operator Example, Value of c = %d\\n\", c);\n"
+            "\n  c &=  2;"
+            "\n  printf(\"Line 9 - &= Operator Example, Value of c = %d\\n\", c);\n"
+            "\n  c ^=  2;"
+            "\n  printf(\"Line 10 - ^= Operator Example, Value of c = %d\\n\", c);\n"
+            "\n  c |=  2;"
+            "\n  printf(\"Line 11 - |= Operator Example, Value of c = %d\\n\", c);\n"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nOutput:"
+            "\nLine 1 - =  Operator Example, Value of c = 21"
+            "\nLine 2 - += Operator Example, Value of c = 42"
+            "\nLine 3 - -= Operator Example, Value of c = 21"
+            "\nLine 4 - *= Operator Example, Value of c = 441"
+            "\nLine 5 - /= Operator Example, Value of c = 21"
+            "\nLine 6 - %= Operator Example, Value of c = 11"
+            "\nLine 7 - <<= Operator Example, Value of c = 44"
+            "\nLine 8 - >>= Operator Example, Value of c = 11"
+            "\nLine 9 - &= Operator Example, Value of c = 2"
+            "\nLine 10 - ^= Operator Example, Value of c = 0"
+            "\nLine 11 - |= Operator Example, Value of c = 2\n"
+            );
+            break;
+
+            case 24:
+            puts("\n### Unary Operators ###\n"
+
+            "\n## The Increment Operator in C ##\n"
+
+            "\n## The Decrement Operator in C ##\n"
+
+            "\n## The Unary \"+\" Operator in C ##\n"
+
+            "\nExample\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  char x = 'A';"
+            "\n  char y = +x;"
+            "\n  float a = 1.55;"
+            "\n  float b = +a;"
+            "\n  printf (\"x: %c y: %c\\n\", x,y);"
+            "\n  printf (\"a: %f y: %f\\n\", a,b);"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nOutput:"
+            "\nx: A y: A"
+            "\na: 1.550000 y: 1.550000\n"
+
+            "The Unary "-" Operator in C"
+
+            "\nExample\n"
+
+            "\n#include <stdio.h>\n"
+
+            "\nint main(){"
+            "\n  int x = 5;"
+            "\n  int y = -x;"
+            "\n  printf(\"x: %d y: %d\\n\", x, y);"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nOutput:"
+            "\nx: 5 y: -5"
+
+            "\nThe Address-of Operator (&) in C\n"
+
+            "\n## Example ##\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  char x = 'A';"
+            "\n  printf (\"Address of x: %d\\n\", &x);"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nOutput:"
+            "\nAddress of x: 6422047"
+
+            "\nchar x = 'A';"
+            "\nprintf (\"Address of x: %p\\n\", &x);\n"
+
+            "\nAddress of x: 000000000061FE1F\n"
+
+            "\nint x = 10;"
+            "\nint *y = &x;\n"
+
+            "The Dereference Operator (*) in C"
+
+            "\nint x = 10;"
+            "\nint *y = &x;\n"
+
+            "\n## Example 1 ##\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  int x = 10;"
+            "\n  int *y = &x;"
+            "\n  printf (\"x: %d Address of x: %d\\n\", x, &x);"
+            "\n  printf(\"Value at x with Dereference: %d\", *y);"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nOutput:"
+            "\nx: 10 Address of x: 6422036"
+            "\nValue at x with Dereference: 10\n"
+
+            "\n## Example 2 ##\n"
+
+            "\n#include <stdio.h>\n"
+
+            "\nint main(){"
+            "\n  int x = 10;"
+            "\n  int *y = &x;"
+            "\n  printf(\"x: %d Address of x %d\\n\", x, &x);"
+            "\n  *y = 20;"
+            "\n  printf(\"x: %d with Dereference: %d\", x, *y);"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nOutput:"
+            "\nx: 10 Address of x: 6422036"
+            "\nx: 20 with dereference: 20\n"
+
+            "\nThe Logical NOT Operator (!) in C\n"
+
+            "\n## Example 1 ##\n"
+
+            "\n#include <stdio.h>\n"
+
+            "\nint main(){"
+            "\n  int a = 0;"
+            "\n  int b = 20;"
+            "\n  if (!(a && b)){"
+            "\n    printf(\"Line 1 - Condition is true\\n\");"
+            "\n  }"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nOutput:"
+            "\nLine 1 - Condition is true\n"
+
+            "\n## Example 2 ##\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  int i = 0;"
+            "\n  while (!(i > 5)){"
+            "\n    printf(\"i = %d\\n\", i);"
+            "\n    i++;"
+            "\n  }"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nOutput:"
+            "\ni = 0"
+            "\ni = 1"
+            "\ni = 2"
+            "\ni = 3"
+            "\ni = 4"
+            "\ni = 5\n"
+
+            "\nThe 1's Complement Operator (~) in C\n"
+            "\na  ~a"
+            "\n0   1"
+            "\n1   0\n"
+
+            "\n~ 0011 1100 = 1100 0011\n"
+
+            "\n## Example ##\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\nint a = 60;	/* 60 = 0011 1100 */"
+            "\nint c = 0;"
+            "\nc = ~a;      /* -61 = 1100 0011 */"
+            "\nprintf(\"Value of c is %d \\n\", c);"
+            "\nreturn 0;"
+            "\n}\n"
+
+            "\nOutput:"
+            "\nValue of c is -61\n"
+            );
+            break;
+
+            case 25:
+            puts("\n### Increment and Decrement Operators ###\n"
+
+            "\nC - Increment and Decrement Operators\n"
+
+            "\nExample of Increment and Decrement Operators\n"
+
+            "\n#include <stdio.h>\n"
+
+            "\nint main() {"
+            "\n  int a = 5, b = 5, c = 5, d = 5;"
+            "\n  a++; // postfix increment"
+            "\n  ++b; // prefix increment"
+            "\n  c--; // postfix decrement"
+            "\n  --d; // prefix decrement"
+            "\n  printf(\"a = %d\\n\", a);"
+            "\n  printf(\"b = %d\\n\", b);"
+            "\n  printf(\"c = %d\\n\", c);"
+            "\n  printf(\"d = %d\\n\", d);"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nOutput:"
+            "\na = 6"
+            "\nb = 6"
+            "\nc = 4"
+            "\nd = 4\n"
+
+            "\nTypes of Increment Operator\n"
+
+            "\nPre (Prefix) Increment Operator\n"
+
+            "\n++variable_name;\n"
+
+            "\n## Example ##\n"
+
+            "\n#include <stdio.h>\n"
+
+            "\nint main() {"
+            "\n  int x = 10;"
+            "\n  int y = 10 + ++x;"
+            "\n  printf(\"x = %d, y = %d\\n\", x, y);"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nx = 11, y = 21\n"
+
+            "\nPost (Postfix) Increment Operator\n"
+
+            "\nvariable_name++;"
+
+            "\n## Example ##\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main() {"
+            "\n  int x = 10;"
+            "\n  int y = 10 + x++;"
+            "\n  printf(\"x = %d, y = %d\\n\", x, y);"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nx = 11, y = 20\n"
+
+            "\nTypes of Decrement Operator\n"
+
+            "\nPre (Prefix) decrement Operator\n"
+
+            "\n--variable_name;\n"
+
+            "\n## Example ##\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main() {"
+            "\n  int x = 10;"
+            "\n  int y = 10 + --x;"
+            "\n  printf(\"x = %d, y = %d\\n\", x, y);"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nx = 9, y = 19\n"
+
+            "\nPost (Postfix) Decrement Operator\n"
+
+            "\nvariable_name--;\n"
+
+            "\n## Example ##\n"
+
+            "\n#include <stdio.h>\n"
+
+            "\nint main() {"
+            "\n  int x = 10;"
+            "\n  int y = 10 + x--;"
+            "\n  printf(\"x = %d, y = %d\\n\", x, y);"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nOutput:"
+            "\nx = 9, y = 20\n"
+
+            "\nMore Examples of Increment and Decrement Operators\n"
+
+            "\n## Example 1 ##\n"
+
+            "\n#include <stdio.h>\n"
+
+            "\nint main(){"
+            "\n  char a = 'a', b = 'M';"
+            "\n  int x = 5, y = 23;"
+            "\n  printf(\"a: %c b: %c\\n\", a, b);"
+            "\n  a++;"
+            "\n  printf(\"postfix increment a: %c\\n\", a);"
+            "\n  ++b;"
+            "\n  printf(\"prefix increment b: %c\\n\", b);"
+            "\n  printf(\"x: %d y: %d\\n\", x, y);"
+            "\n  x--;"
+            "\n  printf(\"postfix decrement x : %d\\n\", x);"
+            "\n  --y;"
+            "\n  printf(\"prefix decrement y : %d\\n\", y);"
+            "\n  return 0;"
+            "\n}\n"
+
             );
             break;
 
