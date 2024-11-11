@@ -9,7 +9,7 @@ int main(){
     do {
         puts("\n### MENU ###\n## BASICS OF C ##\n1. Compilation Steps\n2. Comments\n3. Tokens\n4. Keywords\n5. Identifiers\n6. User Input\n7. Basic Syntax\n8. Data Types"
         "\n9. Variables\n10. Integer Promotions\n11. Type Conversion\n12. Type Casting\n13. Booleans\n## Constants and Literals in C ##\n14. Constants\n15. Literals"
-        "\n16. Escape sequences\n17. Format Specifiers"
+        "\n16. Escape sequences\n17. Format Specifiers\nOperators in C\n18. Operators"
         "\n0. Salir\n\nSeleccione una opcion:");
 
         r = scanf("%d",&n);
@@ -333,10 +333,308 @@ int main(){
             "\nstruct marks m1 = {50, 60, 70};\n");
             break;
             case 16:
-            puts("### Escape Sequence ###");
+            puts("### Escape Sequence ###\n"
+            "## Escape Sequence in C ##\n"
+            "\nprintf(\" Hello \\n World \");\n"
+            "\nAll Escape Sequences in C"
+            "\nEscape sequence Meaning"
+            "\n\\\\  \\ character"
+            "\n\\'  ' character"
+            "\n\\\"  \" character"
+            "\n\\?  ? character"
+            "\n\\a  Alert or bell"
+            "\n\\b  Backspace"
+            "\n\\f  Form feed"
+            "\n\\n  Newline"
+            "\n\\r  Carriage return"
+            "\n\\t  Horizontal tab"
+            "\n\\v  Vertical tab"
+            "\n\\ooo  Octal number of one to three digits"
+            "\n\\xhh . . .  Hexadecimal number of one or more digits\n"
+
+            "\nNewline Escape Sequence (\\n)\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){\n"
+            "\n  printf(\"Hello.\\nGood morning.\\nMy name is Ravi\");"
+            "\n}\n"
+
+            "\nTab Escape Sequence (\\t)\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  printf(\"Name:\\tRavi\\tMarks:\\t50\");"
+            "\n}\n"
+
+            "Backslash Escape Sequence (\\\\)"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  printf(\"Directory in Windows: C:\\\\users\\\\user\");"
+            "\n}\n"
+
+            "Double and Single Quotes Escape Sequences (\\\" and \\')"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  printf(\"Welcome to \\\"TutorialsPoint\\\"\\n\");"
+            "\n  printf (\"\\'Welcome\\' to TutorialsPoint\");"
+            "\n}\n"
+
+            "\nBackspace Escape Sequence (\\b)\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  printf(\"Welcome to\\b TutorialsPoint\");"
+            "\n}\n"
+
+            "\nOctal Number Escape Sequence (\\ooo)\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  printf(\"%c\", '\\141');"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nHexadecimal Number Escape Sequence (\\xhh)\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  printf(\\\"%c\\\", '\\x41');"
+            "\n  return 0;"
+            "}\n"
+
+            "\nAlert or Bell Number Escape Sequence (\\a)"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  printf(\"Hello \\a world\\n\");"
+            "\n  return 0;"
+            "\n}\n"
+            );
             break;
             case 17:
-            puts("");
+            puts("\nFormat Specifiers\n"
+            "\nWhy Do We Use Format Specifiers in C?\n"
+            "\nFormat Specifiers in printf() Function\n"
+            "\nint printf(format_string, expr1, expr2, . . );\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  int age = 18;"
+            "\n  float percent = 67.75;"
+            "\n  printf(\"Age: %d \\nPercent: %f\", age, percent);"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nFormat Specifiers in scanf() Function\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  int age;"
+            "\n  float percent;"
+            "\n  printf(\"Enter Age and Percent: \\n\");"
+            "\n  scanf(\"%d %f\", &age, &percent);"
+            "\n  printf(\"Age: %d Percent: %f\", age, percent);"
+            "\n  return 0;"
+            "}\n"
+
+            "\nTypes of Format Specifiers\n"
+
+            "\nFormat Specifier Type"
+            "\n%c  Character"
+            "\n%d  Signed integer"
+            "\n%e  or %E Scientific notation of floats"
+            "\n%f  Float values"
+            "\n%g or %G  Similar as %e or %E"
+            "\n%hi  Signed integer (short)"
+            "\n%hu  Unsigned Integer (short)"
+            "\n%i  Unsigned integer"
+            "\n%l or %ld  or %li Long"
+            "\n%lf  Double"
+            "\n%Lf  Long double"
+            "\n%lu  Unsigned int or unsigned long"
+            "\n%lli or %lld  Long long"
+            "\n%llu  Unsigned long long"
+            "\n%o  Octal representation"
+            "\n%p  Pointer"
+            "\n%s  String"
+            "\n%u  Unsigned int"
+            "\n%x or %X  Hexadecimal representation\n"
+
+            "\n- A minus symbol (-) tells left alignment."
+            "\n- A number after % specifies the minimum field width. If a string is less than the width, it will be filled with spaces."
+            "\n- A period (.) is used to separate field width and precision."
+
+            "\nInteger Format Specifiers\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  int num = 20;"
+            "\n  printf(\"Signed integer: %d\\n\", num);"
+            "\n  printf(\"Unsigned integer: %i\\n\", num);"
+            "\n  printf(\"Long integer: %ld\\n\", num);"
+            "\n  printf(\"Octal integer: %o\\n\", num);"
+            "\n  printf(\"Hexadecimal integer: %x\\n\", num);"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nFloating-point Formats\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  float num = 5.347;"
+            "\n  printf(\"float: %f\\n\", num);"
+            "\n  printf(\"double: %lf\\n\", num);"
+            "\n  printf(\"Scientific notation: %e\\n\", num);"
+            "\n  printf(\"width and precision: %4.2f\\n\", num);"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nString Formats\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  char ch = 'D';"
+            "\n  char word[]=\"Hello World\";"
+            "\n  printf(\"As character: %c\\n\", ch);"
+            "\n  printf(\"As its ASCII value: %d\\n\", ch);"
+            "\n  printf(\"String format: %s\", word);"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nFormat Specifiers in File IO Functions\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  int x,y,z;"
+            "\n  FILE *fp = fopen(\"test.txt\",\"w\");"
+            "\n  x = 10; y = 20; z = 30;"
+            "\n  fprintf(fp, \"%d, %d, %d\", x,y,z);"
+            "\n  fclose(fp);"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  int x,y,z;"
+            "\n  FILE *fp = fopen(\"test.txt\",\"r\");"
+            "\n  fscanf(fp, \"%d, %d, %d\", &x,&y,&z);"
+            "\n  printf(\"%d, %d, %d\", x,y,z);"
+            "\n  fclose(fp);"
+            "\n  return 0;"
+            "\n}\n"
+            );
+            break;
+
+            case 18:
+            puts("\n### Operators ###\n"
+            "\n- Unary operators - ++ (increment), -- (decrement), ! (NOT), ~ (compliment), & (address of), * (dereference)"
+            "\n- Binary operators - arithmetic, logical and relational operators except !"
+            "\n- Ternary operators - The ? operator\n"
+
+            "\n- Arithmetic Operators"
+            "\n- Relational Operators"
+            "\n- Logical Operators"
+            "\n- Bitwise Operators"
+            "\n- Assignment Operators"
+            "\n- Misc Operators\n"
+
+            "\nArithmetic Operators\n"
+            "\na + b\n"
+            "\nOperator - Description - Example"
+            "\n+  Adds two operands. A + B = 30"
+            "\n-  Subtracts second operand from the first. A - B = -10"
+            "\n*  Multiplies both operands. A * B = 200"
+            "\n/  Divides numerator by de-numerator. B / A = 2"
+            "\n%  Modulus Operator and remainder of after an integer division. B % A = 0"
+            "\n++ Increment operator increases the integer value by one. A++ = 11"
+            "\n-- Decrement operator decreases the integer value by one. A-- = 9\n"
+
+            "\nRelational Operators\n"
+            "\na > b\n"
+
+            "\nOperator Description Example\n"
+            "\n==  Checks if the values of two operands are equal or not. If yes, then the condition becomes true. (A == B) is not true."
+            "\n!=  Checks if the values of two operands are equal or not. If the values are not equal, then the condition becomes true. (A != B) is true."
+            "\n>   Checks if the value of left operand is greater than the value of right operand. If yes, then the condition becomes true. (A > B) is not true."
+            "\n<   Checks if the value of left operand is less than the value of right operand. If yes, then the condition becomes true. (A < B) is true."
+            "\n>=  Checks if the value of left operand is greater than or equal to the value of right operand. If yes, then the condition becomes true. (A >= B) is not true."
+            "\n<=  Checks if the value of left operand is less than or equal to the value of right operand. If yes, then the condition becomes true. (A <= B) is true.\n"
+
+            "\nLogical Operators\n"
+            "\na >= 50 && b >= 50\n"
+
+            "\nOperator - Description - Example\n"
+            "\n&&  Called Logical AND operator. If both the operands are non-zero, then the condition becomes true. (A && B) is false."
+            "\n||  Called Logical OR Operator. If any of the two operands is non-zero, then the condition becomes true. (A || B) is true."
+            "\n!   Called Logical NOT Operator. It is used to reverse the logical state of its operand. If a condition is true, then Logical NOT operator will make it false. !(A && B) is true.\n"
+
+            "\nBitwise Operators\n"
+            "\np  q  p & q  p | q  p ^ q"
+            "\n0  0  0  0  0"
+            "\n0  1  0  1  1"
+            "\n1  1  1  1  0"
+            "\n1  0  0  1  1\n"
+
+            "\nOperator - Description - Example\n"
+            "\n&   Binary AND Operator copies a bit to the result if it exists in both operands. (A & B) = 12, i.e., 0000 1100"
+            "\n|   Binary OR Operator copies a bit if it exists in either operand. (A | B) = 61, i.e., 0011 1101"
+            "\n^   Binary XOR Operator copies the bit if it is set in one operand but not both. (A ^ B) = 49, i.e., 0011 0001"
+            "\n~   Binary One's Complement Operator is unary and has the effect of 'flipping' bits.  (~A ) = ~(60), i.e,. -0111101"
+            "\n<<  Binary Left Shift Operator. The left operands value is moved left by the number of bits specified by the right operand. A << 2 = 240 i.e., 1111 0000"
+            "\n>>  Binary Right Shift Operator. The left operands value is moved right by the number of bits specified by the right operand. A >> 2 = 15 i.e., 0000 1111\n"
+
+            "\nAssignment Operators\n"
+
+            "\nOperator - Description - Example"
+            "\n=   Simple assignment operator. Assigns values from right side operands to left side operand C = A + B will assign the value of A + B to C"
+            "\n+=  Add AND assignment operator. It adds the right operand to the left operand and assign the result to the left operand. C += A is equivalent to C = C + A"
+            "\n-=  Subtract AND assignment operator. It subtracts the right operand from the left operand and assigns the result to the left operand. C -= A is equivalent to C = C - A"
+            "\n*=  Multiply AND assignment operator. It multiplies the right operand with the left operand and assigns the result to the left operand. C *= A is equivalent to C = C * A"
+            "\n/=  Divide AND assignment operator. It divides the left operand with the right operand and assigns the result to the left operand. C /= A is equivalent to C = C / A"
+            "\n%=  Modulus AND assignment operator. It takes modulus using two operands and assigns the result to the left operand. C %= A is equivalent to C = C % A"
+            "\n<<= Left shift AND assignment operator. C <<= 2 is same as C = C << 2"
+            "\n>>= Right shift AND assignment operator. C >>= 2 is same as C = C >> 2"
+            "\n&=  Bitwise AND assignment operator. C &= 2 is same as C = C & 2"
+            "\n^=  Bitwise exclusive OR and assignment operator. C ^= 2 is same as C = C ^ 2"
+            "\n|=  Bitwise inclusive OR and assignment operator. C |= 2 is same as C = C | 2\n"
+
+            "\nMisc Operators --> sizeof & ternary\n"
+
+            "\nOperator - Description - Example"
+            "\nsizeof() Returns the size of a variable. sizeof(a), where a is integer, will return 4."
+            "\n& Returns the address of a variable. &a; returns the actual address of the variable."
+            "\n* Pointer to a variable. *a;"
+            "\n? : Conditional Expression. If Condition is true ? then value X : otherwise value Y\n"
+
+            "\nOperators Precedence in C\n"
+
+            "\nCategory - Operator - Associativity"
+            "\nPostfix () [] -> . ++ - - Left to right"
+            "\nUnary + - ! ~ ++ - - (type)* & sizeof Right to left"
+            "\nMultiplicative * / % Left to right"
+            "\nAdditive + - Left to right"
+            "\nShift << >> Left to right"
+            "\nRelational < <= > >= Left to right"
+            "\nEquality == != Left to right"
+            "\nBitwise AND & Left to right"
+            "\nBitwise XOR ^ Left to right"
+            "\nBitwise OR | Left to right"
+            "\nLogical AND && Left to right"
+            "\nLogical OR || Left to right"
+            "\nConditional ?: Right to left"
+            "\nAssignment = += -= *= /= %= >>= <<= &= ^= |= Right to left"
+            "\nComma , Left to right\n"
+
+            "\nOther Operators in C\n"
+
+            "\na + b * c\n"
+            );
+            break;
+            case 19:
+            puts(""
+            );
             break;
             default:
             puts("opcion invalida");
