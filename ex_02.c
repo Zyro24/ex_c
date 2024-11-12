@@ -23,21 +23,21 @@ int main(){
         "\n10. Integer Promotions"
         "\n11. Type Conversion"
         "\n12. Type Casting"
-        "\n13. Booleans"
+        "\n13. Booleans\n"
 
         "\n## Constants and Literals in C ##\n"
 
         "\n14. Constants"
         "\n15. Literals"
         "\n16. Escape sequences"
-        "\n17. Format Specifiers"
+        "\n17. Format Specifiers\n"
 
         "\n## Operators in C ##\n"
 
         "\n18. Operators"
         "\n19. Arithmetic Operators"
         "\n20. Relational Operators"
-        "\n21. Logical Operators"
+        "\n21. Logical Operators\n"
 
         "\n0. Salir\n"
         "\nSeleccione una opcion:");
@@ -1795,7 +1795,7 @@ int main(){
             "\nx: A y: A"
             "\na: 1.550000 y: 1.550000\n"
 
-            "The Unary "-" Operator in C"
+            "The Unary \"-\" Operator in C"
 
             "\nExample\n"
 
@@ -2052,6 +2052,303 @@ int main(){
             "\n  return 0;"
             "\n}\n"
 
+            "\nOutput:"
+            "\na: a b: M"
+            "\npostfix increment a: b"
+            "\nprefix increment b: N\n"
+
+            "\nx: 5 y: 23"
+            "\npostfix decrement x: 4"
+            "\nprefix decrement y: 22\n"
+
+            "\nExample 2\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  int x = 5, y = 5;"
+            "\n  printf(\"x: %d y: %d\\n\", x,y);"
+            "\n  printf(\"postfix increment x: %d\\n\", x++);"
+            "\n  printf(\"prefix increment y: %d\\n\", ++y);"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nOutput:"
+            "\nx: 5 y: 5"
+            "\npostfix increment x: 5"
+            "\nprefix increment y: 6\n"
+
+            "\nOperator Precedence of Increment and Decrement Operators\n"
+
+            "\n## Example 1 ##\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  int x = 5, z;"
+            "\n  printf(\"x: %d \\n\", x);"
+            "\n  z = x++;"
+            "\n  printf(\"x: %d z: %d\\n\", x, z);"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nOutput"
+            "\nx: 5"
+            "\nx: 6 z: 5\n"
+
+            "\n## Example 2 ##\n"
+
+            "\n#include <stdio.h>"
+            "\nint main(){"
+            "\nint x = 5, y = 5, z;"
+            "\nprintf(\"x: %d y: %d\\n\", x,y);"
+            "\nz = ++y;"
+            "\nprintf(\"y: %d z: %d\\n\", y ,z);"
+            "\nreturn 0;"
+            "\n}\n"
+
+            "\nOutput:"
+            "\ny: 5"
+            "\ny: 6 z: 6\n"
+
+            "\n## Example 3 ##\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\nint x = 5, y = 5, z;"
+            "\nz = x++ + ++y;"
+            "\nprintf(\"x: %d y: %d z: %d\\n\", x,y,z);"
+            "\nreturn 0;"
+            "\n}\n"
+
+            "\nOutput"
+            "\nx: 6 y:6 z: 11\n"
+
+            "\nUsing the Increment Operator in Loop\n"
+
+            "\nfor (init_val; final_val; increment) {"
+            "\n  statement(s);"
+            "\n}\n"
+
+            "\n## Example ##\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  int x;"
+            "\n  for (x = 1; x <= 5; x++){"
+            "\n    printf(\"x: %d\\n\", x);"
+            "\n  }"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nOutput:"
+            "\nx: 1"
+            "\nx: 2"
+            "\nx: 3"
+            "\nx: 4"
+            "\nx: 5\n"
+            );
+            break;
+
+            case 26:
+            puts("\n### Ternary Operator ###\n"
+
+            "\nSyntax of Ternary Operator in C\n"
+
+            "\nexp1 ? exp2 : exp3\n"
+
+            "\nexp1 - A Boolean expression evaluating to true or false"
+            "\nexp2 - Returned by the ? operator when exp1 is true"
+            "\nexp3 - Returned by the ? operator when exp1 is false\n"
+
+            "\nExample 1: Ternary Operator in C\n"
+
+            "\n#include <stdio.h>\n"
+
+            "\nint main(){"
+            "\n  int a = 10;"
+            "\n  (a % 2 == 0) ? printf(\"%d is Even \\n\", a) : printf(\"%d is Odd \\n\", a);"
+            "\n  return 0;"
+            "\n}\n"
+
+            "Output:"
+            "10 is Even"
+            "15 is Odd"
+
+            "Example 2"
+
+            "\n#include <stdio.h>\n"
+            "\nint main() {"
+            "\n  int a = 10;"
+            "\n  if (a % 2 == 0){"
+            "\n    printf(\"%d is Even\\n\", a);"
+            "\n  } else {"
+            "\n    printf(\"%d is Odd\\n\", a);"
+            "\n  }"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nOutput"
+            "\n10 is Even"
+
+            "\n## Example 3 ##"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  int a = 100, b = 20, c;"
+            "\n  c = (a >= b) ? a : b;"
+            "\n  printf (\"a: %d b: %d c: %d\\n\", a, b, c);"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nOutput"
+            "\na: 100 b: 20 c: 100\n"
+
+            "\n## Example 4 ##\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  int a = 100, b = 20, c;"
+            "\n  if (a >= b){"
+            "\n    c = a;"
+            "\n  } else {"
+            "\n    c = b;"
+            "\n  }"
+            "\n  printf (\"a: %d b: %d c: %d\\n\", a, b, c);"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nOutput:"
+            "\na: 100 b: 20 c: 100\n"
+
+            "\n## Example 5 ##\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  int a = 100, b = 20, c;"
+            "\n  c = (a >= b) ? printf (\"a is larger \"), c = a : printf(\"b is larger \"), c = b;"
+            "\n  printf (\"a: %d b: %d c: %d\\n\", a, b, c);"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nOutput"
+            "\na is larger a: 100 b: 20 c: 20\n"
+
+            "\n## Example 6 ##\n"
+
+            "\n#include <stdio.h>\n"
+
+            "\nint main(){"
+            "\n  int a = 100, b = 20, c;"
+            "\n  if(a >= b){"
+            "\n    printf(\"a is larger \\n\");"
+            "\n    c = a;"
+            "\n  } else {"
+            "\n    printf(\"b is larger \\n\");"
+            "\n    c = b;"
+            "\n  }"
+            "\n  printf (\"a: %d b: %d c: %d\\n\", a, b, c);"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nOutput"
+            "\na is larger"
+            "\na: 100 b: 20 c: 100\n"
+
+            "\nNested Ternary Operator"
+
+            "\nexp1 ? (exp2 ? expr3 : expr4) : (exp5 ? expr6: expr7)"
+
+            "\n## Example 1 ##\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  int a = 15;"
+            "\n  printf(\"a: %d\\n\", a);"
+            "\n  (a % 2 == 0) ? ("
+            "\n    (a%3 == 0)? printf(\"divisible by 2 and 3\") : printf(\"divisible by 2 but not 3\"))"
+            "\n  : ("
+            "\n    (a%3 == 0)? printf(\"divisible by 3 but not 2\") : printf(\"not divisible by 2, not divisible by 3\")"
+            "\n  );"
+            "\n  return 0;"
+            "\n}"
+
+            "\nOutput"
+            "\na: 15"
+            "\ndivisible by 3 but not 2"
+            "\na: 16"
+            "\ndivisible by 2 but not 3"
+            "\na: 17"
+            "\nnot divisible by 2, not divisible by 3"
+            "\na: 18"
+            "\ndivisible by 2 and 3"
+
+            "\nExample 2"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  int a = 15;"
+            "\n  printf(\"a: %d\\n\", a);"
+            "\n  if(a % 2 == 0){"
+            "\n    if (a % 3 == 0){"
+            "\n      printf(\"divisible by 2 and 3\");"
+            "\n    } else {"
+            "\n      printf(\"divisible by 2 but not 3\");"
+            "\n    }"
+            "\n  } else {"
+            "\n    if(a % 3 == 0){"
+            "\n      printf(\"divisible by 3 but not 2\");"
+            "\n    } else {"
+            "\n      printf(\"not divisible by 2, not divisible by 3\");"
+            "\n    }"
+            "\n  }"
+            "\n  return 0;"
+            "\n}"
+
+            "\nOutput"
+            "\na: 15"
+            "\ndivisible by 3 but not 2\n"
+            );
+            break;
+
+            case 27:
+            puts("\n### The sizeof Operator ###\n"
+
+            "\nsizeof(type or var);\n"
+
+            "\nExample 1: Using the sizeof Operator in C\n"
+
+            "\n#include <stdio.h>"
+            "\nint main(){"
+            "\nint a = 16;"
+            "\nprintf(\"Size of variable a: %d \\n\",sizeof(a));"
+            "\nprintf(\"Size of int data type: %d \\n\",sizeof(int));"
+            "\nprintf(\"Size of char data type: %d \\n\",sizeof(char));"
+            "\nprintf(\"Size of float data type: %d \\n\",sizeof(float));"
+            "\nprintf(\"Size of double data type: %d \\n\",sizeof(double));"
+            "\nreturn 0;"
+            "\n}\n"
+
+            "\nOutput"
+            "\nSize of variable a: 4"
+            "\nSize of int data type: 4"
+            "\nSize of char data type: 1"
+            "\nSize of float data type: 4"
+            "\nSize of double data type: 8\n"
+
+            "\nExample 2: Using sizeof with Struct\n"
+
+            "\n#include <stdio.h>\n"
+            "\nstruct employee {"
+            "\n  char name[10];"
+            "\n  int age;"
+            "\n  double percent;"
+            "\n};\n"
+            "\nint main(){"
+            "\n  struct employee e1 = {\"Raghav\", 25, 78.90};"
+            "\n  printf(\"Size of employee variable: %d\\n\",sizeof(e1));"
+            "\n  return 0;"
+            "\n}\n"
+
+            
             );
             break;
 

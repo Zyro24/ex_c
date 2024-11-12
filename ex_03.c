@@ -3,7 +3,7 @@
 int main() {
     int v1, v3;
     char v2, v4;
-
+    
     while (1) {
         puts("Ingrese: numcharnumchar");
         if (scanf("%1d%c%1d%c", &v1, &v2, &v3, &v4) == 4)
