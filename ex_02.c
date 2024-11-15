@@ -37,7 +37,36 @@ int main(){
         "\n18. Operators"
         "\n19. Arithmetic Operators"
         "\n20. Relational Operators"
-        "\n21. Logical Operators\n"
+        "\n21. Logical Operators"
+        "\n22. Bitwise Operators"
+        "\n23. Assignment Operators"
+        "\n24. Unary Operators"
+        "\n25. Increment and Decrement Operators"
+        "\n26. Ternary Operator"
+        "\n27. sizeof Operator"
+        "\n28. Operator Precedence"
+        "\n29. Misc Operators"
+
+        "## Decision Making ##"
+
+        "\n30. Decision Making"
+        "\n31. if statement"
+        "\n32. if...else statement"
+        "\n33. nested if statements"
+        "\n34. switch statement"
+        "\n35. nested switch statements"
+
+        "\n## Loops in C ##\n"
+
+        "\n36. Loops"
+        "\n37. While loop"
+        "\n38. For loop"
+        "\n39. Do...while loop"
+        "\n40. Nested loop"
+        "\n41. Infinite loop"
+        "\n42. Break Statement"
+        "\n43. Continue Statement"
+        "\n44. goto Statement\n"
 
         "\n0. Salir\n"
         "\nSeleccione una opcion:");
@@ -2348,7 +2377,383 @@ int main(){
             "\n  return 0;"
             "\n}\n"
 
-            
+            "\nOutput:"
+            "\nSize of employee variable: 24"
+
+            "\nExample 3: Using sizeof with Array"
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  int arr[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};"
+            "\n  printf(\"Size of arr: %d\\n\", sizeof(arr));"
+            "\n}\n"
+
+            "\nOutput:"
+            "\nSize of arr: 40\n"
+
+            "\nExample 4: Using sizeof to Find the Length of an Array\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  int arr[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};"
+            "\n  int y = sizeof(arr)/sizeof(int);"
+            "\n  printf(\"No of elements in arr: %d\\n\", y);"
+            "\n}\n"
+
+            "\nOutput:"
+            "\nNo of elements in arr: 10\n"
+
+            "\nExample 5: Using sizeof in Dynamic Memory Allocation\n"
+
+            "\ntype *ptr = (type *) malloc(sizeof(type)*number);\n"
+
+            "\nint *ptr = (int *)malloc(sizeof(int)*10);\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  char a = 'S';"
+            "\n  double b = 4.65;"
+            "\n  printf(\"Size of variable a: %d\\n\",sizeof(a));"
+            "\n  printf(\"Size of an expression: %d\\n\",sizeof(a+b));"
+            "\n  int s = (int)(a+b);"
+            "\n  printf(\"Size of explicitly converted expression: %d\\n\",sizeof(s));"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nOutput:"
+            "\nSize of variable a: 1"
+            "\nSize of an expression: 8"
+            "\nSize of explicitly converted expression: 4\n"
+
+            "\nExample 6: The Size of a Pointer in C\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  printf(\"Size of int data type: %d \\n\", sizeof(int *));"
+            "\n  printf(\"Size of char data type: %d \\n\", sizeof(char *));"
+            "\n  printf(\"Size of float data type: %d \\n\", sizeof(float *));"
+            "\n  printf(\"Size of double data type: %d \\n\", sizeof(double *));"
+            "\n  printf(\"Size of double pointer type: %d \\n\", sizeof(int **));"
+            "\n}\n"
+
+            "\nOutput:"
+            "\nSize of int data type: 8"
+            "\nSize of char data type: 8"
+            "\nSize of float data type: 8"
+            "\nSize of double data type: 8"
+            "\nSize of double pointer type: 8\n"
+            );
+            break;
+
+            case 28:
+            puts("\n### Operator Precedence ###\n"
+
+            "\nCategory - Operator - Associativity"
+            "\nPostfix () [] -> . ++ - - Left to right"
+            "\nUnary + - ! ~ ++ - - (type)* & sizeof Right to left"
+            "\nMultiplicative * / % Left to right"
+            "\nAdditive + - Left to right"
+            "\nShift << >> Left to right"
+            "\nRelational < <= > >= Left to right"
+            "\nEquality == != Left to right"
+            "\nBitwise AND & Left to right"
+            "\nBitwise XOR ^ Left to right"
+            "\nBitwise OR | Left to right"
+            "\nLogical AND && Left to right"
+            "\nLogical OR || Left to right"
+            "\nConditional ?: Right to left"
+            "\nAssignment = += -= *= /= %= >>= <<= &= ^= |= Right to left"
+            "\nComma , Left to right\n"
+
+            "\nOperator Associativity\n"
+
+            "\n15 / 5 * 2\n"
+
+            "\n(15 / 5) * 2\n"
+
+            "\n3 * 2 = 6\n"
+
+            "\n## Example 1 ##\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  int a = 20;"
+            "\n  int b = 10;"
+            "\n  int c = 15;"
+            "\n  int d = 5;"
+            "\n  int e;"
+            "\n  e = a + b * c / d;"
+            "\n  printf(\"e : %d\\n\",e);"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nOutput:"
+            "\ne: 50\n"
+
+            "\n## Example 2 ##\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  int a = 20;"
+            "\n  int b = 10;"
+            "\n  int c = 15;"
+            "\n  int d = 5;"
+            "\n  int e;"
+            "\n  e = (a + b) * c / d;"
+            "\n  printf(\"e:  %d\\n\",  e);"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nOutput:"
+            "\ne: 90\n"
+
+            "\n## Example 3 ##\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  int a = 20;"
+            "\n  int b = 10;"
+            "\n  int c = 15;"
+            "\n  int d = 5;"
+            "\n  int e;"
+            "\n  e = (a + b) * (c / d);"
+            "\n  printf(\"e: %d\\n\",  e);"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nOutput:"
+            "\ne: 90\n"
+
+            "\nPrecedence of Post / Prefix Increment / Decrement Operators\n"
+
+            "\n## Example ##\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  int x = 5, y = 5, z;"
+            "\n  printf(\"x: %d \\n\", x);"
+            "\n  z = x++;"
+            "\n  printf(\"Postfix increment: x: %d z: %d\\n\", x, z);"
+            "\n  z = ++y;"
+            "\n  printf(\"Prefix increment. y: %d z: %d\\n\", y ,z);"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nOutput:"
+            "\nx: 5"
+            "\nPostfix increment: x: 6 z: 5"
+            "\nPrefix increment. y: 6 z: 6\n"
+
+            "\nx > 50 && y > 50\n"
+
+            "\nOperator - Description - Example"
+            "\nsizeof() Returns the size of a variable. sizeof(a), where a is integer, will return 4."
+            "\n& Returns the address of a variable. &a; returns the actual address of the variable."
+            "\n* Pointer to a variable. *a;"
+            "\n?: Conditional Expression. If Condition is true ? then value X, else value Y"
+            "\n. Member access operator var.member"
+            "\n-> Access members of a struct variable with pointerptr -> member;\n"
+
+            "\nThe sizeof Operator in C\n"
+
+            "\nsizeof(type or var);\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  int a = 16;"
+            "\n  printf(\"Size of variable a : %d\\n\",sizeof(a));"
+            "\n  printf(\"Size of int data type : %d\\n\",sizeof(int));"
+            "\n  printf(\"Size of char data type : %d\\n\",sizeof(char));"
+            "\n  printf(\"Size of float data type : %d\\n\",sizeof(float));"
+            "\n  printf(\"Size of double data type : %d\\n\",sizeof(double));"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nOutput"
+            "\nSize of variable a: 4"
+            "\nSize of int data type: 4"
+            "\nSize of char data type: 1"
+            "\nSize of float data type: 4"
+            "\nSize of double data type: 8\n"
+
+            "\nAddress-of Operator in C\n"
+
+            "\nint a;\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  int var = 100;"
+            "\n  printf(\"var: %d address: %d\", var, &var);"
+            "\n  return 0;"
+            "\n}\n"
+
+            "Output:"
+            "var: 100 address: 931055924"
+
+            "The Dereference Operator in C"
+
+            "type *var;"
+
+            "int *x;"
+
+            "float *y;"
+
+            "int a;"
+            "int *x = &a;"
+
+            "float var1 = 10.55;"
+            "int *intptr = &var1;"
+
+            "initialization of 'int *' from incompatible pointer type 'float *' [-Wincompatible-pointer-types]"
+
+            "## Example 1 ##"
+
+            "#include <stdio.h>\n"
+
+            "int main(){"
+            "float var1 = 10.55;"
+            "float *floatptr = &var1;"
+            "printf(\"var1: %f \\naddress of var1: %d \\n\\nfloatptr: %d \\naddress of floatptr: %d\", var1, &var1, floatptr, &floatptr);"
+            "return 0;"
+            "}"
+
+            "Output:"
+            "var1: 10.550000"
+            "address of var1: 6422044"
+
+            "floatptr: 6422044"
+            "address of floatptr: 6422032"
+
+            "## Example 2 ##"
+
+            "#include <stdio.h>\n"
+
+            "int main(){"
+            "float var1 = 10.55;"
+            "float *floatptr = &var1;"
+            "printf(\"var1: %f address of var1: %d\\n\",var1, &var1);"
+            "printf(\"floatptr: %d address of floatptr: %d\\n\", floatptr, &floatptr);"
+            "printf(\"var1: %f value at floatptr: %f\", var1, *floatptr);"
+            "return 0;"
+            "}"
+
+            "Output"
+            "var1: 10.550000 address of var1: 6422044"
+            "floatptr: 6422044 address of floatptr: 6422032"
+            "var1: 10.550000 value at floatptr: 10.550000"
+
+            "The Ternary Operator in C"
+
+            "exp1 ? exp2 : exp3"
+
+            "exp1 - a Boolean expression that evaluates to True or False"
+            "exp2 - returned by the ? operator when exp1 is true"
+            "exp3 - returned by the ? operator when exp1 is false"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\nint a = 10;"
+            "\n(a % 2==0) ? printf(\"%d is Even\\n\", a) : printf(\"%d is Odd\\n\", a);"
+            "\nreturn 0;"
+            "\n}\n"
+
+            "\nOutput:"
+            "\n10 is Even"
+            "\n15 is Odd"
+
+            "\nThe Dot (.) Operator in C"
+
+            "\nvar.member;"
+
+            "\nstruct newtype {"
+            "\ntype elem1;"
+            "\ntype elem2;"
+            "\ntype elem3;"
+            "\n. . ."
+            "\n. . ."
+            "\n}\n;"
+
+            "\nstruct newtype var;"
+
+            "\nvar.elem1;"
+
+            "\n#include <stdio.h>\n"
+            "\nstruct book{"
+            "\nchar title[10];"
+            "\ndouble price;"
+            "\nint pages;"
+            "\n};\n"
+            "\nint main(){"
+            "\nstruct book b1 = {\"Learn C\", 675.50, 325};"
+            "\nprintf(\"Title: %s\\n\", b1.title);"
+            "\nprintf(\"Price: %lf\\n\", b1.price);"
+            "\nprintf(\"No of Pages: %d\\n\", b1.pages);"
+            "\nprintf(\"size of book struct: %d\", sizeof(struct book));"
+            "\nreturn 0;"
+            "\n}\n"
+
+            "\nOutput:"
+            "\nTitle: Learn C"
+            "\nPrice: 675.500000"
+            "\nNo of Pages: 325"
+            "\nsize of book struct: 32\n"
+
+            "\nThe Indirection Operator in C\n"
+
+            "\nstruct type {"
+            "\ntype var1;"
+            "\ntype var2;"
+            "\ntype var3;"
+            "\n. . ."
+            "\n. . ."
+            "\n};\n"
+
+            "\nstruct type = var;\n"
+            "\nstruct book {"
+            "\nchar title[10];"
+            "\ndouble price;"
+            "\nint pages;"
+            "\n};\n"
+
+            "\nstruct book b1;\n"
+
+            "\nstruct book b1 = {\"Learn C\", 675.50, 325};\n"
+
+            "\nstruct book *strptr;\n"
+
+            "\nstrptr = &b1;\n"
+
+            "\n## Example ##\n"
+
+            "\n#include <stdio.h>"
+            "\n#include <string.h>\n"
+
+            "\nstruct book {"
+            "\nchar title[10];"
+            "\ndouble price;"
+            "\nint pages;"
+            "\n};\n"
+
+            "\nint main() {"
+            "\nstruct book b1 = {\"Learn C\", 675.50, 325};"
+            "\nstruct book *strptr;"
+            "\nstrptr = &b1;"
+            "\nprintf(\"Title: %s\\n\", strptr->title);"
+            "\nprintf(\"Price: %lf\\n\", strptr->price);"
+            "\nprintf(\"No of Pages: %d\\n\", strptr->pages);\n"
+            "\nreturn 0;"
+            "\n}\n"
+
+            "\nOutput:"
+            "\nTitle: Learn C"
+            "\nPrice: 675.500000"
+            "\nNo of Pages: 325\n"
+            );
+            break;
+
+            case 29:
+            puts("### Decision Making ###\n"
+
+            "Decision Making\n"
             );
             break;
 
