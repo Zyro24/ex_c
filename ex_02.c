@@ -45,16 +45,16 @@ int main(){
         "\n26. Ternary Operator"
         "\n27. sizeof Operator"
         "\n28. Operator Precedence"
-        "\n29. Misc Operators"
+        "\n29. Misc Operators\n"
 
-        "## Decision Making ##"
+        "\n## Decision Making ##\n"
 
         "\n30. Decision Making"
         "\n31. if statement"
         "\n32. if...else statement"
         "\n33. nested if statements"
         "\n34. switch statement"
-        "\n35. nested switch statements"
+        "\n35. nested switch statements\n"
 
         "\n## Loops in C ##\n"
 
@@ -3700,153 +3700,148 @@ int main(){
             break;
 
             case 35:
-            puts("### C - While Loop ###"
+            puts("\n### C - While Loop ###\n"
 
-            "Syntax of C while Loop"
+            "\nSyntax of C while Loop\n"
 
-            while(expression){
-            statement(s);
-            }
+            "\nwhile(expression){"
+            "\n  statement(s);"
+            "\n}\n"
 
-            "Flowchart of C while Loop"
+            "\nFlowchart of C while Loop\n"
 
-            "How while Loop Works in C?"
+            "\nHow while Loop Works in C?\n"
 
-            "Example of while Loop in C"
+            "\nExample of while Loop in C\n"
 
-            #include <stdio.h>
-            
-            int main(){
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  // local variable definition"
+            "\n  int a = 1;"
+            "\n  // while loop execution"
+            "\n  while(a <= 5){"
+            "\n    printf(\"Hello World \\n\");"
+            "\n  a++;"
+            "\n  }"
+            "\n  printf(\"End of loop\"); "
+            "\n  return 0;"
+            "\n}\n"
 
-            // local variable definition
-            int a = 1;
+            "\nOutput"
+            "\nHello World"
+            "\nHello World"
+            "\nHello World"
+            "\nHello World"
+            "\nHello World"
+            "\nEnd of loop\n"
 
-            // while loop execution
-            while(a <= 5){
-                printf("Hello World \n");
-                a++;
-            }
-            printf("End of loop"); 
-            return 0;
-            }
+            "\nExample Explanation\n"
 
-            Output
-            Hello World
-            Hello World
-            Hello World
-            Hello World
-            Hello World
-            End of loop
+            "\nEnd of loop\n"
 
-            Example Explanation
+            "\nUsing while as Conditional Loop\n"
 
-            End of loop
+            "\nExample\n"
 
-            "Using while as Conditional Loop"
+            "\n#include <stdio.h>\n"
+            "\n  int main(){"
+            "\n  // local variable definition "
+            "\n  char choice = 'a';"
+            "\n  int x = 0;"
+            "\n  // while loop execution"
+            "\n  while(x >= 0){"
+            "\n    (x % 2 == 0) ? printf(\"%d is Even \\n\", x) : printf(\"%d is Odd \\n\", x);"
+            "\n    printf(\"\\n Enter a positive number: \");"
+            "\n    scanf(\"%d\", &x);"
+            "\n  }"
+            "\n  printf(\"\n End of loop\");"
+            "\n  return 0;"
+            "\n}\n"
 
-            "Example"
+            "\nOutput"
+            "\n0 is Even\n"
 
-            #include <stdio.h>
+            "\nEnter a positive number: 12"
+            "\n12 is Even\n"
 
-            int main(){
+            "\nEnter a positive number: 25"
+            "\n25 is Odd\n"
 
-            // local variable definition 
-            char choice = 'a';
+            "\nEnter a positive number: -1\n"
 
-            int x = 0;
+            "\nEnd of loop\n"
 
-            // while loop execution
-            while(x >= 0){
-                (x % 2 == 0) ? printf("%d is Even \n", x) : printf("%d is Odd \n", x);
+            "\nWhile Loop with break and continue\n"
 
-                printf("\n Enter a positive number: ");
-                scanf("%d", &x);
-            }
-            printf("\n End of loop");
-            return 0;
-            }
+            "\nExample\n"
 
-            Output
-            0 is Even
+            "\nwhile (expr){"
+            "\n  . . ."
+            "\n  . . ."
+            "\n  if (condition)"
+            "\n    break;"
+            "\n    . . ."
+            "\n}\n"
 
-            Enter a positive number: 12
-            12 is Even
+            "\nExample\n"
 
-            Enter a positive number: 25
-            25 is Odd
+            "\nwhile (expr){"
+            "\n  . . ."
+            "\n  . . ."
+            "\n  if (condition)"
+            "\n    continue;"
+            "\n    . . ."
+            "\n}\n"
 
-            Enter a positive number: -1
+            "\nMore Examples of C while Loop\n"
 
-            End of loop
+            "\nExample: Printing Lowercase Alphabets\n"
 
-            "While Loop with break and continue"
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  // local variable definition"
+            "\n  char a = 'a';"
+            "\n  // while loop execution"
+            "\n  while(a <= 'z') {"
+            "\n    printf(\"%c\", a);"
+            "\n    a++;"
+            "\n  }"
+            "\n  printf(\"\\n End of loop\"); "
+            "\n  return 0;"
+            "\n}\n"
 
-            "Example"
+            "\nOutput"
+            "\nabcdefghijklmnopqrstuvwxyz"
+            "\nEnd of loop\n"
 
-            while (expr){
-            . . .
-            . . .
-            if (condition)
-                break;
-            . . .
-            }
+            "\nExample: Equate Two Variables\n"
 
-            "Example"
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  // local variable definition"
+            "\n  int a = 10, b = 0;"
+            "\n  // while loop execution"
+            "\n  while(a != b){"
+            "\n    a--;"
+            "\n    b++;"
+            "\n    printf(\"a: %d b: %d\\n\", a,b);"
+            "\n  }"
+            "\n  printf(\"\\n End of loop\");"
+            "\n  return 0;"
+            "\n}\n"
 
-            while (expr){
-            . . .
-            . . .
-            if (condition)
-                continue;
-            . . .
-            }
+            "\nOutput:"
+            "\na: 9 b: 1"
+            "\na: 8 b: 2"
+            "\na: 7 b: 3"
+            "\na: 6 b: 4"
+            "\na: 5 b: 5"
+            "\nEnd of loop\n"
+            );
+            break;
 
-            "More Examples of C while Loop"
-
-            "Example: Printing Lowercase Alphabets"
-
-            #include <stdio.h>
-            
-            int main(){
-
-            // local variable definition
-            char a = 'a';
-
-            // while loop execution
-            while(a <= 'z') {
-                printf("%c", a);
-                a++;
-            }
-            printf("\n End of loop"); 
-            return 0;
-            }
-
-            Output
-            abcdefghijklmnopqrstuvwxyz
-            End of loop
-
-            Example: Equate Two Variables
-
-            #include <stdio.h>
-
-            int main(){
-
-            // local variable definition
-            int a = 10, b = 0;
-
-            // while loop execution
-            while(a != b){
-                a--;
-                b++;
-                printf("a: %d b: %d\n", a,b);
-            }
-            printf("\n End of loop");
-            return 0;
-            }
-
-            
-
-
+            case 36:
+            puts(""
             );
             break;
 
