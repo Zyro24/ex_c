@@ -2751,9 +2751,1102 @@ int main(){
             break;
 
             case 29:
-            puts("### Decision Making ###\n"
+            puts("\n### Decision Making ###\n"
 
-            "Decision Making\n"
+            "\nDecision Making\n"
+
+            "\nSequential logic"
+            "\nDecision or branching"
+            "\nRepetition or iteration\n"
+
+            "\nSr.No. - Statement & Description"
+            "\n1 if statement: An if statement consists of a boolean expression followed by one or more statements."
+            "\n2 if...else statement: An if statement can be followed by an optional else statement, which executes when the Boolean expression is false."
+            "\n3 nested if statements: You can use one if or else-if statement inside another if or else-if statement(s)."
+            "\n4 switch statement: A switch statement allows a variable to be tested for equality against a list of values."
+            "\n5 nested switch statements: You can use one switch statement inside another switch statement(s)."
+
+            "\nIf Statement in C Programming"
+
+            "\nif (Boolean expr){"
+            "\nexpression;"
+            "\n. . ."
+            "\n}\n"
+
+            "\nIf...else Statement in C Programming"
+
+            "\nif (Boolean expr){"
+            "\nexpression;"
+            "\n. . ."
+            "\n} else {"
+            "\nexpression;"
+            "\n. . ."
+            "\n}\n"
+
+            "\nNested If Statements in C Programming\n"
+
+            "\nSwitch Statement in C Programming\n"
+
+            "\nswitch(expression) {"
+            "\ncase constant-expression:"
+            "\nstatement(s);"
+            "\nbreak; /* optional */\n"
+                
+            "\ncase constant-expression :"
+            "\nstatement(s);"
+            "\nbreak; /* optional */\n"
+            
+            "\n/* you can have any number of case statements */"
+            "\ndefault : /* Optional */"
+            "\nstatement(s);"
+            "\n}\n"
+
+            "\nThe ?: Operator in C Programming\n"
+
+            "\nExp1 ? Exp2 : Exp3;\n"
+
+            "\nThe Break Statement in C Programming\n"
+
+            "\nThe Continue Statement in C Programming\n"
+
+            "\nThe goto Statement in C Programming\n"
+
+            "\ngoto label;"
+            "\n.."
+            "\n."
+            "\nlabel: statement;\n"
+            );
+            break;
+
+            case 30:
+            puts("\n### The If Statement ###\n"
+            
+            "\nif Statement"
+
+            "\nSyntax of if Statement"
+
+            "\nif(boolean_expression) {"
+            "\n  /* statement(s) will execute if the boolean expression is true */"
+            "\n}\n"
+            
+            "\nHow if Statement Works?\n"
+
+            "\nFlowchart of if Statement\n"
+
+            "\nExample of if Statement in C\n"
+
+            "\n#include <stdio.h>\n"
+            
+            "\nint main (){"
+            "\n  /* local variable declaration */"
+            "\n  int a;"
+            "\n  // run the program for different values of \"a\""
+            "\n  // Assign 12 first and 40 afterwards"
+            "\n  a = 12;  //change to 40 and run again"
+            "\n  printf(\"Value of a is : %d\\n\", a);"
+            "\n  // check the boolean condition using if statement"
+            "\n  if(a < 20){"
+            "\n    //if the condition is true, then print the following"
+            "\n    printf(\"a is less than 20\\n\" );"
+            "\n  }"
+            "\nreturn 0;"
+            "\n}\n"
+
+            "\nOutput"
+            "\nValue of a is : 12"
+            "\na is less than 20\n"
+
+            "\nValue of a is: 40\n"
+
+            "\nif Statement with Logical Operations\n"
+
+            "\nExample\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main () {"
+            "\n  /* local variable declaration */"
+            "\n  int a, b, c;"
+            "\n  /*use different values for a, b and c as"
+            "\n    10, 5, 7"
+            "\n    10, 20, 15"
+            "\n  */"
+            "\n  // change to 10,20,15 respectively next time"
+            "\n  a = 10; b = 5; c = 7;"
+            "\n  if (a>=b && a>=c){"
+            "\n    printf (\"a is greater than b and c \\n\");"
+            "\n  }"
+            "\n  printf(\"a: %d b:%d c:%d\", a, b, c);"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nOutput:"
+            "\n//when values for a, b and c are 10 5 7"
+            "\na is greater than b and c"
+            "\na: 10 b:5 c:7\n"
+
+            "\n//when values for a, b and c are 10 20 15"
+            "\na: 10 b:20 c:15\n"
+
+            "\nMultiple if Statements\n"
+
+            "\nExample\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main () {"
+            "\n  // local variable declaration"
+            "\n  int amount;"
+            "\n  float discount, net;"
+            "\n  /*Run the program for different values "
+            "\n  of amount - 500, 2250 and 5200. Blocks in "
+            "\n  respective conditions will be executed*/"
+            "\n  // change to 2250 and 5200 and run again"
+            "\n  amount = 500;"
+            "\n  if (amount < 1000){"
+            "\n    discount=0;"
+            "\n  }"
+            "\n  if (amount >= 1000 && amount<5000){"
+            "\n    discount=5;"
+            "\n  }"
+            "\n  if (amount >= 5000){"
+            "\n    discount=10;"
+            "\n  }"
+            "\n  net = amount - amount*discount/100;"
+            "\n  printf(\"Amount: %d Discount: %f Net payable: %f\", amount, discount, net);"
+            "\n  return 0;"
+            "\n}\n"
+
+            "//when the bill amount is 500"
+            "Amount: 500 Discount: 0.000000 Net payable: 500.000000"
+
+            "//when the bill amount is 2250"
+            "Amount: 2250 Discount: 5.000000 Net payable: 2137.500000"
+
+            "//when the bill amount is 5200"
+            "Amount: 5200 Discount: 10.000000 Net payable: 4680.000000"
+
+            "Checking Multiple Conditions With if Statement"
+
+            "Example"
+
+            "\n#include <stdio.h>\n"
+            "\n  int main (){"
+            "\n  /* local variable declaration */"
+            "\n  int phy, maths;"
+            "\n  float avg;"
+            "\n  /*use different values of phy and maths "
+            "\n  to check conditional execution*/"
+            "\n  //change to 40, 40 and 80, 40"
+            "\n  phy = 50; maths = 50;"
+            "\n  avg = (float)(phy + maths)/2;"
+            "\n  printf(\"Phy: %d Maths: %d Avg: %f\\n\", phy, maths, avg);"
+            "\n  if (avg >= 50 && (maths >= 35 && phy >= 35)){"
+            "\n    printf(\"Result: Pass\");"
+            "\n  }"
+            "\n  if (avg<50) {"
+            "\n    printf(\"Result: Fail\\n\");"
+            "\n  }"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nOutput:"
+            "\n//when marks in Phy and Maths - 50 50"
+            "\nPhy: 50 Maths: 50 Avg: 50.000000"
+            "\nResult: Pass\n"
+
+            "\n//when marks in Phy and Maths - 40 40"
+            "\nPhy: 40 Maths: 40 Avg: 40.000000"
+            "\nResult: Fail\n"
+
+            "\n//when marks in Phy and Maths - 80 40"
+            "\nPhy: 80 Maths: 40 Avg: 60.000000"
+            "\nResult: Pass\n"
+
+            );
+            break;
+
+            case 31:
+            puts("\n### The if-else Statement ###\n"
+
+            "\nSyntax of if-else Statement\n"
+
+            "\nif (Boolean expr){"
+            "\n  Expression;"
+            "\n  . . ."
+            "\n} else {"
+            "\n  Expression;"
+            "\n  . . ."
+            "\n}\n"
+
+            "\nFlowchart of if-else Statement\n"
+
+            "\nif (marks<50)"
+            "\n  printf(\"Result: Fail\\n\");"
+            "\nelse"
+            "\n  printf(\"Result: Pass\\n\");\n"
+
+            "\nC if-else Statement Examples\n"
+
+            "\nExample: Tax Calculation Using if-else Statement\n"
+
+            "\n#include <stdio.h>\n"
+
+            "\nint main() {"
+            "\n  int income = 5000;"
+            "\n  float tax;"
+            "\n  printf(\"Income: %d\\n\", income);"
+            "\n  if (income<10000){"
+            "\n    tax = (float)(income * 10 / 100);"
+            "\n    printf(\"tax: %f \\n\", tax);"
+            "\n  } else {"
+            "\n    tax= (float)(1000 + (income-10000) * 15 / 100);"
+            "\n    printf(\"tax: %f\", tax);"
+            "\n  }"
+            "\n}\n"
+
+            "\nOutput:"
+            "\nIncome: 5000"
+            "\ntax: 500.000000\n"
+
+            "\nIncome: 15000"
+            "\ntax: 1750.000000\n"
+
+            "\nExample: Checking Digit Using if-else Statement\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main() {"
+            "\n  char ch='7';"
+            "\n  if (ch>=48 && ch<=57){"
+            "\n    printf(\"The character is a digit.\");"
+            "\n  } else {"
+            "\n    printf(\"The character is not a digit.\");"
+            "\n  }"
+            "\n  return 0;"
+            "\n}"
+
+            "\nOutput"
+            "\nThe character is a digit."
+            "\nThe character is not a digit.\n"
+
+            "\nExample: if-else Statement Without Curly Braces\n"
+
+            "\n#include <stdio.h>\n"
+
+            "\nint main() {"
+            "\n  int amount = 50;"
+            "\n  float discount;"
+            "\n  printf(\"Amount: %d\\n\", amount);"
+            "\n  if (amount >= 100)"
+            "\n    discount = amount * 10 / 100;"
+            "\n    printf(\"Discount: %f \\n\", discount);"
+            "\n  else"
+            "\n    printf(\"Discount not applicable\\n\");"
+            "\n    return 0;"
+            "\n}\n"
+
+            "\nOutput"
+            "\nerror: 'else' without a previous 'if'\n"
+
+            "\nExample: if-else Statement Without Curly Braces\n"
+
+            "\n#include <stdio.h>\n"
+
+            "\nint main() {"
+            "\n  int amount = 50;"
+            "\n  float discount, nett;"
+            "\n  printf(\"Amount: %d\\n\", amount);"
+            "\n  if (amount<100)"
+            "\n    printf(\"Discount not applicable\\n\");"
+            "\n  else"
+            "\n    printf(\"Discount applicable\");"
+            "\n    discount = amount*10/100;"
+            "\n    nett = amount - discount;"
+            "\n    printf(\"Discount: %f Net payable: %f\", discount, nett);"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nOutput"
+            "\nAmount: 50"
+            "\nDiscount not applicable"
+            "\nDiscount: 5.000000 Net payable: 45.000000\n"
+
+            "\nif (amount >= 100){"
+            "\n  discount = amount * 10 / 100;"
+            "\n  printf(\"Discount: %f \\n\", discount);"
+            "\n} else {"
+            "\n  printf(\"Discount not applicable\\n\");"
+            "\n}\n"
+
+            "\nThe else-if Statement in C\n"
+
+            "\nSyntax of else-if Statement\n"
+
+            "\nif (condition){"
+            "\n  // if the condition is true, "
+            "\n  // then run this code"
+            "\n} else if(another_condition){"
+            "\n  // if the above condition was false "
+            "\n  // and this condition is true,"
+            "\n  // then run the code in this block"
+            "\n} else {"
+            "\n  // if both the above conditions are false,"
+            "\n  // then run this code"
+            "\n}\n"
+
+            "\nExample of else-if Statement\n"
+
+            "\n#include <stdio.h>\n"
+
+            "\nint main(void) {"
+            "\n  int age = 15;"
+            "\n  if (age < 18) {"
+            "\n    printf(\"You need to be over 18 years old to continue\\n\");"
+            "\n  } else if (age < 21) {"
+            "\n    printf(\"You need to be over 21\\n\");"
+            "\n  } else {"
+            "\n    printf(\"You are over 18 and older than 21 so you can continue \\n\");"
+            "\n  }"
+            "\n}\n"
+
+            "\nOutput:"
+            "\nYou need to be over 18 years old to continue\n"
+            );
+            break;
+
+            case 32:
+            puts("\n### Nested If Statements ###\n"
+
+            "\nSyntax\n"
+
+            "\nif (expr1){"
+            "\n  if (expr2){"
+            "\n    block to be executed when "
+            "\n    expr1 and expr2 are true"
+            "\n  } else {"
+            "\n    block to be executed when "
+            "\n    expr1 is true but expr2 is false"
+            "\n  }"
+            "\n}\n"
+
+            "\nExample 1\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main (){"
+            "\n  // local variable definition"
+            "\n  int a = 274;"
+            "\n  printf(\"Value of a is : %d\\n\", a);"
+            "\n  if (a < 100){"
+            "\n    printf(\"Value of a is less than 100\\n\");"
+            "\n  }"
+            "\n  if (a >= 100 && a < 200){"
+            "\n    printf(\"Value of a is between 100 and 200\\n\");"
+            "\n  }"
+            "\n  if (a >= 200){"
+            "\n    printf(\"Value of a is more than 200\\n\");"
+            "\n  }"
+            "\n}\n"
+
+            "\nOutput"
+            "\nValue of a is : 274"
+            "\nValue of a is more than 200\n"
+
+            "\nExample 2\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main (){"
+            "\n  // local variable definition"
+            "\n  // check with different values 120, 250 and 74"
+            "\n  int a = 120;"
+            "\n  printf(\"value of a is : %d\\n\", a);"
+            "\n  // check the boolean condition"
+            "\n  if(a >= 100){"
+            "\n    // this will check if a is between 100-200"
+            "\n    if(a < 200){"
+            "\n      // if the condition is true, then print the following"
+            "\n      printf(\"Value of a is between 100 and 200\\n\");"
+            "\n    } else {"
+            "\n      printf(\"Value of a is more than 200\\n\");"
+            "\n    }"
+            "\n  } else {"
+            "\n    // executed if a < 100"
+            "\n    printf(\"Value of a is less than 100\\n\");"
+            "\n  }"
+            "\n  return 0;"
+            "\n}\n"
+
+            "Value of a is : 120"
+            "Value of a is between 100 and 200"
+
+            "Example 3"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  int a = 15;"
+            "\n  printf(\"a: %d\\n\", a);"
+            "\n  if (a % 2 == 0) {"
+            "\n    if (a % 3 == 0){"
+            "\n      printf(\"Divisible by 2 and 3\");"
+            "\n    } else {"
+            "\n      printf(\"Divisible by 2 but not 3\");"
+            "\n    }"
+            "\n  } else {"
+            "\n    if (a % 3 == 0){"
+            "\n      printf(\"Divisible by 3 but not 2\");"
+            "\n    } else {"
+            "\n      printf(\"Not divisible by 2, not divisible by 3\");"
+            "\n    }"
+            "\n  }"
+            "\n  return 0;"
+            "\n}\n"
+
+            "Output"
+            "a: 15"
+            "Divisible by 3 but not 2"
+
+            "Example 4"
+            "Is the year divisible by 4?"
+            "If yes, is it a century year (divisible by 100)?"
+            "If yes, is it divisible by 400? If yes, it is a leap year, otherwise not."
+            "If it is divisible by 4 and not a century year, it is a leap year."
+            "If it is not divisible by 4, it is not a leap year."
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  // Test the program with the values 1900, 2023, 2000, 2012"
+            "\n  int year = 1900;"
+            "\n  printf(\"year: %d\\n\", year);"
+            "\n  // is divisible by 4?"
+            "\n  if (year % 4 == 0){"
+            "\n    // is divisible by 100?"
+            "\n    if (year % 100 == 0){"
+            "\n      // is divisible by 400?"
+            "\n      if(year % 400 == 0){"
+            "\n        printf(\"%d is a Leap Year\\n\", year);"
+            "\n      } else {"
+            "\n        printf(\"%d is not a Leap Year\\n\", year);"
+            "\n      }"
+            "\n    } else {"
+            "\n      printf(\"%d is not a Leap Year\\n\", year);"
+            "\n    }"
+            "\n  } else {"
+            "\n      printf(\"%d is a Leap Year\\n\", year);"
+            "\n  }"
+            "\n}\n"
+
+            "\nOutput:"
+            "\nyear: 1900"
+            "\n1900 is not a Leap Year\n"
+
+            "\nif (year % 4 == 0 && (year % 400 == 0 || year % 100 != 0)){"
+            "\n  printf(\"%d is a leap year\", year);"
+            "\n} else {"
+            "\n  printf(\"%d is not a leap year\", year);"
+            "\n}\n"
+
+            "\n## Switch Statement ##\n"
+
+            "\nC switch-case Statement\n"
+
+            "\nSyntax of switch-case Statement\n"
+
+            "\nswitch (Expression){"
+            "\n  // if expr equals Value1"
+            "\n  case Value1:"
+            "\n    Statement1;"
+            "\n    Statement2;"
+            "\n    break;"
+            "\n  // if expr equals Value2"
+            "\n  case Value2:"
+            "\n    Statement1;"
+            "\n    Statement2;"
+            "\n    break;"
+            "\n    ."
+            "\n    ."
+            "\n  // if expr is other than the specific values above"
+            "\n  default:"
+            "\n    Statement1;"
+            "\n    Statement2;"
+            "\n}\n"
+
+            "\nHow switch-case Statement Work?\n"
+
+            "\nFlowchart of switch-case Statement\n"
+
+            "\nRules for Using the switch-case Statement"
+            "\nThe expression used in a switch statement must have an integral or enumerated type, or be of a class type in which the class has a single conversion function to an integral or enumerated type."
+            "\nYou can have any number of case statements within a switch. Each case is followed by the value to be compared to and a colon."
+            "\nThe constant-expression for a case must be the same data type as the variable in the switch, and it must be a constant or a literal."
+            "\nWhen the variable being switched on is equal to a case, the statements following that case will execute until a break statement is reached."
+            "\nWhen a break statement is reached, the switch terminates, and the flow of control jumps to the next line following the switch statement."
+            "\nNot every case needs to contain a break. If no break appears, the flow of control will fall through to subsequent cases until a break is reached."
+            "\nA switch statement can have an optional default case, which must appear at the end of the switch. The default case can be used for performing a task when none of the cases is true. No break is needed in the default case.\n"
+
+            "\nC switch-case Statement Examples"
+
+            "\nExample 1"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  /* local variable definition */"
+            "\n  char ch = 'e';"
+            "\n  printf(\"Time code: %c\\n\\n\", ch);"
+            "\n  if (ch == 'm')"
+            "\n    printf(\"Good Morning\");"
+            "\n  else if (ch == 'a')"
+            "\n    printf(\"Good Afternoon\");"
+            "\n  else"
+            "\n    printf(\"Good Evening\");"
+            "\n  return 0;"
+            "\n}"
+
+            "\n#include <stdio.h>\n"
+            "\nint main (){"
+            "\n  // local variable definition"
+            "\n  char ch = 'm';"
+            "\n  printf(\"Time code: %c\\n\\n\", ch);"
+            "\n  switch (ch){"
+            "\n    case 'a':"
+            "\n      printf(\"Good Afternoon\\n\");"
+            "\n    break;"
+            "\n    case 'e':"
+            "\n      printf(\"Good Evening\\n\");"
+            "\n      break;"
+            "\n    case 'm':"
+            "\n      printf(\"Good Morning\\n\");"
+            "\n  }"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nOutput"
+            "\nTime code: m"
+            "\nGood Morning\n"
+
+            "\nExample 2: Switch Statement without using Break"
+
+            "\n#include <stdio.h>\n"
+            "\nint main (){"
+            "\n  /* local variable definition */"
+            "\n  char ch = 'a';"
+            "\n  printf(\"Time code: %c\\n\\n\", ch);"
+            "\n  switch (ch){"
+            "\n    case 'a':"
+            "\n      printf(\"Good Afternoon\\n\");"
+            "\n      // break;"
+            "\n    case 'e':"
+            "\n      printf(\"Good Evening\\n\");"
+            "\n      // break;"
+            "\n    case 'm':"
+            "\n      printf(\"Good Morning\\n\");"
+            "\n  }"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nOutput"
+            "\nTime code: a\n"
+
+            "\nGood Afternoon"
+            "\nGood Evening"
+            "\nGood Morning\n"
+
+            "\nExample 3: Grade Checker Program using Switch Statement"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  /* local variable definition */"
+            "\n  char grade = 'B';"
+            "\n  switch(grade){"
+            "\n    case 'A' :"
+            "\n      printf(\"Outstanding!\\n\");"
+            "\n    break;"
+            "\n    case 'B':"
+            "\n      printf(\"Excellent!\\n\");"
+            "\n      break;"
+            "\n    case 'C':"
+            "\n      printf(\"Well Done\\n\");"
+            "\n    break;"
+            "\n    case 'D':"
+            "\n      printf(\"You passed\\n\");"
+            "\n    break;"
+            "\n    case 'F':"
+            "\n      printf(\"Better try again\\n\");"
+            "\n    break;"
+            "\n    default :"
+            "\n      printf(\"Invalid grade\\n\");"
+            "\n  }"
+            "\n  printf(\"Your grade is  %c\\n\", grade);"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nOutput"
+            "\nExcellent!"
+            "\nYour grade is B\n"
+
+            "\nExample 4: Menu-based Calculator for Arithmetic Operations using Switch\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main (){"
+            "\n  // local variable definition"
+            "\n  int a = 10, b = 5;"
+            "\n  // Run the program with other values 2, 3, 4, 5"
+            "\n  int op = 1;"
+            "\n  float result;"
+            "\n  printf(\"1: addition\\n\");"
+            "\n  printf(\"2: subtraction\\n\");"
+            "\n  printf(\"3: multiplication\\n\");"
+            "\n  printf(\"4: division\\n\");"
+            "\n  printf(\"\na: %d b: %d : op: %d\\n\", a, b, op);"
+            "\n  switch (op){"
+            "\n    case 1:"
+            "\n      result = a + b;"
+            "\n    break;"
+            "\n    case 2:"
+            "\n      result = a - b;"
+            "\n    break;"
+            "\n    case 3:"
+            "\n      result = a * b;"
+            "\n    break;"
+            "\n    case 4:"
+            "\n      result = a / b;"
+            "\n    break;"
+            "\n    default:"
+            "\n      printf(\"Invalid operation\\n\");"
+            "\n  }\n"
+            "\n  if (op >= 1 && op <= 4)"
+            "\n    printf(\"Result: %6.2f\", result);"
+            "\n  return 0;"
+            "\n}"
+
+            "\nOutput"
+            "\n1: addition"
+            "\n2: subtraction"
+            "\n3: multiplication"
+            "\n4: division"
+
+            "\na: 10 b: 5 : op: 1"
+            "\nResult:  15.00"
+            "\na: 10 b: 5 : op: 2"
+            "\nResult:   5.00"
+            "\na: 10 b: 5 : op: 3"
+            "\nResult:  50.00"
+            "\na: 10 b: 5 : op: 4"
+            "\nResult:   2.00"
+            "\na: 10 b: 5 : op: 5"
+            "\nInvalid operation"
+
+            "\nSwitch Statement by Combining Multiple Cases"
+
+            "\nSyntax"
+
+            "\nswitch (exp) {"
+            "\n  case 1:"
+            "\n  case 2:"
+            "\n    statements;"
+            "\n  break;"
+            "\n  case 3:"
+            "\n    statements;"
+            "\n  break;"
+            "\n  default:"
+            "\n    printf(\"%c is a non-alphanumeric character\\n\", ch);"
+            "\n}\n"
+
+            "\nExample 1"
+
+            "\n#include <stdio.h>\n"
+            "\nint main (){"
+            "\n  // local variable definition"
+            "\n  int number = 5;"
+            "\n  switch (number){"
+            "\n    case 1 ... 10:"
+            "\n      printf(\"The number is between 1 and 10\\n\");"
+            "\n    break;"
+            "\n    default:"
+            "\n      printf(\"The number is not between 1 and 10\\n\");"
+            "\n  }"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nOutput"
+            "\nThe number is between 1 and 10"
+
+            "\nExample 2"
+
+            "\n#include <stdio.h>\n"
+            "\nint main (){"
+            "\n  char ch = 'g';"
+            "\n  switch (ch){"
+            "\n    case 'a' ... 'z':"
+            "\n      printf(\"%c is a lowercase alphabet\\n\", ch);"
+            "\n    break;"
+            "\n    case 'A' ... 'Z':"
+            "\n      printf(\"%c is an uppercase alphabet\\n\", ch);"
+            "\n    break;"
+            "\n    case 48 ... 57:"
+            "\n      printf(\"%c is a digit\\n\", ch);"
+            "\n    break;\n"
+            "\n    default:"
+            "\n      printf(\"%c is a non-alphanumeric character\\n\", ch);"
+            "\n    }"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nOutput"
+            "\ng is a lowercase alphabet\n"
+            );
+            break;
+
+            case 33:
+            puts("\n### Nested Switch Statements ###\n"
+
+            "\nSyntax\n"
+
+            "\nswitch(ch1){"
+            "\n  case 'A': "
+            "\n    printf(\"This A is part of outer switch\" );"
+            "\n    switch(ch2) {"
+            "\n      case 'A':"
+            "\n        printf(\"This A is part of inner switch\" );"
+            "\n      break;"
+            "\n      case 'B':  /* case code */"
+            "\n    }"
+            "\n  break;"
+            "\n  case 'B':  /* case code */"
+            "\n}\n"
+
+            "\nExample\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main (){"
+            "\n  /* local variable definition */"
+            "\n  int a = 100;"
+            "\n  int b = 200;"
+            "\n  switch(a){"
+            "\n    case 100:"
+            "\n      printf(\"This is part of outer switch\\n\", a);"
+            "\n      switch(b){"
+            "\n        case 200:"
+            "\n          printf(\"This is part of inner switch\\n\", a);"
+            "\n      }"
+            "\n  }"
+            "\n  printf(\"Exact value of a is: %d\\n\", a);"
+            "\n  printf(\"Exact value of b is: %d\\n\", b);"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nOutput"
+            "\nThis is part of outer switch"
+            "\nThis is part of inner switch"
+            "\nExact value of a is : 100"
+            "\nExact value of b is : 200\n"
+
+            "\nNested Switch-Case Statements in C\n"
+
+            "\nswitch (exp1){"
+            "\n  case val1:"
+            "\n    switch (exp2){"
+            "\n      case val_a:"
+            "\n      stmts;"
+            "\n    break;"
+            "\n    case val_b:"
+            "\n      stmts;"
+            "\n    break;"
+            "\n    }"
+            "\n  case val2:"
+            "\n    switch (expr2){"
+            "\n      case val_c:"
+            "\n      stmts;"
+            "\n    break;"
+            "\n      case val_d:"
+            "\n      stmts;"
+            "\n    break;"
+            "\n  }"
+            "\n}\n"
+
+            "\nExample\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  int x = 1, y = 'b', z='X';"
+            "\n  // Outer Switch"
+            "\n  switch (x){"
+            "\n    case 1:"
+            "\n      printf(\"Case 1 \\n\");"
+            "\n      switch (y){"
+            "\n        case 'a':"
+            "\n          printf(\"Case a \\n\");"
+            "\n        break;"
+            "\n        case 'b':"
+            "\n          printf(\"Case b \\n\");"
+            "\n        break;"
+            "\n      }"
+            "\n    break;"
+            "\n    case 2:"
+            "\n      printf(\"Case 2 \\n\");"
+            "\n      switch (z){"
+            "\n        case 'X':"
+            "\n          printf(\"Case X \\n\");"
+            "\n        break;"
+            "\n        case 'Y':"
+            "\n          printf(\"Case Y \\n\");"
+            "\n    break;"
+            "\n    }"
+            "\n  }"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nOutput"
+            "\nCase 1"
+            "\nCase b\n"
+
+            );
+            break;
+
+            case 34:
+            puts("\n### C - Loops ###\n"
+
+            "\nFlowchart of C Loop Statement\n"
+
+            "\nExample: Loops in C\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main (){"
+            "\n  // local variable definition"
+            "\n  int a = 1;"
+            "\n  printf(\"a: %d\\n\", a);"
+            "\n  a++;"
+            "\n  printf(\"a: %d\\n\", a);"
+            "\n  a++;"
+            "\n  printf(\"a: %d\\n\", a);"
+            "\n  a++;"
+            "\n  printf(\"a: %d\\n\", a);"
+            "\n  a++;"
+            "\n  printf(\"a: %d\\n\", a);"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nOutput"
+            "\na: 1"
+            "\na: 2"
+            "\na: 3"
+            "\na: 4"
+            "\na: 5\n"
+
+            "\nExample: Using While Loop in C\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main () {"
+            "\n// local variable definition"
+            "\nint a = 1;"
+            "\nwhile (a <= 100){"
+            "\nprintf(\"a: %d\\n\", a);"
+            "\na++;"
+            "\n}"
+            "\nreturn 0;"
+            "\n}"
+
+            "\nOutput"
+            "\na: 1"
+            "\na: 2"
+            "\na: 3"
+            "\na: 4"
+            "\n....."
+            "\n....."
+            "\na: 98"
+            "\na: 99"
+            "\na: 100\n"
+
+            "\nParts of C Loops\n"
+
+            "\nLooping statement (while, do–while or for)"
+            "\nLooping block"
+            "\nLooping condition\n"
+
+            "\nCounted Loops in C\n"
+
+            "\nConditional Loops in C\n"
+
+            "\nLooping Statements in C\n"
+
+            "\nSr.No. - Loop Type & Description"
+            "\n1 while loop: Repeats a statement or group of statements while a given condition is true. It tests the condition before executing the loop body."
+            "\n2 for loop: Executes a sequence of statements multiple times and abbreviates the code that manages the loop variable."
+            "\n3 do-while loop: It is more like a while statement, except that it tests the condition at the end of the loop body."
+            "\n4 nested loops: You can use one or more loops inside any other while, for or do-while loop."
+
+            "\nLoop Control Statements in C\n"
+
+            "\nSr.No. - Control Statement & Description"
+            "\n1 break statement: Terminates the loop or switch statement and transfers execution to the statement immediately following the loop or switch."
+            "\n2 continue statement: Causes the loop to skip the remainder of its body and immediately retest its condition prior to reiterating."
+            "\n3 goto statement: Transfers the control to the labeled statement."
+
+            "\nThe Infinite Loop in C"
+
+            "\nExample: Infinite Loop in C"
+
+            "\n#include <stdio.h>\n"
+            "\nint main (){"
+            "\n  for( ; ; ){"
+            "\n    printf(\"This loop will run forever. \\n\");"
+            "\n  }"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nOutput"
+            "\nThis loop will run forever."
+            "\nThis loop will run forever."
+            "\n........"
+            "\n........"
+            "\nThis loop will run forever.\n"
+            );
+            break;
+
+            case 35:
+            puts("### C - While Loop ###"
+
+            "Syntax of C while Loop"
+
+            while(expression){
+            statement(s);
+            }
+
+            "Flowchart of C while Loop"
+
+            "How while Loop Works in C?"
+
+            "Example of while Loop in C"
+
+            #include <stdio.h>
+            
+            int main(){
+
+            // local variable definition
+            int a = 1;
+
+            // while loop execution
+            while(a <= 5){
+                printf("Hello World \n");
+                a++;
+            }
+            printf("End of loop"); 
+            return 0;
+            }
+
+            Output
+            Hello World
+            Hello World
+            Hello World
+            Hello World
+            Hello World
+            End of loop
+
+            Example Explanation
+
+            End of loop
+
+            "Using while as Conditional Loop"
+
+            "Example"
+
+            #include <stdio.h>
+
+            int main(){
+
+            // local variable definition 
+            char choice = 'a';
+
+            int x = 0;
+
+            // while loop execution
+            while(x >= 0){
+                (x % 2 == 0) ? printf("%d is Even \n", x) : printf("%d is Odd \n", x);
+
+                printf("\n Enter a positive number: ");
+                scanf("%d", &x);
+            }
+            printf("\n End of loop");
+            return 0;
+            }
+
+            Output
+            0 is Even
+
+            Enter a positive number: 12
+            12 is Even
+
+            Enter a positive number: 25
+            25 is Odd
+
+            Enter a positive number: -1
+
+            End of loop
+
+            "While Loop with break and continue"
+
+            "Example"
+
+            while (expr){
+            . . .
+            . . .
+            if (condition)
+                break;
+            . . .
+            }
+
+            "Example"
+
+            while (expr){
+            . . .
+            . . .
+            if (condition)
+                continue;
+            . . .
+            }
+
+            "More Examples of C while Loop"
+
+            "Example: Printing Lowercase Alphabets"
+
+            #include <stdio.h>
+            
+            int main(){
+
+            // local variable definition
+            char a = 'a';
+
+            // while loop execution
+            while(a <= 'z') {
+                printf("%c", a);
+                a++;
+            }
+            printf("\n End of loop"); 
+            return 0;
+            }
+
+            Output
+            abcdefghijklmnopqrstuvwxyz
+            End of loop
+
+            Example: Equate Two Variables
+
+            #include <stdio.h>
+
+            int main(){
+
+            // local variable definition
+            int a = 10, b = 0;
+
+            // while loop execution
+            while(a != b){
+                a--;
+                b++;
+                printf("a: %d b: %d\n", a,b);
+            }
+            printf("\n End of loop");
+            return 0;
+            }
+
+            
+
+
             );
             break;
 
