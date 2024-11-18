@@ -11,7 +11,7 @@ int main(){
 
         "\n## BASICS OF C ##\n"
 
-        "\n1. Compilation Steps"
+        "\n1. Compilation Process"
         "\n2. Comments"
         "\n3. Tokens"
         "\n4. Keywords"
@@ -70,7 +70,16 @@ int main(){
 
         "\n## Functions in C ##\n"
 
-        "\n45. xxx"
+        "\n45. C - Functions"
+        "\n46. C - Main Function"
+        "\n47. C - Function call by Value"
+        "\n48. C - Function call by reference"
+        "\n49. C - Nested Functions"
+        "\n50. C - Variadic Functions"
+        "\n51. C - User-Defined Functions"
+        "\n52. C - Callback Function"
+        "\n53. C - Return Statement"
+        "\n54. C - Recursion"
 
         "\n0. Salir\n"
         "\nSeleccione una opcion:");
@@ -3251,8 +3260,11 @@ int main(){
             "\n} else {"
             "\n  printf(\"%d is not a leap year\", year);"
             "\n}\n"
+            );
+            break;
 
-            "\n## Switch Statement ##\n"
+            case 34:
+            puts("\n## Switch Statement ##\n"
 
             "\nC switch-case Statement\n"
 
@@ -3503,7 +3515,7 @@ int main(){
             );
             break;
 
-            case 33:
+            case 35:
             puts("\n### Nested Switch Statements ###\n"
 
             "\nSyntax\n"
@@ -3609,7 +3621,9 @@ int main(){
             );
             break;
 
-            case 34:
+            //######################################################################
+
+            case 36:
             puts("\n### C - Loops ###\n"
 
             "\nFlowchart of C Loop Statement\n"
@@ -3665,7 +3679,7 @@ int main(){
 
             "\nParts of C Loops\n"
 
-            "\nLooping statement (while, do–while or for)"
+            "\nLooping statement (while, do-while or for)"
             "\nLooping block"
             "\nLooping condition\n"
 
@@ -3709,7 +3723,7 @@ int main(){
             );
             break;
 
-            case 35:
+            case 37:
             puts("\n### C - While Loop ###\n"
 
             "\nSyntax of C while Loop\n"
@@ -3852,7 +3866,7 @@ int main(){
             );
             break;
 
-            case 36:
+            case 38:
             puts("\n### For Loop in C ###\n"
 
             "\nSyntax of for Loop\n"
@@ -4056,7 +4070,7 @@ int main(){
             );
             break;
 
-            case 37:
+            case 39:
             puts("\nDo-While Loop in C\n"
 
             "\nSyntax of do while Loop\n"
@@ -4144,7 +4158,7 @@ int main(){
             );
             break;
 
-            case 38:
+            case 40:
             puts("\n### Nested Loops in C ###\n"
 
             "\nGeneral Syntax of Nested Loops\n"
@@ -4332,7 +4346,7 @@ int main(){
             );
             break;
 
-            case 39:
+            case 41:
             puts("\n### C - Infinite Loop ###\n"
 
             "\nFlowchart of an Infinite Loop\n"
@@ -4570,7 +4584,7 @@ int main(){
             );
             break;
 
-            case 40:
+            case 42:
             puts("\n### Break Statement in C ###\n"
 
             "\nFlowchart of Break Statement in C\n"
@@ -4578,12 +4592,12 @@ int main(){
             "\nBreak Statements in While Loops\n"
 
             "\nwhile(condition1){"
-            "\n. . ."
-            "\n. . ."
+            "\n  . . ."
+            "\n  . . ."
             "\nif(condition2)"
-            "\nbreak;"
-            "\n. . ."
-            "\n. . ."
+            "\n  break;"
+            "\n  . . ."
+            "\n  . . ."
             "\n}\n"
 
             "\nExample of break Statement with while Loop\n"
@@ -4742,7 +4756,7 @@ int main(){
             );
             break;
 
-            case 41:
+            case 43:
             puts("\n### Continue Statement in C ###\n"
 
             "\nWhat is Continue Statement in C?\n"
@@ -4890,8 +4904,9 @@ int main(){
 
             "\nPrime factors of 90:"
             "\n2 3 3 5\n"
-
-            "\nGoto Statement in C\n"
+            );
+            case 44:
+            puts("\nGoto Statement in C\n"
 
             "\nWhat is goto Statement in C?\n"
 
@@ -5018,7 +5033,7 @@ int main(){
             );
             break;
 
-            case 42:
+            case 45:
             puts("\n### Modular Programming in C ###\n"
 
             "Library Functions in C"
@@ -5101,13 +5116,238 @@ int main(){
             "return result;"
             "}"
 
-            
-            
+            "Output"
+            "Max value is : 200"
+
+            "The main() Function in C"
+
+            "Function Arguments"
+
+            "Sr.No - Call Type & Description"
+            "1 - Call by value: This method copies the actual value of an argument into the formal parameter of the function. In this case, changes made to the parameter inside the function have no effect on the argument."
+            "2 - Call by reference: This method copies the address of an argument into the formal parameter. Inside the function, the address is used to access the actual argument used in the call. This means that changes made to the parameter affect the argument."
+            );
+            break;
+
+            case 46:
+            puts("\n### C - Main Function ###\n"
+            );
+            break;
+
+            case 47:
+            puts("\n### C - Function call by Value ###\n")
+            ;
+            break;
+
+            case 48:
+            puts("\n### C - Function call by reference ###\n"
+            );
+            break;
+
+            case 49:
+            puts("\n### C - Nested Functions ###\n"
+            );
+            break;
+
+            case 50:
+            puts("\n### C - Variadic Functions ###\n"
+            );
+            break;
+
+            case 51:
+            puts("\n### C - User-Defined Functions ###\n"
+            );
+            break;
+
+            case 52:
+            puts("\n### C - Callback Function ###\n"
+            );
+            break;
+
+            case 53:
+            puts("\n### C - Return Statement ###\n"
+            );
+            break;
+
+            case 54:
+            puts("\n### C - Recursion ###\n"
+            );
+            break;
+
+            // ######################## //
+            // ### Scope Rules in C ### //
+            // ######################## //
+
+            case 55:
+            puts("\n### C - Scope Rules ###\n"
+            );
+            break;
+
+            case 56:
+            puts("\n### C - Static Variables ###\n"
+            );
+            break;
+
+            case 57:
+            puts("\n### C - Global Variables ###\n"
+            );
+            break;
+
+            // ################### //
+            // ### Arrays in C ### //
+            // ################### //
+
+            case 58:
+            puts("\n### C - Arrays ###\n"
+            );
+            break;
+
+            case 59:
+            puts("\n### C - Properties of Array ###\n"
+            );
+            break;
+
+            case 60:
+            puts("\n### C - Multi-Dimensional Arrays ###\n"
+            );
+            break;
+
+            case 61:
+            puts("\n### C - Passing Arrays to Function ###\n"
+            );
+            break;
+
+            case 62:
+            puts("\n### C - Return Array from Function ###\n"
+            );
+            break;
+
+            case 63:
+            puts("\n### C - Variable Length Arrays ###\n"
+            );
+            break;
+
+            // ##################### //
+            // ### Pointers in C ### //
+            // ##################### //
+
+            case 64:
+            puts("\n### C - Pointers ###\n"
+            );
+            break;
+
+            case 65:
+            puts("\n### C - Pointers and Arrays ###\n"
+            );
+            break;
+
+            case 66:
+            puts("\n### C - Applications of Pointers ###\n"
+            );
+            break;
+
+            case 67:
+            puts("\n### C - Pointer Arithmetics ###\n"
+            );
+            break;
+
+            case 68:
+            puts("\n### C - Array of Pointers ###\n"
+            );
+            break;
+
+            case 69:
+            puts("\n### C - Pointer to Pointer ###\n"
+            );
+            break;
+
+            case 70:
+            puts("\n### C - Passing Pointers to Functions ###\n"
+            );
+            break;
+
+            case 71:
+            puts("\n### C - Return Pointer from Functions ###\n"
+            );
+            break;
+
+            case 72:
+            puts("\n### C - Function Pointers ###\n"
+            );
+            break;
+
+            case 73:
+            puts("\n### C - Pointer to an Array ###\n"
+            );
+            break;
+
+            case 74:
+            puts("\n### C - Pointers to Structures ###\n"
+            );
+            break;
+
+            case 75:
+            puts("\n### C - Chain of Pointers ###\n"
+            );
+            break;
+
+            case 76:
+            puts("\n### C - Pointer vs Array ###\n"
+            );
+            break;
+
+            case 77:
+            puts("\n### C - Character Pointers and Functions ###\n"
+            );
+            break;
+
+            case 78:
+            puts("\n### C - NULL Pointer ###\n"
+            );
+            break;
+
+            case 79:
+            puts("\n### C - void Pointer ###\n"
+            );
+            break;
+
+            case 80:
+            puts("\n### C - Dangling Pointers ###\n"
+            );
+            break;
+
+            case 81:
+            puts("\n### C - Dereference Pointer ###\n"
+            );
+            break;
+
+            case 82:
+            puts("\n### C - Near, Far and Huge Pointers ###\n"
+            );
+            break;
+
+            case 83:
+            puts("\n### C - Initialization of Pointer Arrays ###\n"
+            );
+            break;
+
+            case 84:
+            puts("\n### C - Pointers vs. Multi-dimensional Arrays ###\n"
+            );
+            break;
+
+            // #################### //
+            // ### Strings in C ### //
+            // #################### //
+
+            case 85:
+            puts("\n###  ###\n"
             );
             break;
 
             default:
-            puts("opcion invalida");
+            puts("opcion invalida"
+            );
             break;
         }
         getchar();
