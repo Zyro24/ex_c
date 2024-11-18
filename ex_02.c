@@ -8,9 +8,9 @@ int main(){
     int n = -1, r = 0;
     do {
         puts("\n### MENU ###\n"
-        
+
         "\n## BASICS OF C ##\n"
-        
+
         "\n1. Compilation Steps"
         "\n2. Comments"
         "\n3. Tokens"
@@ -67,6 +67,10 @@ int main(){
         "\n42. Break Statement"
         "\n43. Continue Statement"
         "\n44. goto Statement\n"
+
+        "\n## Functions in C ##\n"
+
+        "\n45. xxx"
 
         "\n0. Salir\n"
         "\nSeleccione una opcion:");
@@ -1662,8 +1666,8 @@ int main(){
             "\n#include <stdio.h>\n"
 
             "\nint main(){"
-            "\n  unsigned int a = 60;	/* 60 = 0011 1100 */"
-            "\n  unsigned int b = 13;	/* 13 = 0000 1101 */"
+            "\n  unsigned int a = 60;/* 60 = 0011 1100 */"
+            "\n  unsigned int b = 13;/* 13 = 0000 1101 */"
             "\n  int c = 0;\n"
             "\n  c = a & b;       /* 12 = 0000 1100 */"
             "\n  printf(\"Line 1 - Value of c is %d\\n\", c);\n"
@@ -1948,7 +1952,7 @@ int main(){
 
             "\n#include <stdio.h>\n"
             "\nint main(){"
-            "\nint a = 60;	/* 60 = 0011 1100 */"
+            "\nint a = 60; /* 60 = 0011 1100 */"
             "\nint c = 0;"
             "\nc = ~a;      /* -61 = 1100 0011 */"
             "\nprintf(\"Value of c is %d \\n\", c);"
@@ -2544,6 +2548,12 @@ int main(){
             "\nPrefix increment. y: 6 z: 6\n"
 
             "\nx > 50 && y > 50\n"
+            );
+
+            break;
+
+            case 29:
+            puts("\n### C - Misc Operators ###\n"
 
             "\nOperator - Description - Example"
             "\nsizeof() Returns the size of a variable. sizeof(a), where a is integer, will return 4."
@@ -2750,7 +2760,7 @@ int main(){
             );
             break;
 
-            case 29:
+            case 30:
             puts("\n### Decision Making ###\n"
 
             "\nDecision Making\n"
@@ -2769,18 +2779,18 @@ int main(){
             "\nIf Statement in C Programming"
 
             "\nif (Boolean expr){"
-            "\nexpression;"
-            "\n. . ."
+            "\n  expression;"
+            "\n  . . ."
             "\n}\n"
 
-            "\nIf...else Statement in C Programming"
+            "\nIf...else Statement in C Programming\n"
 
             "\nif (Boolean expr){"
-            "\nexpression;"
-            "\n. . ."
+            "\n  expression;"
+            "\n  . . ."
             "\n} else {"
-            "\nexpression;"
-            "\n. . ."
+            "\n  expression;"
+            "\n  . . ."
             "\n}\n"
 
             "\nNested If Statements in C Programming\n"
@@ -2788,17 +2798,17 @@ int main(){
             "\nSwitch Statement in C Programming\n"
 
             "\nswitch(expression) {"
-            "\ncase constant-expression:"
-            "\nstatement(s);"
-            "\nbreak; /* optional */\n"
-                
-            "\ncase constant-expression :"
-            "\nstatement(s);"
-            "\nbreak; /* optional */\n"
+            "\n  case constant-expression:"
+            "\n  statement(s);"
+            "\n  break; /* optional */\n"
+
+            "\n  case constant-expression :"
+            "\n  statement(s);"
+            "\n  break; /* optional */\n"
             
-            "\n/* you can have any number of case statements */"
-            "\ndefault : /* Optional */"
-            "\nstatement(s);"
+            "\n  /* you can have any number of case statements */"
+            "\n  default : /* Optional */"
+            "\n  statement(s);"
             "\n}\n"
 
             "\nThe ?: Operator in C Programming\n"
@@ -2818,7 +2828,7 @@ int main(){
             );
             break;
 
-            case 30:
+            case 31:
             puts("\n### The If Statement ###\n"
             
             "\nif Statement"
@@ -2849,7 +2859,7 @@ int main(){
             "\n    //if the condition is true, then print the following"
             "\n    printf(\"a is less than 20\\n\" );"
             "\n  }"
-            "\nreturn 0;"
+            "\n  return 0;"
             "\n}\n"
 
             "\nOutput"
@@ -2915,18 +2925,18 @@ int main(){
             "\n  return 0;"
             "\n}\n"
 
-            "//when the bill amount is 500"
-            "Amount: 500 Discount: 0.000000 Net payable: 500.000000"
+            "\n//when the bill amount is 500"
+            "\nAmount: 500 Discount: 0.000000 Net payable: 500.000000"
 
-            "//when the bill amount is 2250"
-            "Amount: 2250 Discount: 5.000000 Net payable: 2137.500000"
+            "\n//when the bill amount is 2250"
+            "\nAmount: 2250 Discount: 5.000000 Net payable: 2137.500000"
 
-            "//when the bill amount is 5200"
-            "Amount: 5200 Discount: 10.000000 Net payable: 4680.000000"
+            "\n//when the bill amount is 5200"
+            "\nAmount: 5200 Discount: 10.000000 Net payable: 4680.000000"
 
-            "Checking Multiple Conditions With if Statement"
+            "\nChecking Multiple Conditions With if Statement"
 
-            "Example"
+            "\nExample\n"
 
             "\n#include <stdio.h>\n"
             "\n  int main (){"
@@ -2964,7 +2974,7 @@ int main(){
             );
             break;
 
-            case 31:
+            case 32:
             puts("\n### The if-else Statement ###\n"
 
             "\nSyntax of if-else Statement\n"
@@ -3112,7 +3122,7 @@ int main(){
             );
             break;
 
-            case 32:
+            case 33:
             puts("\n### Nested If Statements ###\n"
 
             "\nSyntax\n"
@@ -3835,13 +3845,1264 @@ int main(){
             "\na: 8 b: 2"
             "\na: 7 b: 3"
             "\na: 6 b: 4"
-            "\na: 5 b: 5"
+            "\na: 5 b: 5\n"
             "\nEnd of loop\n"
+
+            "\nwhile Vs. do while Loops\n"
             );
             break;
 
             case 36:
-            puts(""
+            puts("\n### For Loop in C ###\n"
+
+            "\nSyntax of for Loop\n"
+
+            "\nfor (init; condition; increment) {"
+            "\n  statement(s);"
+            "\n}\n"
+
+            "\nControl Flow of a For Loop\n"
+
+            "\nFlowchart of for Loop\n"
+
+            "\nExample: Basic for Loop\n"
+
+            "\n#include <stdio.h>\n"
+
+            "\nint main(){"
+            "\n  int a;"
+            "\n  // for loop execution"
+            "\n  for(a = 1; a <= 5; a++) {"
+            "\n    printf(\"a: %d\\n\", a);"
+            "\n  }\n"
+            "\nreturn 0;"
+            "\n}\n"
+
+            "\nOutput:"
+            "\na: 1"
+            "\na: 2"
+            "\na: 3"
+            "\na: 4"
+            "\na: 5\n"
+
+            "\nInitializing for Loop Counter Before Loop Statement\n"
+
+            "\nExample\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  int a = 1;"
+            "\n  // for loop execution"
+            "\n  for( ; a <= 5; a++){"
+            "\n    printf(\"a: %d\\n\", a);"
+            "\n  }"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nOutput:"
+            "\na: 1"
+            "\na: 2"
+            "\na: 3"
+            "\na: 4"
+            "\na: 5\n"
+
+            "\nUpdating Loop Counter Inside for Loop Body\n"
+
+            "\nExample\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  int a;"
+            "\n  // for loop execution"
+            "\n  for(a = 1; a <= 5; ){"
+            "\n    printf(\"a: %d\\n\", a);"
+            "\n    a++;"
+            "\n  }"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nOutput"
+            "\na: 1"
+            "\na: 2"
+            "\na: 3"
+            "\na: 4"
+            "\na: 5\n"
+
+            "\nUsing Test Condition Inside for Loop Body\n"
+
+            "\nExample\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  int a;"
+            "\n  // for loop execution"
+            "\n  for(a = 1; ; a++){"
+            "\n      printf(\"a: %d\\n\", a);"
+            "\n    if(a == 5)"
+            "\n      break;"
+            "\n  }"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nOutput"
+            "\na: 1"
+            "\na: 2"
+            "\na: 3"
+            "\na: 4"
+            "\na: 5\n"
+
+            "\nUsing for Loops with Multiple Counters\n"
+
+            "\nExample\n"
+
+            "\n#include <stdio.h>\n"
+            "\n  int main(){"
+            "\n  int a, b;"
+            "\n  // for loop execution"
+            "\n  for(a = 1, b = 1; a <= 5; a++, b++){"
+            "\n    printf(\"a: %d b: %d a*b: %d\\n\", a, b, a*b);"
+            "\n  }"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nOutput"
+            "\na: 1 b: 1 a*b: 1"
+            "\na: 2 b: 2 a*b: 4"
+            "\na: 3 b: 3 a*b: 9"
+            "\na: 4 b: 4 a*b: 16"
+            "\na: 5 b: 5 a*b: 25\n"
+
+            "\nDecrement in for Loop\n"
+
+            "\nExample\n"
+
+            "\n#include <stdio.h>\n"
+            "\n  int main(){"
+            "\n  int a;"
+            "\n  // for loop execution"
+            "\n  for(a = 5; a >= 1; a--){"
+            "\n    printf(\"a: %d\\n\", a);"
+            "\n  }"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nOutput"
+            "\na: 5"
+            "\na: 4"
+            "\na: 3"
+            "\na: 2"
+            "\na: 1\n"
+
+            "\nTraversing Arrays with for Loops\n"
+
+            "\nExample\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  int i;"
+            "\n  int arr[] = {10, 20, 30, 40, 50};"
+            "\n  // for loop execution"
+            "\n  for(i = 0; i < 5; i++){"
+            "\n    printf(\"a[%d]: %d\\n\", i, arr[i]);"
+            "\n  }"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nOutput"
+            "\na[0]: 10"
+            "\na[1]: 20"
+            "\na[2]: 30"
+            "\na[3]: 40"
+            "\na[4]: 50\n"
+
+            "\nExample: Sum of Array Elements Using for Loop\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  int i;"
+            "\n  int arr[] = {10, 20, 30, 40, 50};"
+            "\n  int sum = 0;"
+            "\n  float avg;"
+            "\n  // for loop execution"
+            "\n  for(i=0; i<5; i++){"
+            "\n    sum += arr[i];"
+            "\n  }"
+            "\n  avg = (float)sum / 5;"
+            "\n  printf (\"Average = %f\", avg);"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nOutput"
+            "\nAverage = 30.000000\n"
+
+            "\nExample: Factorial Using for Loop\n"
+
+            "\nx! = 1 * 2 * . . . * x\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  int i, x = 5;"
+            "\n  int fact = 1;"
+            "\n  // for loop execution"
+            "\n  for(i=1; i<= x; i++){"
+            "\n    fact *= i;"
+            "\n  }"
+            "\n  printf(\"%d != %d\", x, fact);"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nOutput"
+            "\n5! = 120\n"
+            );
+            break;
+
+            case 37:
+            puts("\nDo-While Loop in C\n"
+
+            "\nSyntax of do while Loop\n"
+
+            "\ndo {"
+            "\n  statement(s);"
+            "\n} while(condition);\n"
+
+            "\nHow do while Loop Works?\n"
+
+            "\nFlowchart of do while Loop\n"
+
+            "\nExample of do while Loop\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  // local variable definition"
+            "\n  int a = 1;"
+            "\n  // while loop execution"
+            "\n  do{"
+            "\n    printf(\"Hello World\\n\");"
+            "\n    a++;"
+            "\n  } while(a <= 5);"
+            "\n  printf(\"End of loop\");"
+            "\n  return 0;"
+            "\n}\n"
+            
+            "\nOutput"
+            "\nHello World"
+            "\nHello World"
+            "\nHello World"
+            "\nHello World"
+            "\nHello World"
+            "\nEnd of loop\n"
+
+            "\nHello World"
+            "\nEnd of loop\n"
+
+            "\nDifference Between while and do while Loops\n"
+
+            "\nExample\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  // local variable definition"
+            "\n  int a = 0, b = 0;"
+            "\n  // while loop execution"
+            "\n  printf(\"Output of while loop: \\n\");"
+            "\n  while(a < 5){"
+            "\n    a++;"
+            "\n    printf(\"a: %d\\n\", a);"
+            "\n  }"
+            "\n  printf(\"Output of do-while loop: \\n\");"
+            "\n  do{"
+            "\n    b++;"
+            "\n    printf(\"b: %d\\n\",b);"
+            "\n  } while(b < 5);"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nOutput"
+            "\nOutput of while loop:"
+            "\na: 1"
+            "\na: 2"
+            "\na: 3"
+            "\na: 4"
+            "\na: 5\n"
+            "\nOutput of do-while loop:"
+            "\nb: 1"
+            "\nb: 2"
+            "\nb: 3"
+            "\nb: 4"
+            "\nb: 5\n"
+
+            "\nOutput of while loop:"
+            "\na: 4"
+            "\na: 5\n"
+            "\nOutput of do-while loop:"
+            "\nb: 4"
+            "\nb: 5\n"
+
+            "\nOutput of while loop:\n"
+            "\nOutput of do-while loop:"
+            "\nb: 11\n"
+            );
+            break;
+
+            case 38:
+            puts("\n### Nested Loops in C ###\n"
+
+            "\nGeneral Syntax of Nested Loops\n"
+
+            "\nOuter loop {"
+            "\nInner loop {"
+            "\n    ..."
+            "\n    ..."
+            "\n}"
+            "\n..."
+            "\n}\n"
+
+            "\nNested For Loops\n"
+
+            "\nExample: Nested for Loop\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\nint i, j;"
+            "\n// outer loop"
+            "\nfor(i = 1; i <= 3; i++){"
+            "\n// inner loop"
+            "\nfor(j = 1; j <= 3; j++){"
+            "\nprintf(\"i: %d j: %d\\n\", i, j);"
+            "\n}"
+            "\nprintf(\"End of Inner Loop \\n\");"
+            "\n}"
+            "\nprintf(\"End of Outer Loop\");"
+            "\nreturn 0;"
+            "\n}\n"
+
+            "\nOutput"
+            "\ni: 1 j: 1"
+            "\ni: 1 j: 2"
+            "\ni: 1 j: 3"
+            "\nEnd of Inner Loop\n"
+
+            "\ni: 2 j: 1"
+            "\ni: 2 j: 2"
+            "\ni: 2 j: 3"
+            "\nEnd of Inner Loop\n"
+
+            "\ni: 3 j: 1"
+            "\ni: 3 j: 2"
+            "\ni: 3 j: 3"
+            "\nEnd of Inner Loop\n"
+
+            "\nEnd of Outer loop\n"
+
+            "\nExplanation of Nested Loop\n"
+
+            "\nNesting a While Loop Inside a For Loop\n"
+
+            "\nExample: Nested Loops (while Loop Inside for Loop)\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  int i, j;"
+            "\n  // outer for loop"
+            "\n  for (i = 1; i <= 3; i++){"
+            "\n    // inner while loop"
+            "\n    j = 1;"
+            "\n    while (j <= 3){"
+            "\n      printf(\"i: %d j: %d\\n\", i, j);"
+            "\n      j++;"
+            "\n    }"
+            "\n    printf(\"End of Inner While Loop\\n\");"
+            "\n  }"
+            "\n  printf(\"End of Outer For loop\");"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nOutput"
+            "\ni: 1 j: 1"
+            "\ni: 1 j: 2"
+            "\ni: 1 j: 3"
+            "\nEnd of Inner While Loop\n"
+
+            "\ni: 2 j: 1"
+            "\ni: 2 j: 2"
+            "\ni: 2 j: 3"
+            "\nEnd of Inner While Loop\n"
+
+            "\ni: 3 j: 1"
+            "\ni: 3 j: 2"
+            "\ni: 3 j: 3"
+            "\nEnd of inner while Loop\n"
+
+            "\nEnd of outer for loop\n"
+
+            "\nC Nested Loops Examples\n"
+
+            "\nExample: Printing Tables\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  int i, j;"
+            "\n  printf(\"Program to Print the Tables of 1 to 10 \\n\");"
+            "\n  // outer loop"
+            "\n  for(i = 1; i <= 10; i++){"
+            "\n    // inner loop"
+            "\n    for(j = 1; j <= 10; j++){"
+            "\n      printf(\"%4d\", i*j);"
+            "\n    }"
+            "\n    printf(\"\\n\");"
+            "\n  }"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nOutput"
+            "\nProgram to Print the Tables of 1 to 10"
+            "\n    1    2    3    4    5    6    7    8    9   10"
+            "\n    2    4    6    8   10   12   14   16   18   20"
+            "\n    3    6    9   12   15   18   21   24   27   30"
+            "\n    4    8   12   16   20   24   28   32   36   40"
+            "\n    5   10   15   20   25   30   35   40   45   50"
+            "\n    6   12   18   24   30   36   42   48   54   60"
+            "\n    7   14   21   28   35   42   49   56   63   70"
+            "\n    8   16   24   32   40   48   56   64   72   80"
+            "\n    9   18   27   36   45   54   63   72   81   90"
+            "\n   10   20   30   40   50   60   70   80   90  100\n"
+            
+            "\nExample: Printing Characters Pyramid\n"
+
+            "\n#include <stdio.h>"
+            "\n#include <string.h>\n"
+            "\nint main(){"
+            "\n  int i, j, l;"
+            "\n  char x[] = \"TutorialsPoint\";"
+            "\n  l = strlen(x);\n"
+            "\n  // outer loop"
+            "\n  for(i = 0; i < l; i++){"
+            "\n    // inner loop"
+            "\n    for(j = 0; j <= i; j++){"
+            "\n      printf(\"%c\", x[j]);"
+            "\n    }"
+            "\n    printf(\"\\n\");"
+            "\n  }"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nOutput"
+            "\nT"
+            "\nTu"
+            "\nTut"
+            "\nTuto"
+            "\nTutor"
+            "\nTutori"
+            "\nTutoria"
+            "\nTutorial"
+            "\nTutorials"
+            "\nTutorialsP"
+            "\nTutorialsPo"
+            "\nTutorialsPoi"
+            "\nTutorialsPoin"
+            "\nTutorialsPoint\n"
+
+            "\nExample: Printing Two-Dimensional Array"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  int i, j;"
+            "\n  int x[4][4] = {"
+            "\n    {1, 2, 3, 4},"
+            "\n    {11, 22, 33, 44},"
+            "\n    {9, 99, 999, 9999},"
+            "\n    {10, 20, 30, 40}"
+            "\n  };"
+            "\n  // outer loop"
+            "\n  for (i=0; i<=3; i++){"
+            "\n    // inner loop"
+            "\n    for(j=0; j <= 3; j++){"
+            "\n      printf(\"%5d\", x[i][j]);"
+            "\n    }"
+            "\n    printf(\"\\n\");"
+            "\n  }"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nOutput"
+            "\n    1    2    3    4"
+            "\n   11   22   33   44"
+            "\n    9   99  999 9999"
+            "\n   10   20   30   40\n"
+            );
+            break;
+
+            case 39:
+            puts("\n### C - Infinite Loop ###\n"
+
+            "\nFlowchart of an Infinite Loop\n"
+
+            "\nHow to Create an Infinite Loop in C?\n"
+
+            "\nExample\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main() {"
+            "\n  while (1)"
+            "\n  {"
+            "\n    printf(\"Hello World\");"
+            "\n  }"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nOutput:"
+            "\nHello WorldHello WorldHello WorldHello WorldHello WorldHello World"
+            "\nHello WorldHello WorldHello WorldHello WorldHello WorldHello World"
+            "\nHello WorldHello WorldHello ...\n"
+
+            "\nTypes of Infinite Loops in C\n"
+
+            "\nInfinite While Loop\n"
+
+            "\nExample 1\n"
+
+            "\n#include <stdio.h>\n"
+            "\n// infinite while loop"
+            "\nint main(){"
+            "\n  int i = 0;"
+            "\n  while (i <= 10){"
+            "\n    // i++;"
+            "\n    printf(\"i: %d\\n\", i);"
+            "\n  }"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nOutput"
+            "\ni: 0"
+            "\ni: 0"
+            "\ni: 0"
+            "\n..."
+            "\n...\n"
+
+            "\nExample 2\n"
+
+            "\n#include <stdio.h>\n"
+            "\n// infinite while loop"
+            "\nint main(){"
+            "\n  while(1){"
+            "\n    printf(\"Hello World\\n\");"
+            "\n  }"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nOutput:"
+            "\nHello World"
+            "\nHello World"
+            "\nHello World"
+            "\n..."
+            "\n...\n"
+
+            "\nwhile (condition){"
+            "\n  . . ."
+            "\n  . . ."
+            "\n}\n"
+
+            "\nExample 3\n"
+
+            "\n#include <stdio.h>\n"
+            "\n// infinite while loop"
+            "\nint main(){"
+            "\n  int i = 0;"
+            "\n  while(i < 10);{"
+            "\n    i++;"
+            "\n    printf(\"Hello World \\n\");"
+            "\n  }"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nOutput\n"
+            "\nWhen the program is run, it won't print the message \"Hello World\". There is no output because the while loop becomes an infinite loop with no body.\n"
+
+            "\nInfinite For Loop\n"
+
+            "\nfor (initial val; final val; increment){"
+            "\n  . . ."
+            "\n  . . ."
+            "\n}\n"
+
+            "\nExample 1\n"
+
+            "\n#include <stdio.h>\n"
+            "\n// infinite for loop"
+            "\nint main(){"
+            "\n  int i;"
+            "\n  for(i=1; ; i++){"
+            "\n    i++;"
+            "\n    printf(\"Hello World\\n\");"
+            "\n  }"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nOutput"
+            "\nHello World "
+            "\nHello World "
+            "\nHello World "
+            "\n..."
+            "\n...\n"
+
+            "\nExample 2\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  // infinite for loop"
+            "\n  for(int i = 10; i >= 1; i++){"
+            "\n    i++;"
+            "\n    printf(\"Hello World\\n\");"
+            "\n  }"
+            "\n}\n"
+
+            "\nOutput"
+            "\nHello World "
+            "\nHello World "
+            "\nHello World "
+            "\n..."
+            "\n...\n"
+
+            "\nExample 3\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  // infinite for loop"
+            "\n  for(int i = 1; i <= 10 ; i--){"
+            "\n    i++;"
+            "\n    printf(\"Hello World\\n\");"
+            "\n  }"
+            "\n}\n"
+
+            "\nOutput"
+            "\nHello World "
+            "\nHello World "
+            "\nHello World "
+            "\n..."
+            "\n...\n"
+
+            "\nExample 4\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  int i;"
+            "\n  // infinite for loop"
+            "\n  for ( ; ; ){"
+            "\n    i++;"
+            "\n    printf(\"Hello World \\n\");"
+            "\n  }"
+            "\n}\n"
+
+            "\nOutput"
+            "\nHello World "
+            "\nHello World "
+            "\nHello World "
+            "\n..."
+            "\n...\n"
+
+            "\nInfinite Do While Loop\n"
+
+            "\nExample\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main() {"
+            "\n  do {"
+            "\n    printf(\"Hello World\\n\");"
+            "\n  } while (1);"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nOutput:"
+            "\nHello World"
+            "\nHello World"
+            "\nHello World"
+            "\nHello World"
+            "\n..."
+            "\n...\n"
+
+            "\nHow to Break an Infinite Loop in C?\n"
+
+            "\nExample\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  // infinite while loop"
+            "\n  for(int i = 1; ; ){"
+            "\n    i++;"
+            "\n    printf(\"Hello World\\n\");"
+            "\n  if(i == 5)"
+            "\n    break;"
+            "\n  }"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nOutput"
+            "\nHello World"
+            "\nHello World"
+            "\nHello World"
+            "\nHello World\n"
+
+            "\nHow to Stop an Infinite Loop Forcefully in C?\n"
+
+            "\nExample\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  // local variable definition"
+            "\n  int a = 0;"
+            "\n  // do loop execution"
+            "\n  LOOP:"
+            "\n    a++;"
+            "\n    printf(\"a: %d\\n\", a);"
+            "\n    goto LOOP;"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nOutput"
+            "\na: 1"
+            "\na: 2"
+            "\n..."
+            "\n..."
+            "\na: 10"
+            "\na: 11"
+            "\n..."
+            "\n...\n"
+            );
+            break;
+
+            case 40:
+            puts("\n### Break Statement in C ###\n"
+
+            "\nFlowchart of Break Statement in C\n"
+
+            "\nBreak Statements in While Loops\n"
+
+            "\nwhile(condition1){"
+            "\n. . ."
+            "\n. . ."
+            "\nif(condition2)"
+            "\nbreak;"
+            "\n. . ."
+            "\n. . ."
+            "\n}\n"
+
+            "\nExample of break Statement with while Loop\n"
+
+            "\n#include <stdio.h>\n"
+            "\n/*break in while loop*/"
+            "\nint main () {"
+            "\n  int i = 2;"
+            "\n  int x = 121;"
+            "\n  printf(\"x: %d\\n\", x);"
+            "\n  while (i < x/2){"
+            "\n    if (x % i == 0)"
+            "\n      break;"
+            "\n      i++;"
+            "\n  }"
+            "\n  if (i >= x/2)"
+            "\n    printf(\"%d is prime\", x);"
+            "\n  else"
+            "\n    printf(\"%d is not prime\", x);"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nOutput"
+            "\nx: 121"
+            "\n121 is not prime\n"
+
+            "\nx: 25"
+            "\n25 is not prime\n"
+
+            "\nBreak Statements in For Loops\n"
+
+            "\nfor (init; condition; increment) {"
+            "\n  . . ."
+            "\n  if (condition)"
+            "\n    break;"
+            "\n    . . ."
+            "\n}\n"
+
+            "\nExample of break Statement with for Loop\n"
+
+            "\n#include <stdio.h>"
+            "\n#include <string.h>\n"
+            "\nint main () {"
+            "\n  char string[] = \"Rhythmic\";"
+            "\n  int len = strlen(string);"
+            "\n  int i;"
+            "\n  for (i = 0; i < len; i++){"
+            "\n    if (string[i] == 'a' || string[i] == 'e' || string[i] == 'i' || string[i] == 'o' || string[i] == 'u')"
+            "\n      break;"
+            "\n    printf(\"%c\\n\", string[i]);"
+            "\n  }"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nOutput"
+            "\nR"
+            "\nh"
+            "\ny"
+            "\nt"
+            "\nh"
+            "\nm\n"
+
+            "\nExample of break Statement with Nested for Loops\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  int i, num, n, flag;"
+            "\n  printf(\"The prime numbers in between the range 1 to 30:\\n\");"
+            "\n  for(num = 2; num <= 30; num++){"
+            "\n    flag = 0;"
+            "\n    for(i = 2; i <= num/2; i++){"
+            "\n      if(num % i == 0){"
+            "\n        flag++;"
+            "\n        break;"
+            "\n      }"
+            "\n    }"
+            "\n    if(flag == 0)"
+            "\n      printf(\"%d is prime\\n\",num);"
+            "\n  }"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nOutput"
+            "\n2 is prime"
+            "\n3 is prime"
+            "\n5 is prime"
+            "\n7 is prime"
+            "\n11 is prime"
+            "\n13 is prime"
+            "\n17 is prime"
+            "\n19 is prime"
+            "\n23 is prime"
+            "\n29 is prime\n"
+
+            "\nBreak Statement in an Infinite Loop\n"
+
+            "\nExample of break Statement with Infinite Loop\n"
+
+            "\n#include <stdio.h>"
+            "\n#include <stdlib.h>"
+            "\n#include <time.h>\n"
+            "\nint main(){"
+            "\n  int i, num;"
+            "\n  printf (\"Program to get the random number from 1 to 100: \\n\");"
+            "\n  srand(time(NULL));"
+            "\n  for (; ; ){"
+            "\n    num = rand() % 100 + 1;   // random number between 1 to 100"
+            "\n    printf (\" %d\\n\", num);"
+            "\n    if (num%5 == 0)"
+            "\n      break;"
+            "\n  }"
+            "\n}\n"
+
+            "\nOutput"
+            "\nProgram to get the random number from 1 to 100:"
+            "\n6"
+            "\n56"
+            "\n42"
+            "\n90\n"
+
+            "\nBreak Statements in Switch Case\n"
+
+            "\nExample of break Statement with switch\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\n  /* local variable definition */"
+            "\n  char ch = 'm';"
+            "\n  printf(\"Time code: %c\\n\\n\", ch);"
+            "\n  switch(ch) {"
+            "\n    case 'm':"
+            "\n      printf(\"Good Morning \\n\");"
+            "\n      break;"
+            "\n    case 'a':"
+            "\n      printf(\"Good Afternoon \\n\");"
+            "\n      break;"
+            "\n    case 'e':"
+            "\n      printf(\"Good Evening \\n\");"
+            "\n      break;"
+            "\n    default:"
+            "\n      printf(\"Hello\");"
+            "\n  }"
+            "\n}\n"
+
+            "\nOutput"
+            "\nTime code: m\n"
+
+            "\nGood Morning\n"
+
+            "\nTime code: m\n"
+
+            "\nGood Morning"
+            "\nGood Afternoon"
+            "\nGood Evening"
+            "\nHello\n"
+            );
+            break;
+
+            case 41:
+            puts("\n### Continue Statement in C ###\n"
+
+            "\nWhat is Continue Statement in C?\n"
+
+            "\nContinue Statement Syntax\n"
+
+            "\nwhile (expr){"
+            "\n. . ."
+            "\n. . ."
+            "\nif (condition)"
+            "\ncontinue;"
+            "\n. . ."
+            "\n}\n"
+
+            "\nContinue Statement Flowchart\n"
+
+            "\nContinue Statement with Nested Loops\n"
+
+            "\nContinue Statement Examples\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main(){"
+            "\nint i = 0;"
+            "\nwhile (i < 10){"
+            "\ni++;"
+            "\nif(i%2 == 0)"
+            "\ncontinue;"
+            "\nprintf(\"i: %d\\n\", i);"
+            "\n}"
+            "\n}\n"
+
+            "\nOutput:"
+            "\ni: 1"
+            "\ni: 3"
+            "\ni: 5"
+            "\ni: 7"
+            "\ni: 9\n"
+
+            "\nExample: Continue Statement with For Loop\n"
+
+            "\n#include <stdio.h>"
+            "\n#include <string.h>\n"
+            "\nint main () {"
+            "\n  char string[] = \"Welcome to TutorialsPoint C Tutorial\";"
+            "\n  int len = strlen(string);"
+            "\n  int i;"
+            "\n  printf(\"Given string: %s\\n\", string);"
+            "\n  printf(\"after removing the vowels\\n\");"
+            "\n  for (i=0; i<len; i++){"
+            "\n    if (string[i]=='a' || string[i]=='e' || string[i] == 'i' || string[i] == 'o' || string[i] == 'u')"
+            "\n      continue;"
+            "\n    printf(\"%c\", string[i]);"
+            "\n  }"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nOutput"
+            "\nGiven string: Welcome to TutorialsPoint C Tutorial"
+            "\nafter removing the vowels"
+            "\nWlcm t TtrlsPnt C Ttrl\n"
+
+            "\nExample: Continue Statement with Nested Loops\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main (){"
+            "\nint i, j, k;"
+            "\nfor(i = 1; i <= 3; i++){"
+            "\nfor(j = 1; j <= 3; j++){"
+            "\nif (i == j)"
+            "\ncontinue;"
+            "\nfor (k=1; k <= 3; k++){"
+            "\nif (k == j || k == i)"
+            "\ncontinue;"
+            "\nprintf(\"%d %d %d \\n\", i,j,k);"
+            "\n}"
+            "\n}"
+            "\n}"
+            "\nreturn 0;"
+            "\n}\n"
+
+            "\nOutput"
+            "\n1 2 3"
+            "\n1 3 2"
+            "\n2 1 3"
+            "\n2 3 1"
+            "\n3 1 2"
+            "\n3 2 1\n"
+
+            "\nExample: Removing Spaces Between Words in a String\n"
+
+            "\n#include <stdio.h>"
+            "\n#include <stdlib.h>"
+            "\n#include <string.h>"
+            "\n#include <time.h>\n"
+            "\nint main(){"
+            "\nchar string[] = \"Welcome to TutorialsPoint C Tutorial\";"
+            "\nint len = strlen(string);"
+            "\nint i;"
+            "\nprintf(\"Given string: %s\\n\", string);"
+            "\nfor (i = 0; i < len; i++){"
+            "\nif (string[i] == ' '){"
+            "\nprintf(\"\\n\");"
+            "\ncontinue;"
+            "\n}"
+            "\nprintf(\"%c\", string[i]);"
+            "\n}"
+            "\nreturn 0;"
+            "\n}\n"
+
+            "\nOutput"
+            "\nGiven string: Welcome to TutorialsPoint C Tutorial"
+            "\nWelcome"
+            "\nto"
+            "\nTutorialsPoint"
+            "\nC"
+            "\nTutorial\n"
+
+            "\nExample: Finding Prime Factors of a Number\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main (){"
+            "\nint n = 64;"
+            "\nint i, m = 2;"
+            "\nprintf(\"Prime factors of %d: \\n\", n);"
+            "\nwhile (n > 1){"
+            "\nif (n % m == 0){"
+            "\nn = n/m;"
+            "\nprintf(\"%d \", m);"
+            "\ncontinue;"
+            "\n}"
+            "\nif (m == 2)"
+            "\nm++;"
+            "\nelse"
+            "\nm = m+2;"
+            "\n}"
+            "\nreturn 0;"
+            "\n}\n"
+
+            "\nOutput"
+            "\nPrime factors of 64:"
+            "\n2 2 2 2 2 2\n"
+
+            "\nPrime factors of 45:"
+            "\n3 3 5\n"
+
+            "\nPrime factors of 90:"
+            "\n2 3 3 5\n"
+
+            "\nGoto Statement in C\n"
+
+            "\nWhat is goto Statement in C?\n"
+
+            "\ngoto Statement Syntax\n"
+
+            "\ngoto label;\n"
+            "\n. . ."
+            "\n. . ."
+            "\nlabel: statement;\n"
+
+            "\ngoto Statement Flowchart\n"
+
+            "\ngoto Statement Examples\n"
+
+            "\nExample 1\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main (){"
+            "\nint n = 0;"
+            "\nif (n == 0)"
+            "\ngoto end;"
+            "\nprintf(\"The number is: %d\", n);"
+            "\nend:"
+            "\nprintf (\"End of program\");"
+            "\nreturn 0;"
+            "\n}\n"
+
+            "\nOutput"
+            "\nEnd of program\n"
+
+            "\nExample 2\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main (){"
+            "\nint i = 11;"
+            "\nif (i % 2 == 0){"
+            "\nEVEN:"
+            "\nprintf(\"The number is even \\n\");"
+            "\ngoto END;"
+            "\n} else {"
+            "\nODD:"
+            "\nprintf(\"The number is odd \\n\");"
+            "\n}"
+            "\nEND:"
+            "\nprintf(\"End of program\");"
+            "\nreturn 0;"
+            "\n}\n"
+
+            "\nOutput:"
+            "\nThe number is odd"
+            "\nEnd of program\n"
+
+            "\nExample 3\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main (){"
+            "\n  START:"
+            "\n  printf(\"Hello World \\n\");"
+            "\n  printf(\"How are you? \\n\");"
+            "\n  goto START;"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nOutput"
+            "\nHello World"
+            "\nHow are you?"
+            "\n......."
+            "\n.......\n"
+
+            "\nExample 4\n"
+
+            "\n#include <stdio.h>"
+            "\nint main(){"
+            "\n  int i = 0;"
+            "\n  START:"
+            "\n  i++;"
+            "\n  printf(\"i: %d\\n\", i);"
+            "\n  if (i == 5)"
+            "\n    goto END;"
+            "\n  goto START;"
+            "\n  END:"
+            "\n  printf(\"End of loop\");"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nOutput"
+            "\ni: 1"
+            "\ni: 2"
+            "\ni: 3"
+            "\ni: 4"
+            "\ni: 5"
+            "\nEnd of loop\n"
+
+            "\nExample 5\n"
+
+            "\n#include <stdio.h>\n"
+            "\nint main (){"
+            "\n  int i, j, k;"
+            "\n  for(i = 1; i <= 3; i++){"
+            "\n    for(j = 1; j <= 3; j++){"
+            "\n    if (i == j)"
+            "\n    goto label1;"
+            "\n      for (k = 1; k <= 3; k++){"
+            "\n        if (k == j || k == i)"
+            "\n          goto label2;"
+            "\n        printf(\"%d %d %d \\n\", i,j,k);"
+            "\n        label2: ;"
+            "\n      }"
+            "\n    label1: ;"
+            "\n    }"
+            "\n  }"
+            "\n  return 0;"
+            "\n}\n"
+
+            "\nOutput"
+            "\n1 2 3"
+            "\n1 3 2"
+            "\n2 1 3"
+            "\n2 3 1"
+            "\n3 1 2"
+            "\n3 2 1\n"
+
+            "\nAvoid Using the goto Statement in C\n"
+            );
+            break;
+
+            case 42:
+            puts("\n### Modular Programming in C ###\n"
+
+            "Library Functions in C"
+
+            "Defining a Function in C"
+
+            "Function Declarations in C"
+
+            "int max(int num1, int num2);"
+
+            "int max(int, int);"
+
+            "Parts of a Function in C"
+
+            "return_type function_name(parameter list){"
+            "body of the function"
+            "}"
+
+            "Return Type - A function may return a value. The return_type is the data type of the value the function returns. Some functions perform the desired operations without returning a value. In this case, the return_type is the keyword void."
+            "Function Name - This is the actual name of the function. The function name and the parameter list together constitute the function signature."
+            "Argument List - An argument (also called parameter) is like a placeholder. When a function is invoked, you pass a value as a parameter. This value is referred to as the actual parameter or argument. The parameter list refers to the type, order, and number of the parameters of a function. Parameters are optional; that is, a function may contain no parameters."
+            "Function Body - The function body contains a collection of statements that defines what the function does."
+
+            "Example: User-defined Function in C"
+
+            "#include <stdio.h>"
+
+            "/* function returning the max between two numbers */"
+            "int max(int num1, int num2){"
+
+            "/* local variable declaration */"
+            "int result;"
+            
+            "if(num1 > num2)"
+            "result = num1;"
+            "else"
+            "result = num2;"
+            
+            "return result;"
+            "}"
+
+            "int main(){"
+            "printf(\"Comparing two numbers using max() function: \\n\");"
+            "printf(\"Which of the two, 75 or 57, is greater than the other? \\n\");"
+            "printf(\"The answer is: %d\", max(75, 57));"
+                
+            "return 0;"
+            "}"
+
+            "Output"
+            "Comparing two numbers using max() function:"
+            "Which of the two, 75 or 57, is greater than the other?"
+            "The answer is: 75"
+
+            "Calling a Function in C"
+
+            "Example: Calling a Function"
+
+            "#include <stdio.h>"
+            "/* function declaration */"
+            "int max(int num1, int num2);"
+            "int main (){"
+            "/* local variable definition */"
+            "int a = 100;"
+            "int b = 200;"
+            "int ret;"
+            "/* calling a function to get max value */"
+            "ret = max(a, b);"
+            "printf(\"Max value is : %d\\n\", ret );"
+            "return 0;"
+            "}"
+            "/* function returning the max between two numbers */"
+            "int max(int num1, int num2){"
+            "/* local variable declaration */"
+            "int result;"
+            "if (num1 > num2)"
+            "result = num1;"
+            "else"
+            "result = num2;"
+            "return result;"
+            "}"
+
+            
+            
             );
             break;
 
