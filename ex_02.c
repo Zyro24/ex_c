@@ -9,7 +9,7 @@ int main(){
     do {
         puts("\n### MENU ###\n"
 
-        "\n## BASICS OF C ##\n"
+        "\n## Basics of C ##\n"
 
         "\n1. Compilation Process"
         "\n2. Comments"
@@ -99,6 +99,10 @@ int main(){
             case 0:
             puts("\n ### ... Adios! ... ###\n");
             return 0;
+
+            // ###################### //
+            // ### Functions in C ### //
+            // ###################### //
 
             case 1:
             puts("\n### COMPILATION STEPS ###\n"
@@ -4905,6 +4909,7 @@ int main(){
             "\nPrime factors of 90:"
             "\n2 3 3 5\n"
             );
+            
             case 44:
             puts("\nGoto Statement in C\n"
 
@@ -5033,8 +5038,14 @@ int main(){
             );
             break;
 
+            // ###################### //
+            // ### Functions in C ### //
+            // ###################### //
+
             case 45:
             puts("\n### Modular Programming in C ###\n"
+
+            "\nModular Programming in C\n"
 
             "Library Functions in C"
 
@@ -5131,16 +5142,311 @@ int main(){
 
             case 46:
             puts("\n### C - Main Function ###\n"
+
+            "main() Function in C"
+
+            "Syntax"
+
+            int main(){
+            //one or more statements;
+            return 0;
+            }
+
+            Syntax Explained
+
+            Valid/Different Signatures of main() Function
+
+            int main() {
+            . .
+            return 0;
+            }
+
+            int main(void){
+            . .
+            return 0;
+            }
+
+            int main(int argc, char *argv[]){
+            . .
+            return 0;
+            }
+
+            Example of main() Function
+
+            #include <stdio.h>
+
+            int main() {
+            // Write code from here
+            printf("Hello World");
+            return 0;
+            }
+
+            Important Points about main() Function
+
+
+            A C program must have a main() function.
+            The main is not a C keyword.
+            It is classified as a user-defined function because its body is not pre−decided, it depends on the processing logic of the program.
+            By convention, int is the return type of main(). The last statement in the function body of main() returns 0, to indicate that the function has been successfully executed. Any non−zero return value indicates failure.
+            Some old C compilers let you define main() function with void return type.
+            However, this is considered to be non−standard and is not recommended.
+            As compared to other functions, the main() function:
+                Can't be declared as inline.
+                Can't be declared as static.
+                Can't have its address taken.
+                Can't be called from your program.
+
+            How does main() Works in C?
+
+            Use of exit() in main() Function
+
+            Example
+
+            #include <stdio.h>
+            #include <stdlib.h>
+            int add(int, int);
+            int main (){
+            int i;
+            for ( i = 1; i<=5; i++){
+                if ( i == 3 ){
+                    printf  (" \n exiting ..");
+                    exit(0);
+                }
+                else
+                printf  (" \n Number is %d", i);
+            }
+            return 0;
+            }
+
+            Output
+            Number is 1
+            Number is 2
+            exiting ..
+
+            Command-line Arguments with main()
+
+            Syntax
+
+            int main(int argc, char *argv[]){
+            . . 
+            return 0;
+            }
+
+            Argument Definitions
+
+            Example: Using main() Function with Command-line Arguments
+
+            #include <stdio.h>
+            #include <stdlib.h>
+            int add(int, int);
+            int main (int argc, char *argv[]){
+            int x, y, z;
+            if (argc<3){
+                printf("insufficient arguments");
+            }
+            else{
+                x = atoi(argv[1]);
+                y = atoi(argv[2]);
+                z = x+y;
+                printf("addition : %d", z);
+            }
+            return 0;
+            }
+
+            C:\Users\mlath>test 10 20
+            addition : 30
+
             );
+
             break;
 
             case 47:
-            puts("\n### C - Function call by Value ###\n")
-            ;
+            puts("\n### C - Function call by Value ###\n"
+            
+            "Function Call by Value in C"
+
+            "Formal Arguments and Actual Arguments"
+
+            type function_name(type var1, type var2, ...)
+
+            int add(int x, int y){
+            int z = x + y;
+            return z;
+            }
+
+            Example: Call by Value in C
+
+            #include <stdio.h>\n
+            int add(int x, int y){
+            int z = x + y;
+            return z;
+            }\n
+            int main(){
+            int a = 10, b = 20;
+            int c = add(a, b);
+            printf("Addition: %d", c);
+            }\n
+
+            Output
+            Addition: 30
+
+            How Does "Call by Value" Work in C?
+
+            Example
+
+            #include <stdio.h>
+            /* function declaration */
+            void swap(int x, int y);
+            int main(){
+            /* local variable definition */
+            int a = 100;
+            int b = 200;
+            printf("Before swap, value of a: %d\n", a);
+            printf("Before swap, value of b: %d\n", b);
+            /* calling a function to swap the values */
+            swap(a, b);
+            printf("After swap, value of a: %d\n", a);
+            printf("After swap, value of b: %d\n", b);
+            return 0;
+            }
+            void swap(int x, int y){
+            int temp;
+            temp = x; /* save the value of x */
+            x = y;    /* put y into x */
+            y = temp; /* put temp into y */
+            return;
+            }
+
+            Output
+            Before swap, value of a: 100
+            Before swap, value of b: 200
+            After swap, value of a: 100
+            After swap, value of b: 200
+            );
             break;
 
             case 48:
             puts("\n### C - Function call by reference ###\n"
+
+            "Function Call by Reference in C"
+
+            The Address Operator (&) in C
+
+            Example
+
+            #include <stdio.h>
+            int main(){
+            int x = 10;
+            printf("x: %d Address of x: %d", x, &x);
+            }
+
+            Output
+            x: 10 Address of x: -1990957196
+
+            What is a Pointer in C?
+
+            Example
+
+            #include <stdio.h>
+            int main(){
+            int x = 10;
+            int *y = &x;
+            printf("x: %d Address of x: %d\n", x, &x);
+            printf("Address of y: %d \n", &y);
+            printf("Value at address in y: %d\n", *y);
+            }
+
+            Output
+            x: 10 Address of x: -1742755108
+            Address of y: -1742755104 
+            Value at address in y: 10
+
+            How Does Call by Reference Work in C?
+
+            int add(int *x, int *y){
+            int z = *x + *y;
+            return z;
+            }
+
+            Example
+
+            #include <stdio.h>
+            /* function declaration */
+            int add(int *, int *);
+            int main(){
+            int a = 10, b = 20;
+            int c = add(&a, &b);
+            printf("Addition: %d", c);
+            }
+            int add(int *x, int *y){
+            int z = *x + *y;
+            return z;
+            }
+
+            Output
+            Addition: 30
+
+            Example: Swap Values with Call by Reference
+
+            #include <stdio.h>\n
+            /* Function definition to swap the values */
+            /* It receives the reference of two variables whose values are to be swapped */
+            int swap(int *x, int *y){
+            int z;
+            z = *x;   /* save the value at address x */
+            *x = *y;  /* put y into x */
+            *y = z;   /* put z into y */
+            return 0;
+            }
+            /* The main() function has two variables "a" and "b" */ 
+            /* Their addresses are passed as arguments to the swap() function. */
+            int main(){
+            /* local variable definition */
+            int a = 10;
+            int b = 20;
+            printf("Before swap, value of a: %d\n", a );
+            printf("Before swap, value of b: %d\n", b );
+            /* calling a function to swap the values */
+            swap(&a, &b);
+            printf("After swap, value of a: %d\n", a);
+            printf("After swap, value of b: %d\n", b);
+            return 0;
+            }
+
+            Output
+            Before swap, value of a: 10
+            Before swap, value of b: 20
+            After swap, value of a: 20
+            After swap, value of b: 10
+
+            Explanation
+
+            Mixing Call by Value and Call by Reference
+
+            Example
+
+            #include <stdio.h>
+            #include <math.h>
+            /* function declaration */
+            int calculate(int, int *, int *);
+
+            int main(){
+            int a = 10;
+            int b, c;
+            calculate(a, &b, &c);
+            printf("a: %d \nSquare of a: %d \nCube of a: %d", a, b, c);
+            }
+            int calculate(int x, int *y, int *z){
+            *y  = pow(x,2);
+            *z = pow(x, 3);
+            return 0;
+            }
+
+            Output
+            a: 10 
+            Square of a: 100 
+            Cube of a: 1000
+
             );
             break;
 
@@ -5341,7 +5647,255 @@ int main(){
             // #################### //
 
             case 85:
-            puts("\n###  ###\n"
+            puts("\n### C - Strings ###\n"
+            );
+            break;
+
+            case 86:
+            puts("\n### C - Array of Strings ###\n"
+            );
+            break;
+
+            case 87:
+            puts("\n### C - Special Characters ###\n"
+            );
+            break;
+
+            // ############################### //
+            // ### C Structures and Unions ### //
+            // ############################### //
+
+            case 88:
+            puts("\n### C - Structures ###\n"
+            );
+            break;
+
+            case 89:
+            puts("\n### C - Structures and Functions ###\n"
+            );
+            break;
+
+            case 90:
+            puts("\n### C - Arrays of Structures ###\n"
+            );
+            break;
+
+            case 91:
+            puts("\n### C - Self-Referential Structures ###\n"
+            );
+            break;
+
+            case 92:
+            puts("\n### C - Lookup Tables ###\n"
+            );
+            break;
+
+            case 93:
+            puts("\n### C - Dot (.) Operator ###\n"
+            );
+            break;
+
+            case 94:
+            puts("\n### C - Enumeration (or enum) ###\n"
+            );
+            break;
+
+            case 95:
+            puts("\n### C - Structure Padding and Packing ###\n"
+            );
+            break;
+
+            case 96:
+            puts("\n### C - Nested Structures ###\n"
+            );
+            break;
+
+            case 97:
+            puts("\n### C - Anonymous Structure and Union ###\n"
+            );
+            break;
+
+            case 98:
+            puts("\n### C - Unions ###\n"
+            );
+            break;
+
+            case 99:
+            puts("\n### C - Bit Fields ###\n"
+            );
+            break;
+
+            case 100:
+            puts("\n### C - Typedef ###\n"
+            );
+            break;
+
+            // ########################## //
+            // ### File Handling in C ### //
+            // ########################## //
+
+            case 101:
+            puts("\n### C - Input & Output ###\n"
+            );
+            break;
+
+            case 102:
+            puts("\n### C - File I/O (File Handling) ###\n"
+            );
+            break;
+
+            // ####################### //
+            // ### C Preprocessors ### //
+            // ####################### //
+
+            case 103:
+            puts("\n### C - Preprocessors ###\n"
+            );
+            break;
+
+            case 104:
+            puts("\n### C - Pragmas ###\n"
+            );
+            break;
+
+            case 105:
+            puts("\n### C - Preprocessor Operators ###\n"
+            );
+            break;
+
+            case 106:
+            puts("\n### C - Macros ###\n"
+            );
+            break;
+
+            case 107:
+            puts("\n### C - Header Files ###\n"
+            );
+            break;
+
+            // ############################## //
+            // ### Memory Management in C ### //
+            // ############################## //
+
+            case 108:
+            puts("\n### C - Memory Management ###\n"
+            );
+            break;
+
+            case 109:
+            puts("\n### C - Memory Address ###\n"
+            );
+            break;
+
+            case 110:
+            puts("\n### C - Storage Classes ###\n"
+            );
+            break;
+
+            // ############################ //
+            // ### Miscellaneous Topics ### //
+            // ############################ //
+
+            case 111:
+            puts("\n### C - Error Handling ###\n"
+            );
+            break;
+
+            case 112:
+            puts("\n### C - Variable Arguments ###\n"
+            );
+            break;
+
+            case 113:
+            puts("\n### C - Command Execution ###\n"
+            );
+            break;
+
+            case 114:
+            puts("\n### C - Math Functions ###\n"
+            );
+            break;
+
+            case 115:
+            puts("\n### C - Static Keyword ###\n"
+            );
+            break;
+
+            case 116:
+            puts("\n### C - Random Number Generation ###\n"
+            );
+            break;
+
+            case 117:
+            puts("\n### C - Command Line Arguments ###\n"
+            );
+            break;
+
+            // ############################### //
+            // ### C Programming Resources ### //
+            // ############################### //
+
+            case 118:
+            puts("\n### C - Questions & Answers ###\n"
+            );
+            break;
+
+            case 119:
+            puts("\n### C - Quick Guide ###\n"
+            );
+            break;
+
+            case 120:
+            puts("\n### C - Cheat Sheet ###\n"
+            );
+            break;
+
+            case 121:
+            puts("\n### C - Useful Resources ###\n"
+            );
+            break;
+
+            case 122:
+            puts("\n### C - Discussion ###\n"
+            );
+            break;
+
+            // ######################## //
+            // ### Selected Reading ### //
+            // ######################## //
+
+            case 123:
+            puts("\n### UPSC IAS Exams Notes ###\n"
+            );
+            break;
+
+            case 124:
+            puts("\n### Developer's Best Practices ###\n"
+            );
+            break;
+
+            case 125:
+            puts("\n### Questions and Answers ###\n"
+            );
+            break;
+
+            case 126:
+            puts("\n### Effective Resume Writing ###\n"
+            );
+            break;
+
+            case 127:
+            puts("\n### HR Interview Questions ###\n"
+            );
+            break;
+
+            case 128:
+            puts("\n### Computer Glossary ###\n"
+            );
+            break;
+
+            case 129:
+            puts("\n### Who is Who ###\n"
             );
             break;
 
