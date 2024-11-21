@@ -5147,115 +5147,114 @@ int main(){
 
             "Syntax"
 
-            int main(){
-            //one or more statements;
-            return 0;
-            }
+            "int main(){"
+            "//one or more statements;"
+            "return 0;"
+            "}"
 
-            Syntax Explained
+            "Syntax Explained"
 
-            Valid/Different Signatures of main() Function
+            "Valid/Different Signatures of main() Function"
 
-            int main() {
-            . .
-            return 0;
-            }
+            "int main() {"
+            ". ."
+            "return 0;"
+            "}"
 
-            int main(void){
-            . .
-            return 0;
-            }
+            "int main(void){"
+            ". ."
+            "return 0;"
+            "}"
 
-            int main(int argc, char *argv[]){
-            . .
-            return 0;
-            }
+            "int main(int argc, char *argv[]){"
+            ". ."
+            "return 0;"
+            "}"
 
-            Example of main() Function
+            "Example of main() Function"
 
-            #include <stdio.h>
+            "#include <stdio.h>"
 
-            int main() {
-            // Write code from here
-            printf("Hello World");
-            return 0;
-            }
+            "int main() {"
+            "// Write code from here"
+            "printf(\"Hello World\");"
+            "return 0;"
+            "}"
 
-            Important Points about main() Function
+            "Important Points about main() Function"
 
 
-            A C program must have a main() function.
-            The main is not a C keyword.
-            It is classified as a user-defined function because its body is not pre−decided, it depends on the processing logic of the program.
-            By convention, int is the return type of main(). The last statement in the function body of main() returns 0, to indicate that the function has been successfully executed. Any non−zero return value indicates failure.
-            Some old C compilers let you define main() function with void return type.
-            However, this is considered to be non−standard and is not recommended.
-            As compared to other functions, the main() function:
-                Can't be declared as inline.
-                Can't be declared as static.
-                Can't have its address taken.
-                Can't be called from your program.
+            "A C program must have a main() function."
+            "The main is not a C keyword."
+            "It is classified as a user-defined function because its body is not pre−decided, it depends on the processing logic of the program."
+            "By convention, int is the return type of main(). The last statement in the function body of main() returns 0, to indicate that the function has been successfully executed. Any non−zero return value indicates failure."
+            "Some old C compilers let you define main() function with void return type."
+            "However, this is considered to be non−standard and is not recommended."
+            "As compared to other functions, the main() function:"
+            "Can't be declared as inline."
+            "Can't be declared as static."
+            "Can't have its address taken."
+            "Can't be called from your program."
 
-            How does main() Works in C?
+            "How does main() Works in C?"
 
-            Use of exit() in main() Function
+            "Use of exit() in main() Function"
 
-            Example
+            "Example"
 
-            #include <stdio.h>
-            #include <stdlib.h>
-            int add(int, int);
-            int main (){
-            int i;
-            for ( i = 1; i<=5; i++){
-                if ( i == 3 ){
-                    printf  (" \n exiting ..");
-                    exit(0);
-                }
-                else
-                printf  (" \n Number is %d", i);
-            }
-            return 0;
-            }
+            "#include <stdio.h>"
+            "#include <stdlib.h>"
+            "int add(int, int);"
+            "int main (){"
+            "int i;"
+            "for ( i = 1; i<=5; i++){"
+            "if ( i == 3 ){"
+            "printf  (\" \\n exiting ..\");"
+            "exit(0);"
+            "}"
+            "else"
+            "printf  (\" \\n Number is %d\", i);"
+            "}"
+            "return 0;"
+            "}"
 
-            Output
-            Number is 1
-            Number is 2
-            exiting ..
+            "Output"
+            "Number is 1"
+            "Number is 2"
+            "exiting .."
 
-            Command-line Arguments with main()
+            "Command-line Arguments with main()"
 
-            Syntax
+            "Syntax"
 
-            int main(int argc, char *argv[]){
-            . . 
-            return 0;
-            }
+            "int main(int argc, char *argv[]){"
+            ". . "
+            "return 0;"
+            "}"
 
-            Argument Definitions
+            "Argument Definitions"
 
-            Example: Using main() Function with Command-line Arguments
+            "Example: Using main() Function with Command-line Arguments"
 
-            #include <stdio.h>
-            #include <stdlib.h>
-            int add(int, int);
-            int main (int argc, char *argv[]){
-            int x, y, z;
-            if (argc<3){
-                printf("insufficient arguments");
-            }
-            else{
-                x = atoi(argv[1]);
-                y = atoi(argv[2]);
-                z = x+y;
-                printf("addition : %d", z);
-            }
-            return 0;
-            }
+            "#include <stdio.h>"
+            "#include <stdlib.h>"
+            "int add(int, int);"
+            "int main (int argc, char *argv[]){"
+            "int x, y, z;"
+            "if (argc<3){"
+                "printf(\"insufficient arguments\");"
+            "}"
+            "else{"
+            "x = atoi(argv[1]);"
+            "y = atoi(argv[2]);"
+            "z = x+y;"
+            "printf(\"addition : %d\", z);"
+            "}"
+            "return 0;"
+            "}"
 
-            C:\Users\mlath>test 10 20
-            addition : 30
-
+            "C:\\Users\\mlath>test 10 20"
+            "addition : 30"
             );
 
             break;
@@ -5267,61 +5266,61 @@ int main(){
 
             "Formal Arguments and Actual Arguments"
 
-            type function_name(type var1, type var2, ...)
+            "type function_name(type var1, type var2, ...)"
 
-            int add(int x, int y){
-            int z = x + y;
-            return z;
-            }
+            "int add(int x, int y){"
+            "int z = x + y;"
+            "return z;"
+            "}"
 
-            Example: Call by Value in C
+            "Example: Call by Value in C"
 
-            #include <stdio.h>\n
-            int add(int x, int y){
-            int z = x + y;
-            return z;
-            }\n
-            int main(){
-            int a = 10, b = 20;
-            int c = add(a, b);
-            printf("Addition: %d", c);
-            }\n
+            "#include <stdio.h>\n"
+            "int add(int x, int y){"
+            "int z = x + y;"
+            "return z;"
+            "}\n"
+            "int main(){"
+            "int a = 10, b = 20;"
+            "int c = add(a, b);"
+            "printf("Addition: %d", c);"
+            "}\n"
 
-            Output
-            Addition: 30
+            "Output"
+            "Addition: 30"
 
-            How Does "Call by Value" Work in C?
+            "How Does "Call by Value" Work in C?"
 
-            Example
+            "Example"
 
-            #include <stdio.h>
-            /* function declaration */
-            void swap(int x, int y);
-            int main(){
-            /* local variable definition */
-            int a = 100;
-            int b = 200;
-            printf("Before swap, value of a: %d\n", a);
-            printf("Before swap, value of b: %d\n", b);
-            /* calling a function to swap the values */
-            swap(a, b);
-            printf("After swap, value of a: %d\n", a);
-            printf("After swap, value of b: %d\n", b);
-            return 0;
-            }
-            void swap(int x, int y){
-            int temp;
-            temp = x; /* save the value of x */
-            x = y;    /* put y into x */
-            y = temp; /* put temp into y */
-            return;
-            }
+            "#include <stdio.h>"
+            "/* function declaration */"
+            "void swap(int x, int y);"
+            "int main(){"
+            "/* local variable definition */"
+            "int a = 100;"
+            "int b = 200;"
+            "printf(\"Before swap, value of a: %d\\n\", a);"
+            "printf(\"Before swap, value of b: %d\\n\", b);"
+            "/* calling a function to swap the values */"
+            "swap(a, b);"
+            "printf(\"After swap, value of a: %d\\n\", a);"
+            "printf(\"After swap, value of b: %d\\n\", b);"
+            "return 0;"
+            "}"
+            "void swap(int x, int y){"
+            "int temp;"
+            "temp = x; /* save the value of x */"
+            "x = y;    /* put y into x */"
+            "y = temp; /* put temp into y */"
+            "return;"
+            "}"
 
-            Output
-            Before swap, value of a: 100
-            Before swap, value of b: 200
-            After swap, value of a: 100
-            After swap, value of b: 200
+            "Output"
+            "Before swap, value of a: 100"
+            "Before swap, value of b: 200"
+            "After swap, value of a: 100"
+            "After swap, value of b: 200"
             );
             break;
 
@@ -5330,153 +5329,762 @@ int main(){
 
             "Function Call by Reference in C"
 
-            The Address Operator (&) in C
+            "The Address Operator (&) in C"
 
-            Example
+            "Example"
 
-            #include <stdio.h>
-            int main(){
-            int x = 10;
-            printf("x: %d Address of x: %d", x, &x);
-            }
+            "#include <stdio.h>"
+            "int main(){"
+            "int x = 10;"
+            "printf(\"x: %d Address of x: %d\", x, &x);"
+            "}"
 
-            Output
-            x: 10 Address of x: -1990957196
+            "Output"
+            "x: 10 Address of x: -1990957196"
 
-            What is a Pointer in C?
+            "What is a Pointer in C?"
 
-            Example
+            "Example"
 
-            #include <stdio.h>
-            int main(){
-            int x = 10;
-            int *y = &x;
-            printf("x: %d Address of x: %d\n", x, &x);
-            printf("Address of y: %d \n", &y);
-            printf("Value at address in y: %d\n", *y);
-            }
+            "#include <stdio.h>"
+            "int main(){"
+            "int x = 10;"
+            "int *y = &x;"
+            "printf(\"x: %d Address of x: %d\\n\", x, &x);"
+            "printf(\"Address of y: %d \\n\", &y);"
+            "printf(\"Value at address in y: %d\\n\", *y);"
+            "}"
 
-            Output
-            x: 10 Address of x: -1742755108
-            Address of y: -1742755104 
-            Value at address in y: 10
+            "Output"
+            "x: 10 Address of x: -1742755108"
+            "Address of y: -1742755104 "
+            "Value at address in y: 10"
 
-            How Does Call by Reference Work in C?
+            "How Does Call by Reference Work in C?"
 
-            int add(int *x, int *y){
-            int z = *x + *y;
-            return z;
-            }
+            "int add(int *x, int *y){"
+            "int z = *x + *y;"
+            "return z;"
+            "}"
 
-            Example
+            "Example"
 
-            #include <stdio.h>
-            /* function declaration */
-            int add(int *, int *);
-            int main(){
-            int a = 10, b = 20;
-            int c = add(&a, &b);
-            printf("Addition: %d", c);
-            }
-            int add(int *x, int *y){
-            int z = *x + *y;
-            return z;
-            }
+            "#include <stdio.h>"
+            "/* function declaration */"
+            "int add(int *, int *);"
+            "int main(){"
+            "int a = 10, b = 20;"
+            "int c = add(&a, &b);"
+            "printf(\"Addition: %d\", c);"
+            "}"
+            "int add(int *x, int *y){"
+            "int z = *x + *y;"
+            "return z;"
+            "}"
 
-            Output
-            Addition: 30
+            "Output"
+            "Addition: 30"
 
-            Example: Swap Values with Call by Reference
+            "Example: Swap Values with Call by Reference"
 
-            #include <stdio.h>\n
-            /* Function definition to swap the values */
-            /* It receives the reference of two variables whose values are to be swapped */
-            int swap(int *x, int *y){
-            int z;
-            z = *x;   /* save the value at address x */
-            *x = *y;  /* put y into x */
-            *y = z;   /* put z into y */
-            return 0;
-            }
-            /* The main() function has two variables "a" and "b" */ 
-            /* Their addresses are passed as arguments to the swap() function. */
-            int main(){
-            /* local variable definition */
-            int a = 10;
-            int b = 20;
-            printf("Before swap, value of a: %d\n", a );
-            printf("Before swap, value of b: %d\n", b );
-            /* calling a function to swap the values */
-            swap(&a, &b);
-            printf("After swap, value of a: %d\n", a);
-            printf("After swap, value of b: %d\n", b);
-            return 0;
-            }
+            "#include <stdio.h>\n"
+            "/* Function definition to swap the values */"
+            "/* It receives the reference of two variables whose values are to be swapped */"
+            "int swap(int *x, int *y){"
+            "int z;"
+            "z = *x;   /* save the value at address x */"
+            "*x = *y;  /* put y into x */"
+            "*y = z;   /* put z into y */"
+            "return 0;"
+            "}"
+            "/* The main() function has two variables "a" and "b" */ "
+            "/* Their addresses are passed as arguments to the swap() function. */"
+            "int main(){"
+            "/* local variable definition */"
+            "int a = 10;"
+            "int b = 20;"
+            "printf(\"Before swap, value of a: %d\\n\", a );"
+            "printf(\"Before swap, value of b: %d\\n\", b );"
+            "/* calling a function to swap the values */"
+            "swap(&a, &b);"
+            "printf(\"After swap, value of a: %d\\n\", a);"
+            "printf(\"After swap, value of b: %d\\n\", b);"
+            "return 0;"
+            "}"
 
-            Output
-            Before swap, value of a: 10
-            Before swap, value of b: 20
-            After swap, value of a: 20
-            After swap, value of b: 10
+            "Output"
+            "Before swap, value of a: 10"
+            "Before swap, value of b: 20"
+            "After swap, value of a: 20"
+            "After swap, value of b: 10"
 
-            Explanation
+            "Explanation"
 
-            Mixing Call by Value and Call by Reference
+            "Mixing Call by Value and Call by Reference"
 
-            Example
+            "Example"
 
-            #include <stdio.h>
-            #include <math.h>
-            /* function declaration */
-            int calculate(int, int *, int *);
+            "#include <stdio.h>"
+            "#include <math.h>"
+            "/* function declaration */"
+            "int calculate(int, int *, int *);"
 
-            int main(){
-            int a = 10;
-            int b, c;
-            calculate(a, &b, &c);
-            printf("a: %d \nSquare of a: %d \nCube of a: %d", a, b, c);
-            }
-            int calculate(int x, int *y, int *z){
-            *y  = pow(x,2);
-            *z = pow(x, 3);
-            return 0;
-            }
+            "int main(){"
+            "int a = 10;"
+            "int b, c;"
+            "calculate(a, &b, &c);"
+            "printf(\"a: %d \\nSquare of a: %d \\nCube of a: %d\", a, b, c);"
+            "}"
+            "int calculate(int x, int *y, int *z){"
+            "*y  = pow(x,2);"
+            "*z = pow(x, 3);"
+            "return 0;"
+            "}"
 
-            Output
-            a: 10 
-            Square of a: 100 
-            Cube of a: 1000
-
+            "Output"
+            "a: 10"
+            "Square of a: 100"
+            "Cube of a: 1000"
             );
             break;
 
             case 49:
             puts("\n### C - Nested Functions ###\n"
+
+            "Nested Functions in C"
+
+            "What is Lexical Scoping?"
+
+            "Nested Functions Have Limited Use"
+
+            "Example: Nested Function"
+
+            "#include <stdio.h>"
+            "int main(void){"
+            "printf(\"Main Function\");"
+            "int my_fun(){"
+            "printf(\"my_fun function\");"
+            "// Nested Function"
+            "int nested(){"
+            "printf(\"This is a nested function.\");"
+            "}"
+            "}"
+            "nested();"
+            "}"
+
+            "Output"
+            "main.c:(.text+0x3d): undefined reference to `nested'"
+            "collect2: error: ld returned 1 exit status"
+
+            "Trampolines for Nested Functions"
+
+            "Example 1"
+
+            "#include <stdio.h>"
+            "int main(){"
+            "auto int nested();"
+            "nested();"
+            "printf(\"In Main Function now\\n\");"
+            "int nested(){"
+                "printf(\"In the nested function now\\n\");"
+            "}"
+            "printf(\"End of the program\");"
+            "}"
+
+            "Output"
+            "In the nested function now"
+            "In Main Function now"
+            "End of the program"
+
+            "Example 2"
+
+            "#include <stdio.h>"
+            "#include <math.h>"
+            "double myfunction (double a, double b);"
+            "int main(){"
+            "double x = 4, y = 5;"
+            "printf(\"Addition of squares of %f and %f = %f\", x, y, myfunction(x, y));"
+            "return 0;"
+            "}"
+            "double myfunction (double a, double b){"
+            "auto double square (double c) { return pow(c,2); }"
+            "return square (a) + square (b);"
+            "}"
+
+            "Output"
+            "Addition of squares of 4.000000 and 5.000000 = 41.000000"
+
+            "Nested Functions: Points to Note"
+
+            "A nested function can access all the identifiers of the containing function that precede its definition."
+            "A nested function must not be called before the containing function exits."
+            "A nested function cannot use a goto statement to jump to a label in the containing function."
+            "Nested function definitions are permitted within functions in any block, mixed with the other declarations and statements in the block."
+            "If you try to call a nested function through its address after the containing function exits, it throws an error."
+            "A nested function always has no linkage. Declaring one with \"extern\" or \"static\" always produces errors."
             );
             break;
 
             case 50:
             puts("\n### C - Variadic Functions ###\n"
+
+            "Variadic Functions in C"
+
+            "Variadic Function in C"
+
+            "printf(\"format specifier\",arg1, arg2, arg3, . . .); "
+
+            "Syntax of Variadic Functions"
+
+            "return_type function_name(type arg1, ...);"
+
+            "Methods - Description"
+            "va_start(va_list ap, arg) Arguments after the last fixed argument are stored in the va_list."
+            "va_arg(va_list ap, type) Each time, the next argument in the variable list va_list and coverts it to the given type, till it reaches the end of list."
+            "va_copy(va_list dest, va_list src) This creates a copy of the arguments in va_list"
+            "va_end(va_list ap) This ends the traversal of the variadic function arguments. As the end of va_list is reached, the list object is cleaned up."
+
+            "Examples of Variadic Functions in C"
+
+            "Example: Sum of Numbers Using a Variadic Function"
+
+            "va_list args;"
+            "va_start (args, n);"
+
+            "for(i = 0; i < n; i++){    "
+            "sum += va_arg (args, int);    "
+            "}"
+
+            "va_end (args);"
+
+            "#include <stdio.h>"
+            "#include <stdarg.h>"
+            "// Variadic function to add numbers"
+            "int addition(int n, ...){"
+            "va_list args;"
+            "int i, sum = 0;"
+            "va_start (args, n);  "
+            "for (i = 0; i < n; i++){    "
+                "sum += va_arg (args, int);    "
+            "}"
+            "va_end (args);"
+            "return sum;"
+            "}"
+            "int main(){"
+            "printf(\"Sum = %d \", addition(5, 1, 2, 3, 4, 5));"
+            "return 0;"
+            "}"
+
+            "Output"
+            "Sum = 15"
+
+            "Example: Finding the Largest Number Using a Variadic Function"
+
+            "#include <stdio.h>"
+            "#include <stdarg.h>"
+            "// Variadic function to add numbers"
+            "int largest(int n, ...){"
+            "va_list args;"
+            "int i, max = 0;"
+            "va_start (args, n);"
+            "for(i = 0; i < n; i++){"
+            "int x = va_arg (args, int);"
+            "if (x >= max)"
+            "max = x;"
+            "}"
+            "va_end (args);"
+            "return max;"
+            "}"
+            "int main(){"
+            "printf(\"Largest number in the list = %d \", largest(5, 12, 34, 21, 45, 32));"
+            "return 0;"
+            "}"
+
+            "Output"
+            "Largest number in the list = 45"
+
+            "Example: Concatenation of Multiple Strings Using Variadic Function"
+
+            "#include <stdio.h>"
+            "#include <string.h>"
+            "#include <stdarg.h>"
+            "char * concat(int n, ...){"
+            "va_list args;"
+            "int i;"
+            "static char string[100], *word;"
+            "va_start (args, n);"
+            "strcpy(string, "");"
+            "for (i = 0; i < n; i++){"
+            "word= va_arg (args, char *);"
+            "strcat(string, word);"
+            "strcat(string, " ");"
+            "}"
+            "va_end (args);"
+            "return string;"
+            "}"
+
+            "int main(){"
+            "char * string1 = concat(2, \"Hello\", \"World\");"
+            "printf(\"%s\\n\", string1);"
+            "char * string2 = concat(3, \"How\", \"are\", \"you?\");"
+            "printf(\"%s\\n\", string2);"
+            "return 0;"
+            "}"
+
+            "Output"
+            "Hello World"
+            "How are you?"
             );
             break;
 
             case 51:
             puts("\n### C - User-Defined Functions ###\n"
+
+            "User-defined Functions in C"
+
+
+            Library functions
+            User-defined functions
+
+            What is User-Defined Function in C?
+
+            Creating a User-defined Function
+
+            Function declaration
+            Function definition
+            Function calling
+
+            Declaration of User-defined Function
+
+            Syntax
+
+            int add(int, int);
+
+            Definition of User-defined Function
+
+            Syntax
+
+            return_type function_name(arg1, arg2, ...){
+            // Function body;
+            return val;
+            }
+
+            Example
+
+            int add(int a, int b){
+            int c;
+            c = a + b;
+            return c;
+            }
+
+            Calling a User-defined Function
+
+            Example
+
+            int result = add(10, 20);
+
+            Example of User-Defined Function
+
+            // C program to demonstrate an example of
+            // user-defined function
+            #include <stdio.h>
+            // Function declarations
+            int add(int, int);
+            int sub(int, int);
+            // Function definitions
+            int add(int a, int b) {
+            return (a + b);
+            }
+            int sub(int a, int b) {
+            return (a - b);
+            }
+            int main() {
+            // Declaring two integer variables to
+            // store the numbers
+            // and resultant variables to store the result
+            int num1 = 36, num2 = 24;
+            int res_add, res_sub;
+            // Calling the functions
+            res_add = add(num1, num2);
+            res_sub = sub(num1, num2);
+            // Printing the results
+            printf("Addition is : %d\n", res_add);
+            printf("Subtraction is : %d\n", res_sub);
+            return 0;
+            }
+
+            Addition is : 60
+            Subtraction is : 12
+
+            Formal and Actual Arguments in User-Defined Function
+
+            int x = 10, y = 20;
+            int result = add(x, y);
+
+            Example
+
+            #include <stdio.h>
+            float divide (int, int);
+            int main(){
+            int x = 15, y = 5;
+            float z = divide (x, y);
+            printf("%f", z);
+            return 0;
+            }
+            int divide (int a, int b){
+            int c = a/b;
+            return c;
+            }
+
+            Output
+            error: conflicting types for 'divide'
+
+            #include <stdio.h>
+
+            int main(){
+            printf("Hello");
+            main();
+            return 0;
+            }
             );
             break;
 
             case 52:
             puts("\n### C - Callback Function ###\n"
+
+            Callback Function in C
+
+            Callback Function
+
+            void hello(){
+            printf("Hello World.");
+            }
+
+            void (*ptr)() = &hello;
+
+            Example of Callback Function in C
+
+            #include <stdio.h>
+            void hello(){
+            printf("Hello World\n");
+            }
+            void callback(void (*ptr)()){
+            printf("Calling a function with its pointer\n");
+            (*ptr)();   // calling the callback function
+            }
+            main(){
+            void (*ptr)() = hello;
+            callback(ptr);
+            }
+
+            Output
+            Calling a function with its pointer
+            Hello World
+
+            Callback Function With Arguments
+
+            int square(int val){
+            return val*val;
+            }
+            int root(int val){
+            return pow(val, 0.5);
+            }
+
+            int callback(int a,  int (*ptr)(int)){
+            int ret = (*ptr)(a);
+            return ret;
+            }
+
+            Example of Callback Function With Arguments
+
+            #include <stdio.h>
+            #include <math.h>
+            int callback(int a, int (*print_callback)(int));
+            int square(int value);
+            int root (int value);
+            int main(){
+            int x = 4;
+            printf("Square of x: %d is %d\n", x, callback(x, square));
+            printf("Square root of x: %d is %d\n", x, callback(x, root));
+            
+            return 0;
+            }
+            int callback(int a,  int (*ptr)(int)){
+            int ret = (*ptr)(a);
+            return ret;
+            }
+            int square(int val){
+            return val*val;
+            }
+            int root(int val){
+            return pow(val, 0.5);
+            }
+
+            Output
+            Square of x: 4 is 16
+            Square root of x: 4 is 2
+
+            Types of Callbacks in C
+
+            Synchronous Callback
+
+            Asynchronous Callback
             );
             break;
 
             case 53:
             puts("\n### C - Return Statement ###\n"
+
+            "Return Statement in C"
+
+            Syntax of return Statement
+
+            return value_or_expression;
+
+            int main(){
+            // function body;
+            return 0;
+            }
+
+            The void return statement
+
+            #include <stdio.h>
+            /* function declaration */
+            void test(){
+            return;
+            }
+            int main() {
+            test();
+            printf("end");
+            return 0;
+            }
+
+            Return type mismatch in return statement
+
+            Example
+
+            int  main(){
+            test(5);
+            printf("end");
+            return 0;
+            }
+            float test(int a) {
+            return 1.1 ;
+            }
+
+            Output
+            Error: C:\Users\mlath\test.c|12|error: conflicting types for 'test'
+
+            float test(int);
+            int  main(){
+            test(5);
+            printf("end");
+            return 0;
+            }
+            float test(float a){
+            return 1.1 ;
+            }
+
+            Multiple return values with return statement
+
+            Example
+
+            int test(int);
+            int  main() {
+            test(5);
+            printf("end");
+            return 0;
+            }
+            int test(int a){
+            if (a<3)
+                return 1;
+            else
+                return 0;
+            }
+
+            Function returning an array
+
+            Example
+
+            #include <stdio.h>
+            int* test(int *);
+            int  main(){
+            int a[] = {1,2,3,4};
+            int i;
+            int *b = test(a);
+            for (i=0; i<4; i++){
+                printf("%d\n", b[i]);
+            }
+            return 0;
+            }
+            int * test(int*a){
+            int i;
+            for (i=0; i<4; i++){
+                a[i] = 2*a[i];
+            }
+            return a;
+            }
+
+            Output
+            2
+            4
+            6
+            8
+
+            exit() instead of return statement
+
+            Syntax
+
+            void exit(int status);
+
             );
             break;
 
             case 54:
             puts("\n### C - Recursion ###\n"
+
+            "Recursion in C"
+
+            What is a Recursive Function in C?
+
+            Syntax
+
+            void recursive_function(){
+            recursion();   // function calls itself
+            }
+            int main(){
+            recursive_function();
+            }
+
+            Why Recursion is Used in C?
+
+            Factorial Using Recursion
+
+            n! = n X (n-1)!
+
+            5! = 5 X 4!
+            5 X 4 X 3!
+            5 X 4 X 3 X 2!
+            5 X 4 X 3 X  2 X 1!
+            5 X 4 X 3 X  2 X 1
+            = 120
+
+            Example: Non-Recursive Factorial Function
+
+            #include <stdio.h>
+            #include <math.h>
+            // function declaration
+            int factorial(int);
+            int main(){
+            int a = 5;
+            int f = factorial(a);
+            printf("a: %d \n", a);
+            printf("Factorial of a: %d", f);
+            }
+            int factorial(int x){
+            int i;
+            int f = 1;
+            for (i = 5; i >= 1; i--){
+                f *= i;
+            }
+            return f;
+            }
+
+            Output
+            a: 5 
+            Factorial of a: 120
+
+            Example: Recursive Factorial Function
+
+            #include <stdio.h>
+            #include <math.h>
+            /* function declaration */
+            int factorial(int i){
+            if(i <= 1){
+                return 1;
+            }
+            return i * factorial(i - 1);
+            }
+            int main(){
+            int a = 5;
+            int f = factorial(a);
+            printf("a: %d \n", a);
+            printf("Factorial of a: %d", f);
+            return 0;
+            }
+
+            Output
+            a: 5 
+            Factorial of a: 120
+
+            Binary Search Using Recursion
+
+            Example: Recursive Binary Search
+
+            #include <stdio.h>
+            int bSearch(int array[], int start, int end, int element){
+            if (end >= start){
+                int mid = start + (end - start ) / 2;
+                if (array[mid] == element)
+                    return mid;
+                if (array[mid] > element)
+                    return bSearch(array, start, mid-1, element);
+                    return bSearch(array, mid+1, end, element);
+            }
+            return -1;
+            }
+            int main(void){
+            int array[] = {5, 12, 23, 45, 	49, 67, 71, 77, 82};
+            int n = 9;
+            int element = 67;
+            int index = bSearch(array, 0, n-1, element);
+            
+            if(index == -1 ){
+                printf("Element not found in the array ");
+            }
+            else{
+                printf("Element found at index: %d", index);
+            }
+            return 0;
+            }
+
+            Output
+            Element found at index: 5
+
+            Fibonacci Series Using Recursion
+
+            Example
+
+            #include <stdio.h>
+            int fibonacci(int i){
+            if(i == 0){
+                return 0;
+            }
+            if(i == 1){
+                return 1;
+            }
+            return fibonacci(i-1) + fibonacci(i-2);
+            }
+            int main(){
+            int i;
+            for (i = 0; i < 10; i++){
+                printf("%d\t\n", fibonacci(i));
+            }
+            return 0;
+            }
+
+            Output
+            0
+            1
+            1
+            2
+            3
+            5
+            8
+            13
+            21
+            34
+            
             );
             break;
 
